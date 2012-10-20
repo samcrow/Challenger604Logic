@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['availablepower',['availablePower',['../class_challenger604_systems_1_1_simple_power_source.html#a8cbfee6545d9538d4850d9aad02cba9a',1,'Challenger604Systems::SimplePowerSource']]]
+  ['availablewattage',['availableWattage',['../class_challenger604_systems_1_1_simple_a_c_power_source.html#af9aab8bb1f32a240aba9b6c4ac969ba9',1,'Challenger604Systems::SimpleACPowerSource::availableWattage()'],['../class_challenger604_systems_1_1_simple_d_c_power_source.html#a1e32a5e348dca6e2043f539a434debd9',1,'Challenger604Systems::SimpleDCPowerSource::availableWattage()']]]
 ];

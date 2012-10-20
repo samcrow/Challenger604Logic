@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>Challenger604Systems</b></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_power_source.html">PowerSource</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_challenger604_systems.html">Challenger604Systems</a></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_power_source.html">PowerSource</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -91,15 +92,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html#a969bc2b8f4e1f2be039851d57ddb01f6">getAvailablePower</a>()=0</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html#a76a69288fe1b32f7af5229aa6a84b717">getCurrentPower</a>()=0</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html#acaed7f7cc4d536770a9e51173eed1d75">getMaxPower</a>()=0</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html#a35af892773c7a60f4d6ac031755cd104">getAvailableWattage</a>()=0</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html#af432be401da09206f49439f6c5299176">getCurrentVoltage</a>()=0</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html#a82252be3f4e80239848bd9cadb69ec31">getCurrentWattage</a>()=0</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html#aed53a668295c22fabdf8adf8018d8d1d">getMaxWattage</a>()=0</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html#a5d42cde201e448ba9fb59991ad31b454">getPowerType</a>()=0</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>PowerSource</b>(QObject *parent=0) (defined in <a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a>)</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html#a7337c7de30e3d23c551d3a41370b34bb">requestPower</a>(double inRequestedPower)=0</td><td class="entry"><a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td><td class="entry"><span class="mlabel">pure virtual</span><span class="mlabel">slot</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 19 2012 19:57:18 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 19 2012 21:33:55 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

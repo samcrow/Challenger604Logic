@@ -23,74 +23,92 @@ Inheritance diagram for Challenger604\-Systems\-:\-:Simple\-Power\-Source\-:\beg
 \hypertarget{class_challenger604_systems_1_1_simple_power_source_aed200c8ab5c16b1f16126c6060ec9e71}{{\bfseries Simple\-Power\-Source} (Q\-Object $\ast$parent=0)}\label{class_challenger604_systems_1_1_simple_power_source_aed200c8ab5c16b1f16126c6060ec9e71}
 
 \item 
-virtual double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a9781b84a22264b24438b7e72d8cf35c4}{get\-Max\-Power} ()
+virtual double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a377f887867cacb82d212ead69271e734}{get\-Max\-Wattage} ()
 \item 
-virtual double \hyperlink{class_challenger604_systems_1_1_simple_power_source_af09780bebd7cc1df4a925187b902c78b}{get\-Available\-Power} ()
+virtual double \hyperlink{class_challenger604_systems_1_1_simple_power_source_afc499fcf88b5da279ba0e335df95b816}{get\-Available\-Wattage} ()
 \item 
-virtual double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a5ec0cc41562579550910e2ddb842a324}{get\-Current\-Power} ()
+virtual double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a8474beaf3067db8ffd1579c6363f5721}{get\-Current\-Wattage} ()
+\item 
+virtual double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a6bb0e0f7759b88801749afa8a462d6db}{get\-Current\-Voltage} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a53ec33df745b2dc2c9963a0510eaccf0}{max\-Power}
+double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a5fb4dd72e0d2a30293f91e9be9eb6e97}{max\-Wattage}
 \item 
-double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a8cbfee6545d9538d4850d9aad02cba9a}{available\-Power}
+double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a4a74a3aadb987bae076113afbe9cec49}{available\-Wattage}
 \item 
-double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a26492b1913645d864d7cc8ace1e1a2f8}{current\-Power}
+double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a4cf363de2167ac9b478febb6e49c4866}{current\-Wattage}
 \item 
 double \hyperlink{class_challenger604_systems_1_1_simple_power_source_af9ee729a686825c87e59c55622b64659}{requested\-Power}
+\item 
+double \hyperlink{class_challenger604_systems_1_1_simple_power_source_a06714fe17da09f4552da8a8766617032}{current\-Voltage}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Extends \hyperlink{class_challenger604_systems_1_1_power_source}{Power\-Source} with built-\/in fields for maximum, available, current, and requested power levels. This is useful for power sources that don't have to do complicated things with their power levels. All these functions are virtual, so you can override them. 
+Extends \hyperlink{class_challenger604_systems_1_1_power_source}{Power\-Source} with built-\/in fields for maximum, available, current, and requested power levels as well as voltage. This is useful for power sources that don't have to do complicated things with their power levels. All these functions are virtual, so you can override them. 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_challenger604_systems_1_1_simple_power_source_af09780bebd7cc1df4a925187b902c78b}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!get\-Available\-Power@{get\-Available\-Power}}
-\index{get\-Available\-Power@{get\-Available\-Power}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
-\subsubsection[{get\-Available\-Power}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::get\-Available\-Power (
+\hypertarget{class_challenger604_systems_1_1_simple_power_source_afc499fcf88b5da279ba0e335df95b816}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!get\-Available\-Wattage@{get\-Available\-Wattage}}
+\index{get\-Available\-Wattage@{get\-Available\-Wattage}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
+\subsubsection[{get\-Available\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::get\-Available\-Wattage (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_simple_power_source_af09780bebd7cc1df4a925187b902c78b}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_simple_power_source_afc499fcf88b5da279ba0e335df95b816}
 Get the maximum power, in watts, that this source can provide in its current state. You may ask this device to change its state to supply more power than this by requesting a power level that is greater than this but less than the maximum power. 
 
-Implements \hyperlink{class_challenger604_systems_1_1_power_source_a969bc2b8f4e1f2be039851d57ddb01f6}{Challenger604\-Systems\-::\-Power\-Source}.
+Implements \hyperlink{class_challenger604_systems_1_1_power_source_a35af892773c7a60f4d6ac031755cd104}{Challenger604\-Systems\-::\-Power\-Source}.
 
-\hypertarget{class_challenger604_systems_1_1_simple_power_source_a5ec0cc41562579550910e2ddb842a324}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!get\-Current\-Power@{get\-Current\-Power}}
-\index{get\-Current\-Power@{get\-Current\-Power}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
-\subsubsection[{get\-Current\-Power}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::get\-Current\-Power (
+\hypertarget{class_challenger604_systems_1_1_simple_power_source_a6bb0e0f7759b88801749afa8a462d6db}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!get\-Current\-Voltage@{get\-Current\-Voltage}}
+\index{get\-Current\-Voltage@{get\-Current\-Voltage}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
+\subsubsection[{get\-Current\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::get\-Current\-Voltage (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_simple_power_source_a5ec0cc41562579550910e2ddb842a324}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_simple_power_source_a6bb0e0f7759b88801749afa8a462d6db}
+Get the voltage, in volts, of the electricity that this source is providing. 
+
+Implements \hyperlink{class_challenger604_systems_1_1_power_source_af432be401da09206f49439f6c5299176}{Challenger604\-Systems\-::\-Power\-Source}.
+
+\hypertarget{class_challenger604_systems_1_1_simple_power_source_a8474beaf3067db8ffd1579c6363f5721}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!get\-Current\-Wattage@{get\-Current\-Wattage}}
+\index{get\-Current\-Wattage@{get\-Current\-Wattage}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
+\subsubsection[{get\-Current\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::get\-Current\-Wattage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_simple_power_source_a8474beaf3067db8ffd1579c6363f5721}
 Get the current power, in watts, that this source is providing. This may be less than the maximum power. 
 
-Implements \hyperlink{class_challenger604_systems_1_1_power_source_a76a69288fe1b32f7af5229aa6a84b717}{Challenger604\-Systems\-::\-Power\-Source}.
+Implements \hyperlink{class_challenger604_systems_1_1_power_source_a82252be3f4e80239848bd9cadb69ec31}{Challenger604\-Systems\-::\-Power\-Source}.
 
-\hypertarget{class_challenger604_systems_1_1_simple_power_source_a9781b84a22264b24438b7e72d8cf35c4}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!get\-Max\-Power@{get\-Max\-Power}}
-\index{get\-Max\-Power@{get\-Max\-Power}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
-\subsubsection[{get\-Max\-Power}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::get\-Max\-Power (
+\hypertarget{class_challenger604_systems_1_1_simple_power_source_a377f887867cacb82d212ead69271e734}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!get\-Max\-Wattage@{get\-Max\-Wattage}}
+\index{get\-Max\-Wattage@{get\-Max\-Wattage}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
+\subsubsection[{get\-Max\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::get\-Max\-Wattage (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_simple_power_source_a9781b84a22264b24438b7e72d8cf35c4}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_simple_power_source_a377f887867cacb82d212ead69271e734}
 Get the maximum power, in watts, that this source can provide in any situation. 
 
-Implements \hyperlink{class_challenger604_systems_1_1_power_source_acaed7f7cc4d536770a9e51173eed1d75}{Challenger604\-Systems\-::\-Power\-Source}.
+Implements \hyperlink{class_challenger604_systems_1_1_power_source_aed53a668295c22fabdf8adf8018d8d1d}{Challenger604\-Systems\-::\-Power\-Source}.
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_challenger604_systems_1_1_simple_power_source_a8cbfee6545d9538d4850d9aad02cba9a}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!available\-Power@{available\-Power}}
-\index{available\-Power@{available\-Power}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
-\subsubsection[{available\-Power}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::available\-Power\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_challenger604_systems_1_1_simple_power_source_a8cbfee6545d9538d4850d9aad02cba9a}
-The maximum power that this source can supply in its current state \hypertarget{class_challenger604_systems_1_1_simple_power_source_a26492b1913645d864d7cc8ace1e1a2f8}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!current\-Power@{current\-Power}}
-\index{current\-Power@{current\-Power}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
-\subsubsection[{current\-Power}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::current\-Power\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_challenger604_systems_1_1_simple_power_source_a26492b1913645d864d7cc8ace1e1a2f8}
-The current power that this source is supplying \hypertarget{class_challenger604_systems_1_1_simple_power_source_a53ec33df745b2dc2c9963a0510eaccf0}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!max\-Power@{max\-Power}}
-\index{max\-Power@{max\-Power}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
-\subsubsection[{max\-Power}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::max\-Power\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_challenger604_systems_1_1_simple_power_source_a53ec33df745b2dc2c9963a0510eaccf0}
+\hypertarget{class_challenger604_systems_1_1_simple_power_source_a4a74a3aadb987bae076113afbe9cec49}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!available\-Wattage@{available\-Wattage}}
+\index{available\-Wattage@{available\-Wattage}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
+\subsubsection[{available\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::available\-Wattage\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_challenger604_systems_1_1_simple_power_source_a4a74a3aadb987bae076113afbe9cec49}
+The maximum power that this source can supply in its current state \hypertarget{class_challenger604_systems_1_1_simple_power_source_a06714fe17da09f4552da8a8766617032}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!current\-Voltage@{current\-Voltage}}
+\index{current\-Voltage@{current\-Voltage}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
+\subsubsection[{current\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::current\-Voltage\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_challenger604_systems_1_1_simple_power_source_a06714fe17da09f4552da8a8766617032}
+The voltage that is currently being supplied \hypertarget{class_challenger604_systems_1_1_simple_power_source_a4cf363de2167ac9b478febb6e49c4866}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!current\-Wattage@{current\-Wattage}}
+\index{current\-Wattage@{current\-Wattage}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
+\subsubsection[{current\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::current\-Wattage\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_challenger604_systems_1_1_simple_power_source_a4cf363de2167ac9b478febb6e49c4866}
+The current power that this source is supplying \hypertarget{class_challenger604_systems_1_1_simple_power_source_a5fb4dd72e0d2a30293f91e9be9eb6e97}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!max\-Wattage@{max\-Wattage}}
+\index{max\-Wattage@{max\-Wattage}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
+\subsubsection[{max\-Wattage}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::max\-Wattage\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_challenger604_systems_1_1_simple_power_source_a5fb4dd72e0d2a30293f91e9be9eb6e97}
 The maximum power that this source can supply \hypertarget{class_challenger604_systems_1_1_simple_power_source_af9ee729a686825c87e59c55622b64659}{\index{Challenger604\-Systems\-::\-Simple\-Power\-Source@{Challenger604\-Systems\-::\-Simple\-Power\-Source}!requested\-Power@{requested\-Power}}
 \index{requested\-Power@{requested\-Power}!Challenger604Systems::SimplePowerSource@{Challenger604\-Systems\-::\-Simple\-Power\-Source}}
 \subsubsection[{requested\-Power}]{\setlength{\rightskip}{0pt plus 5cm}double Challenger604\-Systems\-::\-Simple\-Power\-Source\-::requested\-Power\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_challenger604_systems_1_1_simple_power_source_af9ee729a686825c87e59c55622b64659}

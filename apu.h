@@ -2,11 +2,12 @@
 #define APU_H
 
 #include <QObject>
-#include "simplepowersource.h"
+#include "simpledcpowersource.h"
+#include "Challenger604Logic_global.h"
 
 namespace Challenger604Systems {
 
-class APU : public SimplePowerSource
+class CHALLENGER604LOGICSHARED_EXPORT APU : public SimpleDCPowerSource
 {
     Q_OBJECT
 public:

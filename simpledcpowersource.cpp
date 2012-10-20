@@ -1,28 +1,39 @@
-#include "simplepowersource.h"
+#include "simpledcpowersource.h"
 
 namespace Challenger604Systems {
 
-SimplePowerSource::SimplePowerSource(QObject *parent) :
+SimpleDCPowerSource::SimpleDCPowerSource(QObject *parent) :
     PowerSource(parent),
-    maxPower(0),
-    availablePower(0),
-    currentPower(0)
+    maxWattage(0),
+    availableWattage(0),
+    currentWattage(0),
+    requestedPower(0),
+  currentVoltage(0)
 {
 }
 
-double SimplePowerSource::getMaxPower() {
-    return maxPower;
+double SimpleDCPowerSource::getMaxWattage() {
+    return maxWattage;
 }
 
-double SimplePowerSource::getAvailablePower() {
-    return availablePower;
+double SimpleDCPowerSource::getAvailableWattage() {
+    return availableWattage;
 }
 
-double SimplePowerSource::getCurrentPower() {
-    return currentPower;
+double SimpleDCPowerSource::getCurrentWattage() {
+    return currentWattage;
 }
 
-void SimplePowerSource::requestPower(double inRequestedPower) {
+double SimpleDCPowerSource::getCurrentVoltage() {
+    return currentVoltage;
+}
+
+ElectricalPowerType SimpleDCPowerSource::getPowerType() {
+    return AC_115V_400HZ;
+}
+
+
+void SimpleDCPowerSource::requestPower(double inRequestedPower) {
     requestedPower = inRequestedPower;
 }
 

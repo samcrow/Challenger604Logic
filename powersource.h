@@ -2,13 +2,19 @@
 #define POWERSOURCE_H
 
 #include <QObject>
+#include "Challenger604Logic_global.h"
+#include "electricalpowertype.h"
 
+/**
+  @namespace Challenger604Systems
+  @brief This namespace contains everything in this project.
+  */
 namespace Challenger604Systems {
 
 /**
   An abstract (should be used abstractly, but technically can be used directly) class for something that can provide power to the electrical system
   */
-class PowerSource : public QObject
+class CHALLENGER604LOGICSHARED_EXPORT PowerSource : public QObject
 {
     Q_OBJECT
 public:
@@ -18,7 +24,7 @@ public:
       Get the maximum power, in watts, that this source
       can provide in any situation.
       */
-    virtual double getMaxPower() = 0;
+    virtual double getMaxWattage() = 0;
 
     /**
       Get the maximum power, in watts, that this source
@@ -27,13 +33,24 @@ public:
       power than this by requesting a power level that is greater
       than this but less than the maximum power.
       */
-    virtual double getAvailablePower() = 0;
+    virtual double getAvailableWattage() = 0;
 
     /**
       Get the current power, in watts, that this source
       is providing. This may be less than the maximum power.
       */
-    virtual double getCurrentPower() = 0;
+    virtual double getCurrentWattage() = 0;
+
+    /**
+      Get the voltage, in volts, of the electricity that
+      this source is providing.
+      */
+    virtual double getCurrentVoltage() = 0;
+
+    /**
+      Get the type of power that this source provides
+      */
+    virtual ElectricalPowerType getPowerType() = 0;
     
 signals:
     

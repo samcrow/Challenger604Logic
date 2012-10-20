@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,34 +95,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html">SimplePowerSource</a>(QObject *parent = 0);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a9781b84a22264b24438b7e72d8cf35c4">getMaxPower</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a377f887867cacb82d212ead69271e734">getMaxWattage</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#af09780bebd7cc1df4a925187b902c78b">getAvailablePower</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#afc499fcf88b5da279ba0e335df95b816">getAvailableWattage</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a5ec0cc41562579550910e2ddb842a324">getCurrentPower</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;signals:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a8474beaf3067db8ffd1579c6363f5721">getCurrentWattage</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a6bb0e0f7759b88801749afa8a462d6db">getCurrentVoltage</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestPower(<span class="keywordtype">double</span> inRequestedPower);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a53ec33df745b2dc2c9963a0510eaccf0">   34</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a53ec33df745b2dc2c9963a0510eaccf0">maxPower</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a8cbfee6545d9538d4850d9aad02cba9a">   36</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a8cbfee6545d9538d4850d9aad02cba9a">availablePower</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a26492b1913645d864d7cc8ace1e1a2f8">   38</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a26492b1913645d864d7cc8ace1e1a2f8">currentPower</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#af9ee729a686825c87e59c55622b64659">   40</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#af9ee729a686825c87e59c55622b64659">requestedPower</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;signals:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestPower(<span class="keywordtype">double</span> inRequestedPower);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a5fb4dd72e0d2a30293f91e9be9eb6e97">   36</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a5fb4dd72e0d2a30293f91e9be9eb6e97">maxWattage</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a4a74a3aadb987bae076113afbe9cec49">   38</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a4a74a3aadb987bae076113afbe9cec49">availableWattage</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a4cf363de2167ac9b478febb6e49c4866">   40</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a4cf363de2167ac9b478febb6e49c4866">currentWattage</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#af9ee729a686825c87e59c55622b64659">   42</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#af9ee729a686825c87e59c55622b64659">requestedPower</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a06714fe17da09f4552da8a8766617032">   44</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_power_source.html#a06714fe17da09f4552da8a8766617032">currentVoltage</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif // SIMPLEPOWERSOURCE_H</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // SIMPLEPOWERSOURCE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 19 2012 19:57:18 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 19 2012 21:27:59 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

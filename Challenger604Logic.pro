@@ -14,13 +14,18 @@ DEFINES += CHALLENGER604LOGIC_LIBRARY
 SOURCES += \
     apu.cpp \
     powersource.cpp \
-    simplepowersource.cpp
+    acpowersource.cpp \
+    simpleacpowersource.cpp \
+    simpledcpowersource.cpp
 
 HEADERS +=\
         Challenger604Logic_global.h \
     apu.h \
     powersource.h \
-    simplepowersource.h
+    electricalpowertype.h \
+    acpowersource.h \
+    simpleacpowersource.h \
+    simpledcpowersource.h
 
 symbian {
     MMP_RULES += EXPORTUNFROZEN

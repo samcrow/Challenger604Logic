@@ -36,6 +36,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>Challenger604Systems</b></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html">SimplePowerSource</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_challenger604_systems.html">Challenger604Systems</a></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html">SimplePowerSource</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -120,32 +121,38 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed200c8ab5c16b1f16126c6060ec9e71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed200c8ab5c16b1f16126c6060ec9e71"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SimplePowerSource</b> (QObject *parent=0)</td></tr>
 <tr class="separator:aed200c8ab5c16b1f16126c6060ec9e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9781b84a22264b24438b7e72d8cf35c4"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a9781b84a22264b24438b7e72d8cf35c4">getMaxPower</a> ()</td></tr>
-<tr class="separator:a9781b84a22264b24438b7e72d8cf35c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af09780bebd7cc1df4a925187b902c78b"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#af09780bebd7cc1df4a925187b902c78b">getAvailablePower</a> ()</td></tr>
-<tr class="separator:af09780bebd7cc1df4a925187b902c78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec0cc41562579550910e2ddb842a324"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a5ec0cc41562579550910e2ddb842a324">getCurrentPower</a> ()</td></tr>
-<tr class="separator:a5ec0cc41562579550910e2ddb842a324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377f887867cacb82d212ead69271e734"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a377f887867cacb82d212ead69271e734">getMaxWattage</a> ()</td></tr>
+<tr class="separator:a377f887867cacb82d212ead69271e734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc499fcf88b5da279ba0e335df95b816"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#afc499fcf88b5da279ba0e335df95b816">getAvailableWattage</a> ()</td></tr>
+<tr class="separator:afc499fcf88b5da279ba0e335df95b816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8474beaf3067db8ffd1579c6363f5721"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a8474beaf3067db8ffd1579c6363f5721">getCurrentWattage</a> ()</td></tr>
+<tr class="separator:a8474beaf3067db8ffd1579c6363f5721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb0e0f7759b88801749afa8a462d6db"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a6bb0e0f7759b88801749afa8a462d6db">getCurrentVoltage</a> ()</td></tr>
+<tr class="separator:a6bb0e0f7759b88801749afa8a462d6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_challenger604_systems_1_1_power_source"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_challenger604_systems_1_1_power_source')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_challenger604_systems_1_1_power_source.html">Challenger604Systems::PowerSource</a></td></tr>
 <tr class="memitem:a928bccc7b0f2533f4de701926747d910 inherit pub_methods_class_challenger604_systems_1_1_power_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a928bccc7b0f2533f4de701926747d910"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PowerSource</b> (QObject *parent=0)</td></tr>
 <tr class="separator:a928bccc7b0f2533f4de701926747d910 inherit pub_methods_class_challenger604_systems_1_1_power_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d42cde201e448ba9fb59991ad31b454 inherit pub_methods_class_challenger604_systems_1_1_power_source"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_challenger604_systems.html#a9ad1a793d94b97514092692cb7315afd">ElectricalPowerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_source.html#a5d42cde201e448ba9fb59991ad31b454">getPowerType</a> ()=0</td></tr>
+<tr class="separator:a5d42cde201e448ba9fb59991ad31b454 inherit pub_methods_class_challenger604_systems_1_1_power_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a53ec33df745b2dc2c9963a0510eaccf0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a53ec33df745b2dc2c9963a0510eaccf0">maxPower</a></td></tr>
-<tr class="separator:a53ec33df745b2dc2c9963a0510eaccf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cbfee6545d9538d4850d9aad02cba9a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a8cbfee6545d9538d4850d9aad02cba9a">availablePower</a></td></tr>
-<tr class="separator:a8cbfee6545d9538d4850d9aad02cba9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26492b1913645d864d7cc8ace1e1a2f8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a26492b1913645d864d7cc8ace1e1a2f8">currentPower</a></td></tr>
-<tr class="separator:a26492b1913645d864d7cc8ace1e1a2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb4dd72e0d2a30293f91e9be9eb6e97"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a5fb4dd72e0d2a30293f91e9be9eb6e97">maxWattage</a></td></tr>
+<tr class="separator:a5fb4dd72e0d2a30293f91e9be9eb6e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a74a3aadb987bae076113afbe9cec49"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a4a74a3aadb987bae076113afbe9cec49">availableWattage</a></td></tr>
+<tr class="separator:a4a74a3aadb987bae076113afbe9cec49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf363de2167ac9b478febb6e49c4866"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a4cf363de2167ac9b478febb6e49c4866">currentWattage</a></td></tr>
+<tr class="separator:a4cf363de2167ac9b478febb6e49c4866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ee729a686825c87e59c55622b64659"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#af9ee729a686825c87e59c55622b64659">requestedPower</a></td></tr>
 <tr class="separator:af9ee729a686825c87e59c55622b64659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06714fe17da09f4552da8a8766617032"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_simple_power_source.html#a06714fe17da09f4552da8a8766617032">currentVoltage</a></td></tr>
+<tr class="separator:a06714fe17da09f4552da8a8766617032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Extends <a class="el" href="class_challenger604_systems_1_1_power_source.html">PowerSource</a> with built-in fields for maximum, available, current, and requested power levels. This is useful for power sources that don't have to do complicated things with their power levels. All these functions are virtual, so you can override them. </p>
+<div class="textblock"><p>Extends <a class="el" href="class_challenger604_systems_1_1_power_source.html">PowerSource</a> with built-in fields for maximum, available, current, and requested power levels as well as voltage. This is useful for power sources that don't have to do complicated things with their power levels. All these functions are virtual, so you can override them. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af09780bebd7cc1df4a925187b902c78b"></a>
+<a class="anchor" id="afc499fcf88b5da279ba0e335df95b816"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -153,7 +160,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Challenger604Systems::SimplePowerSource::getAvailablePower </td>
+          <td class="memname">double Challenger604Systems::SimplePowerSource::getAvailableWattage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -167,11 +174,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the maximum power, in watts, that this source can provide in its current state. You may ask this device to change its state to supply more power than this by requesting a power level that is greater than this but less than the maximum power. </p>
 
-<p>Implements <a class="el" href="class_challenger604_systems_1_1_power_source.html#a969bc2b8f4e1f2be039851d57ddb01f6">Challenger604Systems::PowerSource</a>.</p>
+<p>Implements <a class="el" href="class_challenger604_systems_1_1_power_source.html#a35af892773c7a60f4d6ac031755cd104">Challenger604Systems::PowerSource</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5ec0cc41562579550910e2ddb842a324"></a>
+<a class="anchor" id="a6bb0e0f7759b88801749afa8a462d6db"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -179,7 +186,33 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Challenger604Systems::SimplePowerSource::getCurrentPower </td>
+          <td class="memname">double Challenger604Systems::SimplePowerSource::getCurrentVoltage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the voltage, in volts, of the electricity that this source is providing. </p>
+
+<p>Implements <a class="el" href="class_challenger604_systems_1_1_power_source.html#af432be401da09206f49439f6c5299176">Challenger604Systems::PowerSource</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8474beaf3067db8ffd1579c6363f5721"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Challenger604Systems::SimplePowerSource::getCurrentWattage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -193,11 +226,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the current power, in watts, that this source is providing. This may be less than the maximum power. </p>
 
-<p>Implements <a class="el" href="class_challenger604_systems_1_1_power_source.html#a76a69288fe1b32f7af5229aa6a84b717">Challenger604Systems::PowerSource</a>.</p>
+<p>Implements <a class="el" href="class_challenger604_systems_1_1_power_source.html#a82252be3f4e80239848bd9cadb69ec31">Challenger604Systems::PowerSource</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9781b84a22264b24438b7e72d8cf35c4"></a>
+<a class="anchor" id="a377f887867cacb82d212ead69271e734"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -205,7 +238,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Challenger604Systems::SimplePowerSource::getMaxPower </td>
+          <td class="memname">double Challenger604Systems::SimplePowerSource::getMaxWattage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -219,12 +252,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the maximum power, in watts, that this source can provide in any situation. </p>
 
-<p>Implements <a class="el" href="class_challenger604_systems_1_1_power_source.html#acaed7f7cc4d536770a9e51173eed1d75">Challenger604Systems::PowerSource</a>.</p>
+<p>Implements <a class="el" href="class_challenger604_systems_1_1_power_source.html#aed53a668295c22fabdf8adf8018d8d1d">Challenger604Systems::PowerSource</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a8cbfee6545d9538d4850d9aad02cba9a"></a>
+<a class="anchor" id="a4a74a3aadb987bae076113afbe9cec49"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -232,7 +265,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Challenger604Systems::SimplePowerSource::availablePower</td>
+          <td class="memname">double Challenger604Systems::SimplePowerSource::availableWattage</td>
         </tr>
       </table>
   </td>
@@ -245,7 +278,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a26492b1913645d864d7cc8ace1e1a2f8"></a>
+<a class="anchor" id="a06714fe17da09f4552da8a8766617032"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -253,7 +286,28 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Challenger604Systems::SimplePowerSource::currentPower</td>
+          <td class="memname">double Challenger604Systems::SimplePowerSource::currentVoltage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The voltage that is currently being supplied </p>
+
+</div>
+</div>
+<a class="anchor" id="a4cf363de2167ac9b478febb6e49c4866"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Challenger604Systems::SimplePowerSource::currentWattage</td>
         </tr>
       </table>
   </td>
@@ -266,7 +320,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a53ec33df745b2dc2c9963a0510eaccf0"></a>
+<a class="anchor" id="a5fb4dd72e0d2a30293f91e9be9eb6e97"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -274,7 +328,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Challenger604Systems::SimplePowerSource::maxPower</td>
+          <td class="memname">double Challenger604Systems::SimplePowerSource::maxWattage</td>
         </tr>
       </table>
   </td>
@@ -315,7 +369,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 19 2012 19:57:18 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 19 2012 21:27:59 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
