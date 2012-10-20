@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Challenger 604 Systems Logic: /Applications/X-Plane 10 Demo/Aircraft/Heavy Metal/Challenger 604/Challenger604Logic/simpledcpowersource.h Source File</title>
+<title>Challenger 604 Systems Logic: /Applications/X-Plane 10 Demo/Aircraft/Heavy Metal/Challenger 604/Challenger604Logic/electrical/defs/simpledcpowersource.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -77,57 +76,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c2bce7fd3ac825e037eff860c2292573.html">electrical</a></li><li class="navelem"><a class="el" href="dir_01d37133f6a0b4a3b88c5ce912ad5c15.html">defs</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">/Applications/X-Plane 10 Demo/Aircraft/Heavy Metal/Challenger 604/Challenger604Logic/simpledcpowersource.h</div>  </div>
+<div class="title">simpledcpowersource.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SIMPLEPOWERSOURCE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SIMPLEPOWERSOURCE_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;powersource.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Challenger604Systems {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html">SimpleDCPowerSource</a> : <span class="keyword">public</span> <a class="code" href="class_challenger604_systems_1_1_power_source.html">PowerSource</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html">SimpleDCPowerSource</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#ad6285e377af915c21bf15637732f0291">getMaxWattage</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a47085e7418e1e327552bd4339d08621a">getAvailableWattage</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#ac1f53b3d602f8279f3b80bf9280b62d9">getCurrentWattage</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a19a6be7acae4e8183a0b03f0e948f659">getCurrentVoltage</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespace_challenger604_systems.html#a9ad1a793d94b97514092692cb7315afd" title="An enumeration of different types of electricity. Note that all voltage and frequency values here are...">ElectricalPowerType</a> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#aa40311fa856ed2a149c9bf3586275632">getPowerType</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;signals:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestPower(<span class="keywordtype">double</span> inRequestedPower);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a7ccc3391b03c04b09f6792e0a44b026b">   39</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a7ccc3391b03c04b09f6792e0a44b026b">maxWattage</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a1e32a5e348dca6e2043f539a434debd9">   41</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a1e32a5e348dca6e2043f539a434debd9">availableWattage</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a5c8c5b89f6d3cd3d332ee12ef893839c">   43</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a5c8c5b89f6d3cd3d332ee12ef893839c">currentWattage</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a37f983774689318c3cb0295380ce4bd7">   45</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a37f983774689318c3cb0295380ce4bd7">requestedPower</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a6d5b229b66f1e6396229561e9a9562e4">   47</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a6d5b229b66f1e6396229561e9a9562e4">currentVoltage</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // SIMPLEPOWERSOURCE_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../../Challenger604Logic_global.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;powersource.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Challenger604Systems {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html">   15</a></span>&#160;<span class="keyword">class </span>CHALLENGER604LOGICSHARED_EXPORT <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html">SimpleDCPowerSource</a> : <span class="keyword">public</span> <a class="code" href="class_challenger604_systems_1_1_power_source.html">PowerSource</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html">SimpleDCPowerSource</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getMaxWattage();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getAvailableWattage();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getCurrentWattage();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getCurrentVoltage();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespace_challenger604_systems.html#a9ad1a793d94b97514092692cb7315afd" title="An enumeration of different types of electricity. Note that all voltage and frequency values here are...">ElectricalPowerType</a> getPowerType();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;signals:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> requestPower(<span class="keywordtype">double</span> inRequestedPower);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a7ccc3391b03c04b09f6792e0a44b026b">   40</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a7ccc3391b03c04b09f6792e0a44b026b">maxWattage</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a1e32a5e348dca6e2043f539a434debd9">   42</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a1e32a5e348dca6e2043f539a434debd9">availableWattage</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a5c8c5b89f6d3cd3d332ee12ef893839c">   44</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a5c8c5b89f6d3cd3d332ee12ef893839c">currentWattage</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a37f983774689318c3cb0295380ce4bd7">   46</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a37f983774689318c3cb0295380ce4bd7">requestedPower</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a6d5b229b66f1e6396229561e9a9562e4">   48</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a6d5b229b66f1e6396229561e9a9562e4">currentVoltage</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // SIMPLEPOWERSOURCE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 19 2012 21:33:55 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 19 2012 21:58:18 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -16,7 +16,8 @@ SOURCES += \
     electrical/defs/powersource.cpp \
     electrical/defs/acpowersource.cpp \
     electrical/defs/simpleacpowersource.cpp \
-    electrical/defs/simpledcpowersource.cpp
+    electrical/defs/simpledcpowersource.cpp \
+    electrical/components/tru.cpp
 
 HEADERS +=\
         Challenger604Logic_global.h \
@@ -25,7 +26,8 @@ HEADERS +=\
     electrical/defs/electricalpowertype.h \
     electrical/defs/acpowersource.h \
     electrical/defs/simpleacpowersource.h \
-    electrical/defs/simpledcpowersource.h
+    electrical/defs/simpledcpowersource.h \
+    electrical/components/tru.h
 
 symbian {
     MMP_RULES += EXPORTUNFROZEN
