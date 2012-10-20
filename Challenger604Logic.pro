@@ -17,7 +17,12 @@ SOURCES += \
     electrical/defs/acpowersource.cpp \
     electrical/defs/simpleacpowersource.cpp \
     electrical/defs/simpledcpowersource.cpp \
-    electrical/components/tru.cpp
+    electrical/components/tru.cpp \
+    electrical/defs/powersink.cpp \
+    electrical/defs/simpleacpowersink.cpp \
+    electrical/defs/simpledcpowersink.cpp \
+    electrical/components/endlessacpowersource.cpp \
+    electrical/components/testdcpowersink.cpp
 
 HEADERS +=\
         Challenger604Logic_global.h \
@@ -27,7 +32,12 @@ HEADERS +=\
     electrical/defs/acpowersource.h \
     electrical/defs/simpleacpowersource.h \
     electrical/defs/simpledcpowersource.h \
-    electrical/components/tru.h
+    electrical/components/tru.h \
+    electrical/defs/powersink.h \
+    electrical/defs/simpleacpowersink.h \
+    electrical/defs/simpledcpowersink.h \
+    electrical/components/endlessacpowersource.h \
+    electrical/components/testdcpowersink.h
 
 symbian {
     MMP_RULES += EXPORTUNFROZEN

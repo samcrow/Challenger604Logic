@@ -28,7 +28,7 @@ public:
 
     virtual double getCurrentFrequency();
 
-    virtual ElectricalPowerType getPowerType();
+    virtual ElectricalPowerType getOutputPowerType();
 
 signals:
 

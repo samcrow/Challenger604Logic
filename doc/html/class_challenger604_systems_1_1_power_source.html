@@ -101,11 +101,12 @@ Inheritance diagram for Challenger604Systems::PowerSource:</div>
  <div class="center">
   <img src="class_challenger604_systems_1_1_power_source.png" usemap="#Challenger604Systems::PowerSource_map" alt=""/>
   <map id="Challenger604Systems::PowerSource_map" name="Challenger604Systems::PowerSource_map">
-<area href="class_challenger604_systems_1_1_a_c_power_source.html" alt="Challenger604Systems::ACPowerSource" shape="rect" coords="0,112,279,136"/>
-<area href="class_challenger604_systems_1_1_simple_d_c_power_source.html" alt="Challenger604Systems::SimpleDCPowerSource" shape="rect" coords="433,112,712,136"/>
-<area href="class_challenger604_systems_1_1_simple_a_c_power_source.html" alt="Challenger604Systems::SimpleACPowerSource" shape="rect" coords="0,168,279,192"/>
-<area href="class_challenger604_systems_1_1_a_p_u.html" alt="Challenger604Systems::APU" shape="rect" coords="289,168,568,192"/>
-<area href="class_challenger604_systems_1_1_t_r_u.html" alt="Challenger604Systems::TRU" shape="rect" coords="578,168,857,192"/>
+<area href="class_challenger604_systems_1_1_a_c_power_source.html" alt="Challenger604Systems::ACPowerSource" shape="rect" coords="0,112,286,136"/>
+<area href="class_challenger604_systems_1_1_simple_d_c_power_source.html" alt="Challenger604Systems::SimpleDCPowerSource" shape="rect" coords="444,112,730,136"/>
+<area href="class_challenger604_systems_1_1_simple_a_c_power_source.html" alt="Challenger604Systems::SimpleACPowerSource" shape="rect" coords="0,168,286,192"/>
+<area href="class_challenger604_systems_1_1_a_p_u.html" alt="Challenger604Systems::APU" shape="rect" coords="296,168,582,192"/>
+<area href="class_challenger604_systems_1_1_t_r_u.html" alt="Challenger604Systems::TRU" shape="rect" coords="592,168,878,192"/>
+<area href="class_challenger604_systems_1_1_endless_a_c_power_source.html" alt="Challenger604Systems::EndlessACPowerSource" shape="rect" coords="0,224,286,248"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -127,8 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a82252be3f4e80239848bd9cadb69ec31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af432be401da09206f49439f6c5299176"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_source.html#af432be401da09206f49439f6c5299176">getCurrentVoltage</a> ()=0</td></tr>
 <tr class="separator:af432be401da09206f49439f6c5299176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d42cde201e448ba9fb59991ad31b454"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_challenger604_systems.html#a9ad1a793d94b97514092692cb7315afd">ElectricalPowerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_source.html#a5d42cde201e448ba9fb59991ad31b454">getPowerType</a> ()=0</td></tr>
-<tr class="separator:a5d42cde201e448ba9fb59991ad31b454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005b9cac72b89344aded232d87fde2f6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_challenger604_systems.html#a9ad1a793d94b97514092692cb7315afd">ElectricalPowerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_source.html#a005b9cac72b89344aded232d87fde2f6">getOutputPowerType</a> ()=0</td></tr>
+<tr class="separator:a005b9cac72b89344aded232d87fde2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class for something that can provide power to the electrical system </p>
@@ -237,7 +238,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5d42cde201e448ba9fb59991ad31b454"></a>
+<a class="anchor" id="a005b9cac72b89344aded232d87fde2f6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -245,7 +246,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespace_challenger604_systems.html#a9ad1a793d94b97514092692cb7315afd">ElectricalPowerType</a> Challenger604Systems::PowerSource::getPowerType </td>
+          <td class="memname">virtual <a class="el" href="namespace_challenger604_systems.html#a9ad1a793d94b97514092692cb7315afd">ElectricalPowerType</a> Challenger604Systems::PowerSource::getOutputPowerType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -259,7 +260,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the type of power that this source provides </p>
 
-<p>Implemented in <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#a9d50d633080d8663ec78dc33c4d8b13f">Challenger604Systems::SimpleACPowerSource</a>, and <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#aa40311fa856ed2a149c9bf3586275632">Challenger604Systems::SimpleDCPowerSource</a>.</p>
+<p>Implemented in <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#aaaebd8199288938f6d7955743669193b">Challenger604Systems::SimpleACPowerSource</a>, and <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a9253b83cb9e35b40db473e24bf3d7f54">Challenger604Systems::SimpleDCPowerSource</a>.</p>
 
 </div>
 </div>
@@ -302,7 +303,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 19 2012 21:58:18 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 20 2012 10:49:03 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -28,7 +28,7 @@ double SimpleDCPowerSource::getCurrentVoltage() {
     return currentVoltage;
 }
 
-ElectricalPowerType SimpleDCPowerSource::getPowerType() {
+ElectricalPowerType SimpleDCPowerSource::getOutputPowerType() {
     return AC_115V_400HZ;
 }
 

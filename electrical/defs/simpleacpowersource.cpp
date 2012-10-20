@@ -33,7 +33,7 @@ double SimpleACPowerSource::getCurrentFrequency() {
     return currentFrequency;
 }
 
-ElectricalPowerType SimpleACPowerSource::getPowerType() {
+ElectricalPowerType SimpleACPowerSource::getOutputPowerType() {
     return DC_28V;
 }
 

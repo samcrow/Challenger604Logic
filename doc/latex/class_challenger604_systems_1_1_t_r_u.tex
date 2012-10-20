@@ -8,26 +8,44 @@
 Inheritance diagram for Challenger604\-Systems\-:\-:T\-R\-U\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=4.000000cm]{class_challenger604_systems_1_1_t_r_u}
+\includegraphics[height=3.902439cm]{class_challenger604_systems_1_1_t_r_u}
 \end{center}
 \end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_challenger604_systems_1_1_t_r_u_a357a6361c26e37f21eff8da6295263a3}{virtual void {\bfseries request\-Power} (double in\-Requested\-Power)}\label{class_challenger604_systems_1_1_t_r_u_a357a6361c26e37f21eff8da6295263a3}
+
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_challenger604_systems_1_1_t_r_u_a014a3e2230e963365e024eef8656ce5a}{{\bfseries T\-R\-U} (Q\-Object $\ast$parent=0)}\label{class_challenger604_systems_1_1_t_r_u_a014a3e2230e963365e024eef8656ce5a}
+\hypertarget{class_challenger604_systems_1_1_t_r_u_a51fb2291fc0a2bfc4e057c3868ecf45b}{{\bfseries T\-R\-U} (\hyperlink{class_challenger604_systems_1_1_a_c_power_source}{A\-C\-Power\-Source} $\ast$in\-Source, Q\-Object $\ast$parent=0)}\label{class_challenger604_systems_1_1_t_r_u_a51fb2291fc0a2bfc4e057c3868ecf45b}
 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{class_challenger604_systems_1_1_t_r_u_a1fe9c57208efea35e91dce1cc2342375}{efficiency} = 0.\-85
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_challenger604_systems_1_1_t_r_u_a608d302cc2d994b1baa909016a602f70}{\hyperlink{class_challenger604_systems_1_1_a_c_power_source}{A\-C\-Power\-Source} $\ast$ {\bfseries Power\-Source}}\label{class_challenger604_systems_1_1_t_r_u_a608d302cc2d994b1baa909016a602f70}
-
+\hyperlink{class_challenger604_systems_1_1_a_c_power_source}{A\-C\-Power\-Source} $\ast$ \hyperlink{class_challenger604_systems_1_1_t_r_u_a501cfc80d8c3cecc892787eca2f0d221}{ac\-Source}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 Simulates a Transformer-\/\-Rectifier Unit This converts A\-C into D\-C. Currently, the imperfect efficiency of this device is simulated by removing a portion of the power that passes through it. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_challenger604_systems_1_1_t_r_u_a501cfc80d8c3cecc892787eca2f0d221}{\index{Challenger604\-Systems\-::\-T\-R\-U@{Challenger604\-Systems\-::\-T\-R\-U}!ac\-Source@{ac\-Source}}
+\index{ac\-Source@{ac\-Source}!Challenger604Systems::TRU@{Challenger604\-Systems\-::\-T\-R\-U}}
+\subsubsection[{ac\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-C\-Power\-Source}$\ast$ Challenger604\-Systems\-::\-T\-R\-U\-::ac\-Source\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_challenger604_systems_1_1_t_r_u_a501cfc80d8c3cecc892787eca2f0d221}
+The source that supplies A\-C power to this \hyperlink{class_challenger604_systems_1_1_t_r_u}{T\-R\-U} \hypertarget{class_challenger604_systems_1_1_t_r_u_a1fe9c57208efea35e91dce1cc2342375}{\index{Challenger604\-Systems\-::\-T\-R\-U@{Challenger604\-Systems\-::\-T\-R\-U}!efficiency@{efficiency}}
+\index{efficiency@{efficiency}!Challenger604Systems::TRU@{Challenger604\-Systems\-::\-T\-R\-U}}
+\subsubsection[{efficiency}]{\setlength{\rightskip}{0pt plus 5cm}const double Challenger604\-Systems\-::\-T\-R\-U\-::efficiency = 0.\-85\hspace{0.3cm}{\ttfamily [static]}}}\label{class_challenger604_systems_1_1_t_r_u_a1fe9c57208efea35e91dce1cc2342375}
+The ratio of efficiency of a \hyperlink{class_challenger604_systems_1_1_t_r_u}{T\-R\-U}. 1 is perfectly efficient, 0 means that it converts all its input energy into heat (and will result in a divide-\/by-\/zero error). 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

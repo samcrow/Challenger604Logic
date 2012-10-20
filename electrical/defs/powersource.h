@@ -2,6 +2,7 @@
 #define POWERSOURCE_H
 
 #include <QObject>
+#include <QVariant>
 #include "../../Challenger604Logic_global.h"
 #include "electricalpowertype.h"
 
@@ -50,7 +51,7 @@ public:
     /**
       Get the type of power that this source provides
       */
-    virtual ElectricalPowerType getPowerType() = 0;
+    virtual ElectricalPowerType getOutputPowerType() = 0;
     
 signals:
     
