@@ -1,22 +1,22 @@
-#ifndef SIMPLEACPOWERSOURCE_H
-#define SIMPLEACPOWERSOURCE_H
+#ifndef SIMPLEPOWERSOURCE_H
+#define SIMPLEPOWERSOURCE_H
 
-#include "Challenger604Logic_global.h"
-#include "acpowersource.h"
+#include "../../Challenger604Logic_global.h"
+#include "powersource.h"
 
 namespace Challenger604Systems {
 
 /**
-  Extends PowerSource with built-in fields for maximum, available, current, and requested power levels as well as voltage and AC frequency.
+  Extends PowerSource with built-in fields for maximum, available, current, and requested power levels as well as voltage.
   This is useful for power sources that don't have to do complicated things with their power levels.
-  This supplies AC electricity at nominal 115 volts/400 hertz.
+  This supplies DC electricity at nominal 28 volts.
   All these functions are virtual, so you can override them.
   */
-class CHALLENGER604LOGICSHARED_EXPORT SimpleACPowerSource : public ACPowerSource
+class CHALLENGER604LOGICSHARED_EXPORT SimpleDCPowerSource : public PowerSource
 {
     Q_OBJECT
 public:
-    explicit SimpleACPowerSource(QObject *parent = 0);
+    explicit SimpleDCPowerSource(QObject *parent = 0);
 
     virtual double getMaxWattage();
 
@@ -26,16 +26,14 @@ public:
 
     virtual double getCurrentVoltage();
 
-    virtual double getCurrentFrequency();
-
     virtual ElectricalPowerType getPowerType();
-
+    
 signals:
-
+    
 public slots:
 
     virtual void requestPower(double inRequestedPower);
-
+    
 protected:
 
     /** The maximum power that this source can supply */
@@ -48,10 +46,9 @@ protected:
     double requestedPower;
     /** The voltage that is currently being supplied */
     double currentVoltage;
-    /** The frequency of the electricity that is currently being supplied */
-    double currentFrequency;
+
 };
 
 }
 
-#endif // SIMPLEACPOWERSOURCE_H
+#endif // SIMPLEPOWERSOURCE_H

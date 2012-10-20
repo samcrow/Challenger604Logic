@@ -12,20 +12,20 @@ TEMPLATE = lib
 DEFINES += CHALLENGER604LOGIC_LIBRARY
 
 SOURCES += \
-    apu.cpp \
-    powersource.cpp \
-    acpowersource.cpp \
-    simpleacpowersource.cpp \
-    simpledcpowersource.cpp
+    electrical/components/apu.cpp \
+    electrical/defs/powersource.cpp \
+    electrical/defs/acpowersource.cpp \
+    electrical/defs/simpleacpowersource.cpp \
+    electrical/defs/simpledcpowersource.cpp
 
 HEADERS +=\
         Challenger604Logic_global.h \
-    apu.h \
-    powersource.h \
-    electricalpowertype.h \
-    acpowersource.h \
-    simpleacpowersource.h \
-    simpledcpowersource.h
+    electrical/components/apu.h \
+    electrical/defs/powersource.h \
+    electrical/defs/electricalpowertype.h \
+    electrical/defs/acpowersource.h \
+    electrical/defs/simpleacpowersource.h \
+    electrical/defs/simpledcpowersource.h
 
 symbian {
     MMP_RULES += EXPORTUNFROZEN

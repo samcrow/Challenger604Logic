@@ -2,7 +2,7 @@
 #define ACPOWERSOURCE_H
 
 #include "powersource.h"
-#include "Challenger604Logic_global.h"
+#include "../../Challenger604Logic_global.h"
 
 namespace Challenger604Systems {
 
