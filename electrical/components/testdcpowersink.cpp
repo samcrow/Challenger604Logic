@@ -8,7 +8,7 @@ TestDCPowerSink::TestDCPowerSink(PowerSource *inSource) :
     source->requestPower(100);
 }
 
-double TestDCPowerSink::getTargetWattage() {
+double TestDCPowerSink::getTargetInputWattage() {
     return 100;
 }
 

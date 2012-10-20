@@ -24,13 +24,13 @@ public:
     /**
       Get the power, in watts, that this device is currently consuming
       */
-    virtual double getCurrentWattage();
+    virtual double getCurrentInputWattage();
 
     /**
       Get the power, in watts, that this device is currently attempting to consume.
       If the sources can't provide enough power, this will be less than the current wattage.
       */
-    virtual double getTargetWattage() = 0;
+    virtual double getTargetInputWattage() = 0;
 
     /**
       Get the type of power that this device consumes

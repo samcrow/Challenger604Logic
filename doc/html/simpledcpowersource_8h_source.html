@@ -100,13 +100,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html">SimpleDCPowerSource</a>(QObject *parent = 0);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getMaxWattage();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getMaxOutputWattage();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getAvailableWattage();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getAvailableOutputWattage();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getCurrentWattage();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getCurrentOutputWattage();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getCurrentVoltage();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> getCurrentOutputVoltage();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespace_challenger604_systems.html#a9ad1a793d94b97514092692cb7315afd" title="An enumeration of different types of electricity. Note that all voltage and frequency values here are...">ElectricalPowerType</a> getOutputPowerType();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div>
@@ -118,11 +118,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a7ccc3391b03c04b09f6792e0a44b026b">   40</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a7ccc3391b03c04b09f6792e0a44b026b">maxWattage</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a1e32a5e348dca6e2043f539a434debd9">   42</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a1e32a5e348dca6e2043f539a434debd9">availableWattage</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a5c8c5b89f6d3cd3d332ee12ef893839c">   44</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a5c8c5b89f6d3cd3d332ee12ef893839c">currentWattage</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a37f983774689318c3cb0295380ce4bd7">   46</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a37f983774689318c3cb0295380ce4bd7">requestedPower</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a6d5b229b66f1e6396229561e9a9562e4">   48</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a6d5b229b66f1e6396229561e9a9562e4">currentVoltage</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a47660a2b69c6c426bf4cf684de7b8f52">   40</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a47660a2b69c6c426bf4cf684de7b8f52">maxOutputWattage</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#af174a8c75a7d5e3d07332708802bf658">   42</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#af174a8c75a7d5e3d07332708802bf658">availableOutputWattage</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#adb91207a44984ac09b34118d3b1157b8">   44</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#adb91207a44984ac09b34118d3b1157b8">currentOutputWattage</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a44427ce8f77ab04a8f2fc0cd17e7e936">   46</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a44427ce8f77ab04a8f2fc0cd17e7e936">requestedOutputPower</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a9f5aa415f92d0a050db0c92fe9f98c1d">   48</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a9f5aa415f92d0a050db0c92fe9f98c1d">currentOutputVoltage</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 20 2012 10:49:03 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 20 2012 15:09:16 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

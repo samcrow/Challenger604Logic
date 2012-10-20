@@ -25,7 +25,7 @@ public:
       Get the maximum power, in watts, that this source
       can provide in any situation.
       */
-    virtual double getMaxWattage() = 0;
+    virtual double getMaxOutputWattage() = 0;
 
     /**
       Get the maximum power, in watts, that this source
@@ -34,19 +34,19 @@ public:
       power than this by requesting a power level that is greater
       than this but less than the maximum power.
       */
-    virtual double getAvailableWattage() = 0;
+    virtual double getAvailableOutputWattage() = 0;
 
     /**
       Get the current power, in watts, that this source
       is providing. This may be less than the maximum power.
       */
-    virtual double getCurrentWattage() = 0;
+    virtual double getCurrentOutputWattage() = 0;
 
     /**
       Get the voltage, in volts, of the electricity that
       this source is providing.
       */
-    virtual double getCurrentVoltage() = 0;
+    virtual double getCurrentOutputVoltage() = 0;
 
     /**
       Get the type of power that this source provides

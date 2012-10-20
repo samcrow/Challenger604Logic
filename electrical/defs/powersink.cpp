@@ -7,12 +7,12 @@ PowerSink::PowerSink(PowerSource *inSource)
     source = inSource;
 }
 
-double PowerSink::getCurrentWattage() {
-    if(source->getCurrentWattage() > getTargetWattage()) {
-        return getTargetWattage();
+double PowerSink::getCurrentInputWattage() {
+    if(source->getCurrentOutputWattage() > getTargetInputWattage()) {
+        return getTargetInputWattage();
     }
     else {
-        return source->getCurrentWattage();
+        return source->getCurrentOutputWattage();
     }
 }
 

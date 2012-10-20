@@ -1,0 +1,161 @@
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message}{\section{Challenger604\-Systems\-:\-:C\-A\-S\-:\-:C\-A\-S\-Message Class Reference}
+\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message}\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}
+}
+
+
+Base class for a Crew Alerting System message.  
+
+
+
+
+{\ttfamily \#include $<$casmessage.\-h$>$}
+
+Inheritance diagram for Challenger604\-Systems\-:\-:C\-A\-S\-:\-:C\-A\-S\-Message\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.182058cm]{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9}{Priority} \{ \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9aa8160364c5aa91101b50e493e5a8b13c}{W\-A\-R\-N\-I\-N\-G}, 
+\hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9a6fa1e30565258a490a57432d15b59295}{C\-A\-U\-T\-I\-O\-N}, 
+\hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9a10aca7ce6d424c54c78489f7ec2a7bef}{A\-D\-V\-I\-S\-O\-R\-Y}, 
+\hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9a6a31a04097fb1143feb1d1b86aba4ca9}{S\-T\-A\-T\-U\-S}
+ \}
+\begin{DoxyCompactList}\small\item\em An enumeration of priority levels for messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a67f3029962225598a323c961c19025d7}{{\bfseries C\-A\-S\-Message} (Q\-Object $\ast$parent=0)}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a67f3029962225598a323c961c19025d7}
+
+\item 
+virtual \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9}{Priority} \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a36d3794a82ae29fa029494e341a83127}{get\-Priority} ()=0
+\item 
+virtual Q\-String \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a28c4a2be2b31dcc8183ea84effe8f81c}{get\-Display\-Text} ()
+\begin{DoxyCompactList}\small\item\em Get the text that this message should display on the E\-C\-I\-A\-S display. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a55b6926bfd7af2af340cd075e5fb8a17}{triggers\-Master\-Caution} ()
+\begin{DoxyCompactList}\small\item\em Determine if this message should turn on the master caution lights. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a6296584e1a8eff970892c65ce66e8111}{triggers\-Master\-Warning} ()
+\begin{DoxyCompactList}\small\item\em Determine if this message should turn on the master warning lights. \end{DoxyCompactList}\item 
+virtual \\*
+\hyperlink{class_challenger604_systems_1_1_aural_warning_system_a06a8a8fa973dde5ad449b8e0ca058a26}{Aural\-Warning\-System\-::\-Warning\-Sound} \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_af28c41e0c3f36a915bc9151318465b78}{get\-Sound} ()
+\begin{DoxyCompactList}\small\item\em Get the sound that this message triggers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for a Crew Alerting System message. 
+
+Every message that a system sends is one of these. A \hyperlink{namespace_challenger604_systems_1_1_c_a_s}{C\-A\-S} message can have a priority level of warning, caution, advisory, or status. \par
+\par
+ As a result of the sending of a message, one or more of the following may happen\-: 
+\begin{DoxyItemize}
+\item A message may be displayed on the E\-C\-I\-A\-S screen 
+\item The aural warning system may sound an attention-\/getting sound and/or a voice warning 
+\item The master caution or master warning lights may illuminate 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9}{\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!Priority@{Priority}}
+\index{Priority@{Priority}!Challenger604Systems::CAS::CASMessage@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}
+\subsubsection[{Priority}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message\-::\-Priority}}}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9}
+
+
+An enumeration of priority levels for messages. 
+
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{W\-A\-R\-N\-I\-N\-G@{W\-A\-R\-N\-I\-N\-G}!Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!W\-A\-R\-N\-I\-N\-G@{W\-A\-R\-N\-I\-N\-G}}\item[{\em 
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9aa8160364c5aa91101b50e493e5a8b13c}{W\-A\-R\-N\-I\-N\-G}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9aa8160364c5aa91101b50e493e5a8b13c}
+}]A warning message (highest priority) Warning messages are displayed in red. A warning message always triggers a triple attention-\/getting sound and turns on the master warning lights. \index{C\-A\-U\-T\-I\-O\-N@{C\-A\-U\-T\-I\-O\-N}!Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!C\-A\-U\-T\-I\-O\-N@{C\-A\-U\-T\-I\-O\-N}}\item[{\em 
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9a6fa1e30565258a490a57432d15b59295}{C\-A\-U\-T\-I\-O\-N}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9a6fa1e30565258a490a57432d15b59295}
+}]A caution message (second highest priority) Caution messages are displayed in yellow. A caution message always triggers a single attention-\/getting sound and turns on the master caution lights. \index{A\-D\-V\-I\-S\-O\-R\-Y@{A\-D\-V\-I\-S\-O\-R\-Y}!Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!A\-D\-V\-I\-S\-O\-R\-Y@{A\-D\-V\-I\-S\-O\-R\-Y}}\item[{\em 
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9a10aca7ce6d424c54c78489f7ec2a7bef}{A\-D\-V\-I\-S\-O\-R\-Y}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9a10aca7ce6d424c54c78489f7ec2a7bef}
+}]An advisory message. \index{S\-T\-A\-T\-U\-S@{S\-T\-A\-T\-U\-S}!Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!S\-T\-A\-T\-U\-S@{S\-T\-A\-T\-U\-S}}\item[{\em 
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9a6a31a04097fb1143feb1d1b86aba4ca9}{S\-T\-A\-T\-U\-S}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a5a503c8cb9618403fcd342dca9ba1ca9a6a31a04097fb1143feb1d1b86aba4ca9}
+}]A status message. \end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a28c4a2be2b31dcc8183ea84effe8f81c}{\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!get\-Display\-Text@{get\-Display\-Text}}
+\index{get\-Display\-Text@{get\-Display\-Text}!Challenger604Systems::CAS::CASMessage@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}
+\subsubsection[{get\-Display\-Text}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message\-::get\-Display\-Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a28c4a2be2b31dcc8183ea84effe8f81c}
+
+
+Get the text that this message should display on the E\-C\-I\-A\-S display. 
+
+This should be short and in all capital letters 
+
+Reimplemented in \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message_acb892ffef0a7e4e74c647db696ea44c7}{Challenger604\-Systems\-::\-C\-A\-S\-::\-Takeoff\-Autopilot\-Engaged\-Message}, and \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message_a7357021349d02a2d7aba9d3360461761}{Challenger604\-Systems\-::\-C\-A\-S\-::\-Takeoff\-Flaps\-Message}.
+
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a36d3794a82ae29fa029494e341a83127}{\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!get\-Priority@{get\-Priority}}
+\index{get\-Priority@{get\-Priority}!Challenger604Systems::CAS::CASMessage@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}
+\subsubsection[{get\-Priority}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Priority} Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message\-::get\-Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a36d3794a82ae29fa029494e341a83127}
+Get the priority level of this message 
+
+Implemented in \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message_a01bef39f2d4301bfc7cebf0e9309b74c}{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Advisory\-Message}, \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message_af7e93cefbcdd9f9197a4c624c20d5e27}{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Caution\-Message}, \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message_ac6a98cf31cf0b5912425b2a87c17ba62}{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Status\-Message}, and \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message_a895fe790e94e2bda52eb6d78ce1ef09d}{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Warning\-Message}.
+
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_af28c41e0c3f36a915bc9151318465b78}{\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!get\-Sound@{get\-Sound}}
+\index{get\-Sound@{get\-Sound}!Challenger604Systems::CAS::CASMessage@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}
+\subsubsection[{get\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Aural\-Warning\-System\-::\-Warning\-Sound} Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message\-::get\-Sound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_af28c41e0c3f36a915bc9151318465b78}
+
+
+Get the sound that this message triggers. 
+
+The default implementation returns \hyperlink{class_challenger604_systems_1_1_aural_warning_system_a06a8a8fa973dde5ad449b8e0ca058a26ae5acb874e76f6c7d2d6797a6bd4f6c92}{Aural\-Warning\-System\-::\-N\-O\-\_\-\-S\-O\-U\-N\-D}, so a message that does not play sound does not need to override this.
+
+\begin{DoxyReturn}{Returns}
+The sound that this message should play, or \hyperlink{class_challenger604_systems_1_1_aural_warning_system_a06a8a8fa973dde5ad449b8e0ca058a26ae5acb874e76f6c7d2d6797a6bd4f6c92}{Aural\-Warning\-System\-::\-N\-O\-\_\-\-S\-O\-U\-N\-D} if it should not play a sound 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message_a0f3b9be1d9ee8665b5fe6179f666766f}{Challenger604\-Systems\-::\-C\-A\-S\-::\-Takeoff\-Autopilot\-Engaged\-Message}, and \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message_aec477c5edd50ac255f36c750f92622dd}{Challenger604\-Systems\-::\-C\-A\-S\-::\-Takeoff\-Flaps\-Message}.
+
+\hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a55b6926bfd7af2af340cd075e5fb8a17}{\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!triggers\-Master\-Caution@{triggers\-Master\-Caution}}
+\index{triggers\-Master\-Caution@{triggers\-Master\-Caution}!Challenger604Systems::CAS::CASMessage@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}
+\subsubsection[{triggers\-Master\-Caution}]{\setlength{\rightskip}{0pt plus 5cm}bool Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message\-::triggers\-Master\-Caution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a55b6926bfd7af2af340cd075e5fb8a17}
+
+
+Determine if this message should turn on the master caution lights. 
+
+The default implementation returns false, so a message that does not use the master caution lights does not need to override this. \hypertarget{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a6296584e1a8eff970892c65ce66e8111}{\index{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}!triggers\-Master\-Warning@{triggers\-Master\-Warning}}
+\index{triggers\-Master\-Warning@{triggers\-Master\-Warning}!Challenger604Systems::CAS::CASMessage@{Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message}}
+\subsubsection[{triggers\-Master\-Warning}]{\setlength{\rightskip}{0pt plus 5cm}bool Challenger604\-Systems\-::\-C\-A\-S\-::\-C\-A\-S\-Message\-::triggers\-Master\-Warning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_a6296584e1a8eff970892c65ce66e8111}
+
+
+Determine if this message should turn on the master warning lights. 
+
+The default implementation returns false, so a message that does not use the master warning lights does not need to override this. 
+
+Reimplemented in \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message_a6c6c7b355cfd49db0f3090ce00f5b222}{Challenger604\-Systems\-::\-C\-A\-S\-::\-Takeoff\-Autopilot\-Engaged\-Message}, and \hyperlink{class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message_a160c0467f67e17b055683a3bde9dcef3}{Challenger604\-Systems\-::\-C\-A\-S\-::\-Takeoff\-Flaps\-Message}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/\-Applications/\-X-\/\-Plane 10 Demo/\-Aircraft/\-Heavy Metal/\-Challenger 604/\-Challenger604\-Logic/warnings/casmessage.\-h\item 
+/\-Applications/\-X-\/\-Plane 10 Demo/\-Aircraft/\-Heavy Metal/\-Challenger 604/\-Challenger604\-Logic/warnings/casmessage.\-cpp\end{DoxyCompactItemize}

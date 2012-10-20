@@ -4,37 +4,37 @@ namespace Challenger604Systems {
 
 SimpleDCPowerSource::SimpleDCPowerSource(QObject *parent) :
     PowerSource(parent),
-    maxWattage(0),
-    availableWattage(0),
-    currentWattage(0),
-    requestedPower(0),
-  currentVoltage(0)
+    maxOutputWattage(0),
+    availableOutputWattage(0),
+    currentOutputWattage(0),
+    requestedOutputPower(0),
+  currentOutputVoltage(0)
 {
 }
 
-double SimpleDCPowerSource::getMaxWattage() {
-    return maxWattage;
+double SimpleDCPowerSource::getMaxOutputWattage() {
+    return maxOutputWattage;
 }
 
-double SimpleDCPowerSource::getAvailableWattage() {
-    return availableWattage;
+double SimpleDCPowerSource::getAvailableOutputWattage() {
+    return availableOutputWattage;
 }
 
-double SimpleDCPowerSource::getCurrentWattage() {
-    return currentWattage;
+double SimpleDCPowerSource::getCurrentOutputWattage() {
+    return currentOutputWattage;
 }
 
-double SimpleDCPowerSource::getCurrentVoltage() {
-    return currentVoltage;
+double SimpleDCPowerSource::getCurrentOutputVoltage() {
+    return currentOutputVoltage;
 }
 
 ElectricalPowerType SimpleDCPowerSource::getOutputPowerType() {
-    return AC_115V_400HZ;
+    return DC_28V;
 }
 
 
 void SimpleDCPowerSource::requestPower(double inRequestedPower) {
-    requestedPower = inRequestedPower;
+    requestedOutputPower = inRequestedPower;
 }
 
 }

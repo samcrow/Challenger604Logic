@@ -18,7 +18,7 @@ class CHALLENGER604LOGICSHARED_EXPORT TRU : public SimpleDCPowerSource, public S
 {
     Q_OBJECT
 public:
-    explicit TRU(ACPowerSource * inSource, QObject *parent = 0);
+    TRU(ACPowerSource * inSource, QObject *parent = 0);
 
     /**
       The ratio of efficiency of a TRU. 1 is perfectly efficient, 0 means that it converts all its input energy into heat
@@ -26,12 +26,22 @@ public:
       */
     static const double efficiency;
 
+    //from PowerSink
+    double getTargetInputWattage();
+
+
+
 protected:
 
     /**
       The source that supplies AC power to this TRU
       */
     ACPowerSource * acSource;
+
+    /**
+      The power in watts that this device wants to consume
+      */
+    double targetInputWattage;
 
 signals:
     

@@ -18,13 +18,13 @@ class CHALLENGER604LOGICSHARED_EXPORT SimpleACPowerSource : public ACPowerSource
 public:
     explicit SimpleACPowerSource(QObject *parent = 0);
 
-    virtual double getMaxWattage();
+    virtual double getMaxOutputWattage();
 
-    virtual double getAvailableWattage();
+    virtual double getAvailableOutputWattage();
 
-    virtual double getCurrentWattage();
+    virtual double getCurrentOutputWattage();
 
-    virtual double getCurrentVoltage();
+    virtual double getCurrentOutputVoltage();
 
     virtual double getCurrentFrequency();
 

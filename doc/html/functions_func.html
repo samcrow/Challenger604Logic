@@ -70,6 +70,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -88,60 +99,115 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="contents">
-&#160;<ul>
-<li>getAvailableWattage()
-: <a class="el" href="class_challenger604_systems_1_1_power_source.html#a35af892773c7a60f4d6ac031755cd104">Challenger604Systems::PowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#ac20e3e1da3458450951998370cd57601">Challenger604Systems::SimpleACPowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a47085e7418e1e327552bd4339d08621a">Challenger604Systems::SimpleDCPowerSource</a>
+&#160;
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>getActualInputRate()
+: <a class="el" href="class_challenger604_systems_1_1_fuel_1_1_fuel_sink.html#a92372b9df8c5c2898bf4b2a140ca65f3">Challenger604Systems::Fuel::FuelSink</a>
+</li>
+<li>getAvailableOutputWattage()
+: <a class="el" href="class_challenger604_systems_1_1_power_source.html#afbae38476468ff99c6f0da852133d732">Challenger604Systems::PowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#adb43f9aa9dba70e75d2fab1efcafc98f">Challenger604Systems::SimpleDCPowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#ab5c1cacdf81531a9bb73edebda3d5c0c">Challenger604Systems::SimpleACPowerSource</a>
 </li>
 <li>getCurrentFrequency()
 : <a class="el" href="class_challenger604_systems_1_1_a_c_power_source.html#a022e5462d16a445f4703add09778dce4">Challenger604Systems::ACPowerSource</a>
 , <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#ad125522705327fe9e78234c70e1e444f">Challenger604Systems::SimpleACPowerSource</a>
 </li>
-<li>getCurrentVoltage()
-: <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a19a6be7acae4e8183a0b03f0e948f659">Challenger604Systems::SimpleDCPowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_power_source.html#af432be401da09206f49439f6c5299176">Challenger604Systems::PowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#a04f64b1611005171ebb491b84508bcc7">Challenger604Systems::SimpleACPowerSource</a>
+<li>getCurrentInputWattage()
+: <a class="el" href="class_challenger604_systems_1_1_power_sink.html#ab0077d8a7e4120674802588eaa701d57">Challenger604Systems::PowerSink</a>
 </li>
-<li>getCurrentWattage()
-: <a class="el" href="class_challenger604_systems_1_1_power_sink.html#a1940be81051bb43767530bba4d777a00">Challenger604Systems::PowerSink</a>
-, <a class="el" href="class_challenger604_systems_1_1_power_source.html#a82252be3f4e80239848bd9cadb69ec31">Challenger604Systems::PowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#a151696a75ded62c4df93b8597a5a0c2a">Challenger604Systems::SimpleACPowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#ac1f53b3d602f8279f3b80bf9280b62d9">Challenger604Systems::SimpleDCPowerSource</a>
+<li>getCurrentOutputVoltage()
+: <a class="el" href="class_challenger604_systems_1_1_power_source.html#a4ad8976f2c13113c87180257df806317">Challenger604Systems::PowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#a1f88d86aa2bc795732a6a4d3c583ce2b">Challenger604Systems::SimpleACPowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a744f905531f1876b3d66200d78e0ba56">Challenger604Systems::SimpleDCPowerSource</a>
+</li>
+<li>getCurrentOutputWattage()
+: <a class="el" href="class_challenger604_systems_1_1_power_source.html#a941b5d3a7d51811809a22126f9b16f3d">Challenger604Systems::PowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#a4e4755ba334156bf6db48e2d53b189d6">Challenger604Systems::SimpleACPowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a6e35b8636ae955ce4b46f14e3b864650">Challenger604Systems::SimpleDCPowerSource</a>
+</li>
+<li>getDisplayText()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a7357021349d02a2d7aba9d3360461761">Challenger604Systems::CAS::TakeoffFlapsMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a28c4a2be2b31dcc8183ea84effe8f81c">Challenger604Systems::CAS::CASMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#acb892ffef0a7e4e74c647db696ea44c7">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>
 </li>
 <li>getInputPowerType()
-: <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_sink.html#aa487ad5aaa41a206dac34aca02622af9">Challenger604Systems::SimpleDCPowerSink</a>
-, <a class="el" href="class_challenger604_systems_1_1_power_sink.html#aeb901bdc03e7c2c5cef0ccc3ff078a89">Challenger604Systems::PowerSink</a>
+: <a class="el" href="class_challenger604_systems_1_1_power_sink.html#aeb901bdc03e7c2c5cef0ccc3ff078a89">Challenger604Systems::PowerSink</a>
 , <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_sink.html#a79b6956b98935e2b344c969a83540b54">Challenger604Systems::SimpleACPowerSink</a>
+, <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_sink.html#aa487ad5aaa41a206dac34aca02622af9">Challenger604Systems::SimpleDCPowerSink</a>
 </li>
-<li>getMaxWattage()
-: <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#ad6285e377af915c21bf15637732f0291">Challenger604Systems::SimpleDCPowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_power_source.html#aed53a668295c22fabdf8adf8018d8d1d">Challenger604Systems::PowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#ae330676157035c37441d3c8bfc198c2e">Challenger604Systems::SimpleACPowerSource</a>
+<li>getMaxOutputWattage()
+: <a class="el" href="class_challenger604_systems_1_1_power_source.html#a7169f0c8fdce00d38a64b6b6bba04e18">Challenger604Systems::PowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#af4be658550a6883664eacd3ec5f63068">Challenger604Systems::SimpleACPowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a9cdf826d67e23a54371a6d7840fd5ff9">Challenger604Systems::SimpleDCPowerSource</a>
 </li>
 <li>getOutputPowerType()
 : <a class="el" href="class_challenger604_systems_1_1_power_source.html#a005b9cac72b89344aded232d87fde2f6">Challenger604Systems::PowerSource</a>
 , <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#aaaebd8199288938f6d7955743669193b">Challenger604Systems::SimpleACPowerSource</a>
 , <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a9253b83cb9e35b40db473e24bf3d7f54">Challenger604Systems::SimpleDCPowerSource</a>
 </li>
-<li>getTargetWattage()
-: <a class="el" href="class_challenger604_systems_1_1_test_d_c_power_sink.html#a1c1d0c85ccebfb008f7e5212f54bd799">Challenger604Systems::TestDCPowerSink</a>
-, <a class="el" href="class_challenger604_systems_1_1_power_sink.html#a0e20d9dc77b0baadf0fca20f9da5bc26">Challenger604Systems::PowerSink</a>
+<li>getPriority()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html#ac6a98cf31cf0b5912425b2a87c17ba62">Challenger604Systems::CAS::CASStatusMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a895fe790e94e2bda52eb6d78ce1ef09d">Challenger604Systems::CAS::CASWarningMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af7e93cefbcdd9f9197a4c624c20d5e27">Challenger604Systems::CAS::CASCautionMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html#a01bef39f2d4301bfc7cebf0e9309b74c">Challenger604Systems::CAS::CASAdvisoryMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a36d3794a82ae29fa029494e341a83127">Challenger604Systems::CAS::CASMessage</a>
+</li>
+<li>getSound()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#aec477c5edd50ac255f36c750f92622dd">Challenger604Systems::CAS::TakeoffFlapsMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#af28c41e0c3f36a915bc9151318465b78">Challenger604Systems::CAS::CASMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a0f3b9be1d9ee8665b5fe6179f666766f">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>
+</li>
+<li>getTargetInputRate()
+: <a class="el" href="class_challenger604_systems_1_1_fuel_1_1_fuel_sink.html#a909e272f4d9da3389f226590aacac50a">Challenger604Systems::Fuel::FuelSink</a>
+</li>
+<li>getTargetInputWattage()
+: <a class="el" href="class_challenger604_systems_1_1_power_sink.html#ade0817850ef945ba0751d757bceeee65">Challenger604Systems::PowerSink</a>
+, <a class="el" href="class_challenger604_systems_1_1_test_d_c_power_sink.html#a49ae61c3b70aa9d1be22fb3ac564a053">Challenger604Systems::TestDCPowerSink</a>
+, <a class="el" href="class_challenger604_systems_1_1_t_r_u.html#a2b023a31d9adcc544f793e8422519f9d">Challenger604Systems::TRU</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>playWarningSound()
+: <a class="el" href="class_challenger604_systems_1_1_aural_warning_system.html#a0d28225a9215fff9d86834388068c5dc">Challenger604Systems::AuralWarningSystem</a>
 </li>
 <li>PowerSink()
 : <a class="el" href="class_challenger604_systems_1_1_power_sink.html#accbc82df84ef292c094f5b46fa5c7216">Challenger604Systems::PowerSink</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>requestPower()
 : <a class="el" href="class_challenger604_systems_1_1_power_source.html#a7337c7de30e3d23c551d3a41370b34bb">Challenger604Systems::PowerSource</a>
 </li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>SimpleDCPowerSink()
 : <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_sink.html#a8c3c6593b021998352f97b596963e5e3">Challenger604Systems::SimpleDCPowerSink</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>triggersMasterCaution()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a55b6926bfd7af2af340cd075e5fb8a17">Challenger604Systems::CAS::CASMessage</a>
+</li>
+<li>triggersMasterWarning()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a160c0467f67e17b055683a3bde9dcef3">Challenger604Systems::CAS::TakeoffFlapsMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a6c6c7b355cfd49db0f3090ce00f5b222">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a6296584e1a8eff970892c65ce66e8111">Challenger604Systems::CAS::CASMessage</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 20 2012 10:49:03 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 20 2012 15:09:16 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

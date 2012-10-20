@@ -115,10 +115,10 @@ Inheritance diagram for Challenger604Systems::PowerSink:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:accbc82df84ef292c094f5b46fa5c7216"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_sink.html#accbc82df84ef292c094f5b46fa5c7216">PowerSink</a> (<a class="el" href="class_challenger604_systems_1_1_power_source.html">PowerSource</a> *inSource)</td></tr>
 <tr class="separator:accbc82df84ef292c094f5b46fa5c7216"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1940be81051bb43767530bba4d777a00"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_sink.html#a1940be81051bb43767530bba4d777a00">getCurrentWattage</a> ()</td></tr>
-<tr class="separator:a1940be81051bb43767530bba4d777a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e20d9dc77b0baadf0fca20f9da5bc26"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_sink.html#a0e20d9dc77b0baadf0fca20f9da5bc26">getTargetWattage</a> ()=0</td></tr>
-<tr class="separator:a0e20d9dc77b0baadf0fca20f9da5bc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0077d8a7e4120674802588eaa701d57"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_sink.html#ab0077d8a7e4120674802588eaa701d57">getCurrentInputWattage</a> ()</td></tr>
+<tr class="separator:ab0077d8a7e4120674802588eaa701d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0817850ef945ba0751d757bceeee65"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_sink.html#ade0817850ef945ba0751d757bceeee65">getTargetInputWattage</a> ()=0</td></tr>
+<tr class="separator:ade0817850ef945ba0751d757bceeee65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb901bdc03e7c2c5cef0ccc3ff078a89"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_challenger604_systems.html#a9ad1a793d94b97514092692cb7315afd">ElectricalPowerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_power_sink.html#aeb901bdc03e7c2c5cef0ccc3ff078a89">getInputPowerType</a> ()=0</td></tr>
 <tr class="separator:aeb901bdc03e7c2c5cef0ccc3ff078a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -154,7 +154,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a1940be81051bb43767530bba4d777a00"></a>
+<a class="anchor" id="ab0077d8a7e4120674802588eaa701d57"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -162,7 +162,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Challenger604Systems::PowerSink::getCurrentWattage </td>
+          <td class="memname">double Challenger604Systems::PowerSink::getCurrentInputWattage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -204,7 +204,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0e20d9dc77b0baadf0fca20f9da5bc26"></a>
+<a class="anchor" id="ade0817850ef945ba0751d757bceeee65"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -212,7 +212,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual double Challenger604Systems::PowerSink::getTargetWattage </td>
+          <td class="memname">virtual double Challenger604Systems::PowerSink::getTargetInputWattage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -226,7 +226,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the power, in watts, that this device is currently attempting to consume. If the sources can't provide enough power, this will be less than the current wattage. </p>
 
-<p>Implemented in <a class="el" href="class_challenger604_systems_1_1_test_d_c_power_sink.html#a1c1d0c85ccebfb008f7e5212f54bd799">Challenger604Systems::TestDCPowerSink</a>.</p>
+<p>Implemented in <a class="el" href="class_challenger604_systems_1_1_t_r_u.html#a2b023a31d9adcc544f793e8422519f9d">Challenger604Systems::TRU</a>, and <a class="el" href="class_challenger604_systems_1_1_test_d_c_power_sink.html#a49ae61c3b70aa9d1be22fb3ac564a053">Challenger604Systems::TestDCPowerSink</a>.</p>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 20 2012 10:49:03 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 20 2012 15:09:16 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -13,19 +13,19 @@ SimpleACPowerSource::SimpleACPowerSource(QObject *parent) :
 {
 }
 
-double SimpleACPowerSource::getMaxWattage() {
+double SimpleACPowerSource::getMaxOutputWattage() {
     return maxWattage;
 }
 
-double SimpleACPowerSource::getAvailableWattage() {
+double SimpleACPowerSource::getAvailableOutputWattage() {
     return availableWattage;
 }
 
-double SimpleACPowerSource::getCurrentWattage() {
+double SimpleACPowerSource::getCurrentOutputWattage() {
     return currentWattage;
 }
 
-double SimpleACPowerSource::getCurrentVoltage() {
+double SimpleACPowerSource::getCurrentOutputVoltage() {
     return currentVoltage;
 }
 

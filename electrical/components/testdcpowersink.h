@@ -13,7 +13,7 @@ class TestDCPowerSink : public SimpleDCPowerSink
 public:
     TestDCPowerSink(PowerSource * inSource);
 
-    virtual double getTargetWattage();
+    virtual double getTargetInputWattage();
 };
 
 }

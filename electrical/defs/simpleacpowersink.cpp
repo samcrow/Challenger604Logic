@@ -3,7 +3,7 @@
 namespace Challenger604Systems {
 
 SimpleACPowerSink::SimpleACPowerSink(PowerSource * inSource) :
-    PowerSink(source)
+    PowerSink(inSource)
 {
 }
 

@@ -22,7 +22,16 @@ SOURCES += \
     electrical/defs/simpleacpowersink.cpp \
     electrical/defs/simpledcpowersink.cpp \
     electrical/components/endlessacpowersource.cpp \
-    electrical/components/testdcpowersink.cpp
+    electrical/components/testdcpowersink.cpp \
+    fuel/fuelsink.cpp \
+    warnings/casmessage.cpp \
+    warnings/CASmessages/takeoffautopilotengagedmessage.cpp \
+    warnings/aural/auralwarningsystem.cpp \
+    warnings/caswarningmessage.cpp \
+    warnings/cascautionmessage.cpp \
+    warnings/casadvisorymessage.cpp \
+    warnings/casstatusmessage.cpp \
+    warnings/CASmessages/takeoffflapsmessage.cpp
 
 HEADERS +=\
         Challenger604Logic_global.h \
@@ -37,7 +46,16 @@ HEADERS +=\
     electrical/defs/simpleacpowersink.h \
     electrical/defs/simpledcpowersink.h \
     electrical/components/endlessacpowersource.h \
-    electrical/components/testdcpowersink.h
+    electrical/components/testdcpowersink.h \
+    fuel/fuelsink.h \
+    warnings/casmessage.h \
+    warnings/CASmessages/takeoffautopilotengagedmessage.h \
+    warnings/aural/auralwarningsystem.h \
+    warnings/caswarningmessage.h \
+    warnings/cascautionmessage.h \
+    warnings/casadvisorymessage.h \
+    warnings/casstatusmessage.h \
+    warnings/CASmessages/takeoffflapsmessage.h
 
 symbian {
     MMP_RULES += EXPORTUNFROZEN

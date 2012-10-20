@@ -18,13 +18,13 @@ class CHALLENGER604LOGICSHARED_EXPORT SimpleDCPowerSource : public PowerSource
 public:
     explicit SimpleDCPowerSource(QObject *parent = 0);
 
-    virtual double getMaxWattage();
+    virtual double getMaxOutputWattage();
 
-    virtual double getAvailableWattage();
+    virtual double getAvailableOutputWattage();
 
-    virtual double getCurrentWattage();
+    virtual double getCurrentOutputWattage();
 
-    virtual double getCurrentVoltage();
+    virtual double getCurrentOutputVoltage();
 
     virtual ElectricalPowerType getOutputPowerType();
     
@@ -37,15 +37,15 @@ public slots:
 protected:
 
     /** The maximum power that this source can supply */
-    double maxWattage;
+    double maxOutputWattage;
     /** The maximum power that this source can supply in its current state */
-    double availableWattage;
+    double availableOutputWattage;
     /** The current power that this source is supplying */
-    double currentWattage;
+    double currentOutputWattage;
     /** The power that is currently requested */
-    double requestedPower;
+    double requestedOutputPower;
     /** The voltage that is currently being supplied */
-    double currentVoltage;
+    double currentOutputVoltage;
 
 };
 
