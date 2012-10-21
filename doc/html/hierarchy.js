@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "Color", "class_color.html", null ],
+    [ "Challenger604Systems::CAS::EICASMessage", "class_challenger604_systems_1_1_c_a_s_1_1_e_i_c_a_s_message.html", null ],
     [ "Challenger604Systems::Fuel::FuelSink", "class_challenger604_systems_1_1_fuel_1_1_fuel_sink.html", null ],
     [ "Challenger604Systems::PowerSink", "class_challenger604_systems_1_1_power_sink.html", [
       [ "Challenger604Systems::SimpleACPowerSink", "class_challenger604_systems_1_1_simple_a_c_power_sink.html", [

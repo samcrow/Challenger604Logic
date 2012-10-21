@@ -7,5 +7,6 @@ var dir_8f9794e0b340a4335ab3e22a8eda50df =
     [ "casmessage.h", "casmessage_8h_source.html", null ],
     [ "casmessagehandler.h", "casmessagehandler_8h_source.html", null ],
     [ "casstatusmessage.h", "casstatusmessage_8h_source.html", null ],
-    [ "caswarningmessage.h", "caswarningmessage_8h_source.html", null ]
+    [ "caswarningmessage.h", "caswarningmessage_8h_source.html", null ],
+    [ "eicasmessage.h", "eicasmessage_8h_source.html", null ]
 ];

@@ -2,6 +2,7 @@
 #define COLOR_H
 
 #include <QtGlobal>
+#include <QDebug>
 #include "../Challenger604Logic_global.h"
 
 /**
@@ -38,6 +39,9 @@ public:
       This will have red, green, and blue values of 255.
       */
     static Color white();
+
+    //Debug support
+    QDebug operator << (QDebug dbg);
 };
 
 #endif // COLOR_H

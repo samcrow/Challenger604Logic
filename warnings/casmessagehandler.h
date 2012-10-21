@@ -3,7 +3,6 @@
 
 #include <QObject>
 #include <QHash>
-#include <utility>
 
 #include "../Challenger604Logic_global.h"
 
@@ -12,14 +11,10 @@
 #include "cascautionmessage.h"
 #include "casadvisorymessage.h"
 #include "casstatusmessage.h"
+#include "eicasmessage.h"
 
 namespace Challenger604Systems {
 namespace CAS {
-
-/**
-  ECIASMessage: Pairs a string to display with a priority level
-  */
-typedef std::pair<QString, CASMessage::Priority> ECIASMessage;
 
 /**
   @brief Handles Crew Alerting System messages
@@ -38,6 +33,39 @@ public:
     bool isMasterCautionOn();
     /** Determine if the master warning lights are on */
     bool isMasterWarningOn();
+
+    /** Output the ECIAS (text) messages to stderr with QDebug */
+    void dumpEciasMessages();
+
+    /**
+      @brief Get the current ECIAS warning messages
+
+      The first message in the list is the oldest.
+      If no messages exist, this returns an empty QList.
+      */
+    QList<EICASMessage> getEicasWarningMessages();
+    /**
+      @brief Get the current ECIAS caution messages
+
+      The first message in the list is the oldest.
+      This does not return messages that are inhibited on takeoff and landing.
+      If no messages exist, this returns an empty QList.
+      */
+    QList<EICASMessage> getEicasCautionMessages();
+    /**
+      @brief Get the current ECIAS advisory messages
+
+      The first message in the list is the oldest.
+      If no messages exist, this returns an empty QList.
+      */
+    QList<EICASMessage> getEicasAdvisoryMessages();
+    /**
+      @brief Get the current ECIAS status messages
+
+      The first message in the list is the oldest.
+      If no messages exist, this returns an empty QList.
+      */
+    QList<EICASMessage> getEicasStatusMessages();
     
 protected:
 
@@ -45,13 +73,11 @@ protected:
     QList<CASMessage *> messages;
 
     /**
-      @brief The set of strings to display on the ECIAS display
+      @brief The set of messages to display on the EICAS display
 
-      Each message is an std::pair with a QString and a priority level.
-      The key of the table is a pointer to the message that created it,
-      so that the text can be removed when the message is canceled.
+      This associates each CAS message with a single EICAS message.
       */
-    QHash<CASMessage *, ECIASMessage> eciasMessages;
+    QHash<CASMessage *, EICASMessage> eicasMessages;
 
     /** If the master caution lights are currently on */
     bool masterCautionOn;
@@ -63,6 +89,15 @@ protected:
     void enableMasterCaution();
     /** Turn on the master warning lights */
     void enableMasterWarning();
+
+    /**
+      @brief Get a list of EICAS messages from the eciasMessages data structure and sort
+      them according to creation order, earliest first
+
+      If there are no messages with the given priority level, this function returns an empty QList.
+      @param priority The priority level of messages to search for
+      */
+    QList<EICASMessage> getEicasMessages(CASMessage::Priority priority);
 
 signals:
     

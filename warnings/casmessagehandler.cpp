@@ -1,11 +1,16 @@
 #include "casmessagehandler.h"
 
+#include <QDebug>
+#include <algorithm>
+
 namespace Challenger604Systems {
 namespace CAS {
 
 
 CASMessageHandler::CASMessageHandler(QObject *parent) :
-    QObject(parent)
+    QObject(parent),
+    masterCautionOn(false),
+    masterWarningOn(false)
 {
 }
 
@@ -35,10 +40,10 @@ void CASMessageHandler::newMessage(CASMessage * newMessage) {
     QString messageText = newMessage->getDisplayText();
     if(!messageText.isEmpty()) {
         //Create a new ECIAS message struct with the text and priority of the message
-        ECIASMessage eciasMessage(messageText, newMessage->getPriority());
+        EICASMessage eicasMessage(newMessage);
 
         //Add the ECIAS message to the data structure with a pointer to the message as the key
-        eciasMessages.insert(newMessage, eciasMessage);
+        eicasMessages.insert(newMessage, eicasMessage);
     }
 
 }
@@ -47,11 +52,63 @@ void CASMessageHandler::newMessage(CASMessage * newMessage) {
 void CASMessageHandler::cancelMessage(CASMessage * message) {
 
     //Remove the ECIAS message, if any, from the set of ECIAS messages
-    eciasMessages.remove(message);
+    eicasMessages.remove(message);
 
     Q_ASSERT_X(messages.contains(message), "message cancel presence check", "Tried to cancel a message that was not in the list of messages");
 
     messages.removeAll(message);
+}
+
+QList<EICASMessage> CASMessageHandler::getEicasWarningMessages() {
+    return getEicasMessages(CASMessage::WARNING);
+}
+
+QList<EICASMessage> CASMessageHandler::getEicasCautionMessages() {
+    return getEicasMessages(CASMessage::CAUTION);
+}
+
+QList<EICASMessage> CASMessageHandler::getEicasAdvisoryMessages() {
+    return getEicasMessages(CASMessage::ADVISORY);
+}
+
+QList<EICASMessage> CASMessageHandler::getEicasStatusMessages() {
+    return getEicasMessages(CASMessage::STATUS);
+}
+
+QList<EICASMessage> CASMessageHandler::getEicasMessages(CASMessage::Priority priority) {
+    //Assemble a list of every EICAS message with the given priority level
+    QList<EICASMessage> messages;
+
+    QHashIterator<CASMessage *, EICASMessage> iterator(eicasMessages);
+    while(iterator.hasNext()) {
+        iterator.next();
+
+        EICASMessage message = iterator.value();
+        if(message.getPriority() == priority) {
+            messages.append(message);
+        }
+    }
+
+    //Only sort the list if there are actually 2 or more messages in it
+    if(messages.length() >= 2) {
+        std::sort(messages.begin(), messages.end());
+    }
+
+    return messages;
+}
+
+
+void CASMessageHandler::dumpEciasMessages() {
+    qDebug() << "ECIAS text message dump: message pointer | text";
+
+    QHashIterator<CASMessage *, EICASMessage> iterator(eicasMessages);
+    while(iterator.hasNext()) {
+        iterator.next();
+
+        EICASMessage message = iterator.value();
+
+        qDebug() << iterator.key() << "\t" << message.getMessageText();
+    }
 }
 
 

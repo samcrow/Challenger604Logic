@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('color_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,30 +108,35 @@ $(document).ready(function(){initNavTree('color_8h_source.html','');});
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define COLOR_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QtGlobal&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="class_color.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_color.html" title="Stores an RGB color.">Color</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_color.html#ae6a1963d2b88a07e6d656944e5f60504" title="Constructor that accepts red, blue, and green color values, each from 0 to 255.">Color</a>(quint8 inRed, quint8 inGreen, quint8 inBlue);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="class_color.html#a1017c421fcbd75152d10be28e9b8541a">   22</a></span>&#160;    quint8 <a class="code" href="class_color.html#a1017c421fcbd75152d10be28e9b8541a">red</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_color.html#a665980b93fa128ff707191cdd4f3a73c">   24</a></span>&#160;    quint8 <a class="code" href="class_color.html#a665980b93fa128ff707191cdd4f3a73c">green</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_color.html#ac1076853cdacbc55a3d3cdf91f1ff704">   26</a></span>&#160;    quint8 <a class="code" href="class_color.html#ac1076853cdacbc55a3d3cdf91f1ff704">blue</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_color.html#a097ab6c1ad2ebd3f2cd06c536284ae1e" title="Check if two colors are equal to each other.">operator == </a>(<a class="code" href="class_color.html" title="Stores an RGB color.">Color</a> other);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_color.html" title="Stores an RGB color.">Color</a> <a class="code" href="class_color.html#a154c895b965e8aa00cc42e9ad53d8b75" title="Create a color representing white.">white</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // COLOR_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../Challenger604Logic_global.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="class_color.html">   11</a></span>&#160;<span class="keyword">class </span>CHALLENGER604LOGICSHARED_EXPORT <a class="code" href="class_color.html" title="Stores an RGB color.">Color</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_color.html" title="Stores an RGB color.">Color</a>(quint8 inRed, quint8 inGreen, quint8 inBlue);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_color.html#a1017c421fcbd75152d10be28e9b8541a">   24</a></span>&#160;    quint8 <a class="code" href="class_color.html#a1017c421fcbd75152d10be28e9b8541a">red</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_color.html#a665980b93fa128ff707191cdd4f3a73c">   26</a></span>&#160;    quint8 <a class="code" href="class_color.html#a665980b93fa128ff707191cdd4f3a73c">green</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_color.html#ac1076853cdacbc55a3d3cdf91f1ff704">   28</a></span>&#160;    quint8 <a class="code" href="class_color.html#ac1076853cdacbc55a3d3cdf91f1ff704">blue</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> operator == (<a class="code" href="class_color.html" title="Stores an RGB color.">Color</a> other);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_color.html" title="Stores an RGB color.">Color</a> white();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//Debug support</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QDebug operator &lt;&lt; (QDebug dbg);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif // COLOR_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23ec12649285f9fabf3a6b7380226c28.html">util</a></li><li class="navelem"><b>color.h</b></li>
-    <li class="footer">Generated on Sat Oct 20 2012 19:52:41 for Challenger 604 Systems Logic by
+    <li class="footer">Generated on Sun Oct 21 2012 16:33:21 for Challenger 604 Systems Logic by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

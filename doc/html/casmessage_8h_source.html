@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('casmessage_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,61 +109,63 @@ $(document).ready(function(){initNavTree('casmessage_8h_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../util/color.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;aural/auralwarningsystem.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Challenger604Systems {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>CAS {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html" title="Base class for a Crew Alerting System message.">CASMessage</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html" title="Base class for a Crew Alerting System message.">CASMessage</a>(QObject *parent = 0);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9">   37</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9" title="An enumeration of priority levels for messages.">Priority</a> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9aa8160364c5aa91101b50e493e5a8b13c">   44</a></span>&#160;        <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9aa8160364c5aa91101b50e493e5a8b13c" title="A warning message (highest priority)">WARNING</a>,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a6fa1e30565258a490a57432d15b59295">   52</a></span>&#160;        <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a6fa1e30565258a490a57432d15b59295" title="A caution message (second highest priority)">CAUTION</a>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a10aca7ce6d424c54c78489f7ec2a7bef">   57</a></span>&#160;        <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a10aca7ce6d424c54c78489f7ec2a7bef" title="An advisory message.">ADVISORY</a>,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a6a31a04097fb1143feb1d1b86aba4ca9">   62</a></span>&#160;        <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a6a31a04097fb1143feb1d1b86aba4ca9" title="A status message.">STATUS</a></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    };</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9" title="An enumeration of priority levels for messages.">Priority</a> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a36d3794a82ae29fa029494e341a83127">getPriority</a>() = 0;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> QString <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a28c4a2be2b31dcc8183ea84effe8f81c" title="Get the text that this message should display on the ECIAS display.">getDisplayText</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a55b6926bfd7af2af340cd075e5fb8a17" title="Determine if this message should turn on the master caution lights.">triggersMasterCaution</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a6296584e1a8eff970892c65ce66e8111" title="Determine if this message should turn on the master warning lights.">triggersMasterWarning</a>();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26">AuralWarningSystem::WarningSound</a> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#af28c41e0c3f36a915bc9151318465b78" title="Get the sound that this message triggers.">getSound</a>();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a4d9a9429a3bef4df859249cee3303226" title="Determine if this message should be ignored when the aircraft is taking off.">isTakeoffIgnored</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a587b403ea04045382a51d54baaadf959" title="Determine if this message should be ignored when the aircraft is landing.">isLandingIgnored</a>();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_color.html" title="Stores an RGB color.">Color</a> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#abff4870555e6fd82c06dab953c61646c" title="Get the color that should be used to display this message on the ECIAS display.">getDisplayColor</a>();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;signals:</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../Challenger604Logic_global.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../util/color.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;aural/auralwarningsystem.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>Challenger604Systems {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>CAS {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html">   30</a></span>&#160;<span class="keyword">class </span>CHALLENGER604LOGICSHARED_EXPORT <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html" title="Base class for a Crew Alerting System message.">CASMessage</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html" title="Base class for a Crew Alerting System message.">CASMessage</a>(QObject *parent = 0);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9">   39</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9" title="An enumeration of priority levels for messages.">Priority</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9aa8160364c5aa91101b50e493e5a8b13c">   46</a></span>&#160;        <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9aa8160364c5aa91101b50e493e5a8b13c" title="A warning message (highest priority)">WARNING</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a6fa1e30565258a490a57432d15b59295">   54</a></span>&#160;        <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a6fa1e30565258a490a57432d15b59295" title="A caution message (second highest priority)">CAUTION</a>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a10aca7ce6d424c54c78489f7ec2a7bef">   59</a></span>&#160;        <a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a10aca7ce6d424c54c78489f7ec2a7bef" title="An advisory message.">ADVISORY</a>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a6a31a04097fb1143feb1d1b86aba4ca9">   64</a></span>&#160;        STATUS</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> Priority getPriority() = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> QString getDisplayText();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> triggersMasterCaution();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> triggersMasterWarning();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26">AuralWarningSystem::WarningSound</a> getSound();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isTakeoffIgnored();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isLandingIgnored();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_color.html" title="Stores an RGB color.">Color</a> getDisplayColor();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;signals:</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;};</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#endif // CASMESSAGE_H</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif // CASMESSAGE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8f9794e0b340a4335ab3e22a8eda50df.html">warnings</a></li><li class="navelem"><b>casmessage.h</b></li>
-    <li class="footer">Generated on Sat Oct 20 2012 19:52:41 for Challenger 604 Systems Logic by
+    <li class="footer">Generated on Sun Oct 21 2012 16:33:21 for Challenger 604 Systems Logic by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>
