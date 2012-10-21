@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Challenger604Systems\l::Fuel::FuelSink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_fuel_1_1_fuel_sink.html",tooltip="An interface for anything that consumes fuel. All fuel flow rates, unless otherwise noted..."];
+}

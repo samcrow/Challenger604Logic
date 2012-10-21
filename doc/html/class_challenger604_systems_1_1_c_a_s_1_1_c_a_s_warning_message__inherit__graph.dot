@@ -1,0 +1,15 @@
+digraph "Challenger604Systems::CAS::CASWarningMessage"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Challenger604Systems\l::CAS::CASWarningMessage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Challenger604Systems\l::CAS::CASMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html",tooltip="Base class for a Crew Alerting System message."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="QObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Challenger604Systems\l::CAS::TakeoffAutopilotEngaged\lMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html",tooltip="A message that is sent when the aircraft is in takeoff configuration but the autopilot is engaged..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Challenger604Systems\l::CAS::TakeoffFlapsMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html",tooltip="A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not se..."];
+}

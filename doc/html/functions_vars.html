@@ -7,6 +7,12 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -22,7 +28,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Challenger 604 Systems Logic
+   &#160;<span id="projectnumber">a1</span>
    </div>
+   <div id="projectbrief">This Qt C++ dynamic library simulates the systems of a Challenger 604 aircraft</div>
   </td>
  </tr>
  </tbody>
@@ -75,12 +83,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_vars.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,11 +116,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>acSource
 : <a class="el" href="class_challenger604_systems_1_1_t_r_u.html#a501cfc80d8c3cecc892787eca2f0d221">Challenger604Systems::TRU</a>
 </li>
+<li>advisoryColor
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html#ae7d8ff420f373b0fc1008af3de6f9abc">Challenger604Systems::CAS::CASAdvisoryMessage</a>
+</li>
 <li>availableOutputWattage
 : <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#af174a8c75a7d5e3d07332708802bf658">Challenger604Systems::SimpleDCPowerSource</a>
 </li>
 <li>availableWattage
 : <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#af9aab8bb1f32a240aba9b6c4ac969ba9">Challenger604Systems::SimpleACPowerSource</a>
+</li>
+<li>blue
+: <a class="el" href="class_color.html#ac1076853cdacbc55a3d3cdf91f1ff704">Color</a>
+</li>
+<li>cautionColor
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#adb6cbe928daf47f8a291d2fe256fbe29">Challenger604Systems::CAS::CASCautionMessage</a>
 </li>
 <li>currentFrequency
 : <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#a321cb77fea6e9d7a79fd69d2bd7a7227">Challenger604Systems::SimpleACPowerSource</a>
@@ -115,14 +146,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>currentWattage
 : <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#a555e44c4500e6f094e9fb7ca17939648">Challenger604Systems::SimpleACPowerSource</a>
 </li>
+<li>eciasMessages
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#adf1d98d2c914004c891767cbd065fefe">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
 <li>efficiency
 : <a class="el" href="class_challenger604_systems_1_1_t_r_u.html#a1fe9c57208efea35e91dce1cc2342375">Challenger604Systems::TRU</a>
+</li>
+<li>green
+: <a class="el" href="class_color.html#a665980b93fa128ff707191cdd4f3a73c">Color</a>
+</li>
+<li>masterCautionOn
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#a48d57234fe48d0a5499efa47e646c6c8">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
+<li>masterWarningOn
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#a0a514cf63ca068b1a4f1a7375c1b8b43">Challenger604Systems::CAS::CASMessageHandler</a>
 </li>
 <li>maxOutputWattage
 : <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a47660a2b69c6c426bf4cf684de7b8f52">Challenger604Systems::SimpleDCPowerSource</a>
 </li>
 <li>maxWattage
 : <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#a52f945e3cf2a2ece8a3d9f772d5cddce">Challenger604Systems::SimpleACPowerSource</a>
+</li>
+<li>messages
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#a962056db406ea7f7d55f4e175e4f987c">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
+<li>red
+: <a class="el" href="class_color.html#a1017c421fcbd75152d10be28e9b8541a">Color</a>
 </li>
 <li>requestedOutputPower
 : <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a44427ce8f77ab04a8f2fc0cd17e7e936">Challenger604Systems::SimpleDCPowerSource</a>
@@ -136,13 +185,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>targetInputWattage
 : <a class="el" href="class_challenger604_systems_1_1_t_r_u.html#a1a6fadddaee44ec1152fc1859c4b0af3">Challenger604Systems::TRU</a>
 </li>
+<li>warningColor
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a10fe9702fac898354110052924a9c37a">Challenger604Systems::CAS::CASWarningMessage</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 20 2012 15:09:16 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.2
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Oct 20 2012 19:52:41 for Challenger 604 Systems Logic by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
 </body>
 </html>

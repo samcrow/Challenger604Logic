@@ -10,7 +10,7 @@
 namespace Challenger604Systems {
 
 /**
-  Simulates a Transformer-Rectifier Unit
+  @brief Simulates a Transformer-Rectifier Unit
   This converts AC into DC.
   Currently, the imperfect efficiency of this device is simulated by removing a portion of the power that passes through it.
   */

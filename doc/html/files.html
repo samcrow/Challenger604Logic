@@ -7,6 +7,12 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -22,7 +28,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Challenger 604 Systems Logic
+   &#160;<span id="projectnumber">a1</span>
    </div>
+   <div id="projectbrief">This Qt C++ dynamic library simulates the systems of a Challenger 604 aircraft</div>
   </td>
  </tr>
  </tbody>
@@ -63,12 +71,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('files.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,26 +123,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr id="row_0_1_7_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="simpledcpowersource_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>simpledcpowersource.h</b></td><td class="desc"></td></tr>
 <tr id="row_1_"><td class="entry"><img id="arr_1_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('1_')"/><img id="img_1_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('1_')"/><a class="el" href="dir_76377ef47f279da9f157b6bb7cdbe619.html" target="_self">fuel</a></td><td class="desc"></td></tr>
 <tr id="row_1_0_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="fuelsink_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>fuelsink.h</b></td><td class="desc"></td></tr>
-<tr id="row_2_"><td class="entry"><img id="arr_2_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('2_')"/><img id="img_2_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('2_')"/><a class="el" href="dir_8f9794e0b340a4335ab3e22a8eda50df.html" target="_self">warnings</a></td><td class="desc"></td></tr>
-<tr id="row_2_0_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img id="arr_2_0_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('2_0_')"/><img id="img_2_0_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('2_0_')"/><a class="el" href="dir_c3fd8d524a7545268e726327ab644544.html" target="_self">aural</a></td><td class="desc"></td></tr>
-<tr id="row_2_0_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="auralwarningsystem_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>auralwarningsystem.h</b></td><td class="desc"></td></tr>
-<tr id="row_2_1_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img id="arr_2_1_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('2_1_')"/><img id="img_2_1_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('2_1_')"/><a class="el" href="dir_e4e24743f8b7889d5de53d1a3d4ba500.html" target="_self">CASmessages</a></td><td class="desc"></td></tr>
-<tr id="row_2_1_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="takeoffautopilotengagedmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>takeoffautopilotengagedmessage.h</b></td><td class="desc"></td></tr>
-<tr id="row_2_1_1_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="takeoffflapsmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>takeoffflapsmessage.h</b></td><td class="desc"></td></tr>
-<tr id="row_2_2_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="casadvisorymessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>casadvisorymessage.h</b></td><td class="desc"></td></tr>
-<tr id="row_2_3_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="cascautionmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>cascautionmessage.h</b></td><td class="desc"></td></tr>
-<tr id="row_2_4_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="casmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>casmessage.h</b></td><td class="desc"></td></tr>
-<tr id="row_2_5_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="casstatusmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>casstatusmessage.h</b></td><td class="desc"></td></tr>
-<tr id="row_2_6_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="caswarningmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>caswarningmessage.h</b></td><td class="desc"></td></tr>
-<tr id="row_3_" class="even"><td class="entry"><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="_challenger604_logic__global_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>Challenger604Logic_global.h</b></td><td class="desc"></td></tr>
+<tr id="row_2_"><td class="entry"><img id="arr_2_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('2_')"/><img id="img_2_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('2_')"/><a class="el" href="dir_23ec12649285f9fabf3a6b7380226c28.html" target="_self">util</a></td><td class="desc"></td></tr>
+<tr id="row_2_0_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="color_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>color.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_"><td class="entry"><img id="arr_3_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('3_')"/><img id="img_3_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('3_')"/><a class="el" href="dir_8f9794e0b340a4335ab3e22a8eda50df.html" target="_self">warnings</a></td><td class="desc"></td></tr>
+<tr id="row_3_0_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img id="arr_3_0_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('3_0_')"/><img id="img_3_0_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('3_0_')"/><a class="el" href="dir_c3fd8d524a7545268e726327ab644544.html" target="_self">aural</a></td><td class="desc"></td></tr>
+<tr id="row_3_0_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="auralwarningsystem_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>auralwarningsystem.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_1_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img id="arr_3_1_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('3_1_')"/><img id="img_3_1_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('3_1_')"/><a class="el" href="dir_e4e24743f8b7889d5de53d1a3d4ba500.html" target="_self">CASmessages</a></td><td class="desc"></td></tr>
+<tr id="row_3_1_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="groundspoilersdeployedmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>groundspoilersdeployedmessage.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_1_1_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="takeoffautopilotengagedmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>takeoffautopilotengagedmessage.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_1_2_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="takeoffflapsmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>takeoffflapsmessage.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_2_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="casadvisorymessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>casadvisorymessage.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_3_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="cascautionmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>cascautionmessage.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_4_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="casmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>casmessage.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_5_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="casmessagehandler_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>casmessagehandler.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_6_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="casstatusmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>casstatusmessage.h</b></td><td class="desc"></td></tr>
+<tr id="row_3_7_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="caswarningmessage_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>caswarningmessage.h</b></td><td class="desc"></td></tr>
+<tr id="row_4_" class="even"><td class="entry"><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="_challenger604_logic__global_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>Challenger604Logic_global.h</b></td><td class="desc"></td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 20 2012 15:09:17 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.2
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Oct 20 2012 19:52:42 for Challenger 604 Systems Logic by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
 </body>
 </html>

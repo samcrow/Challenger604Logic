@@ -1,0 +1,47 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Challenger604Systems\l::PowerSink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_power_sink.html",tooltip="Abstract base class for anything that accepts electricity from something else."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Challenger604Systems\l::SimpleACPowerSink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_simple_a_c_power_sink.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Challenger604Systems::TRU",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_t_r_u.html",tooltip="Simulates a Transformer-Rectifier Unit This converts AC into DC. Currently, the imperfect efficiency ..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Challenger604Systems\l::SimpleDCPowerSink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_simple_d_c_power_sink.html",tooltip="A power sink that accepts DC power."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Challenger604Systems\l::TestDCPowerSink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_test_d_c_power_sink.html",tooltip="A power sink that consumes 100 watts of power at 28 volts DC."];
+  Node6 [label="QObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Challenger604Systems\l::AuralWarningSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_aural_warning_system.html",tooltip="A class for an aural warning system."];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Challenger604Systems\l::CAS::CASMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html",tooltip="Base class for a Crew Alerting System message."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Challenger604Systems\l::CAS::CASAdvisoryMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html",tooltip="A CAS message with a priority level of ADVISORY."];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Challenger604Systems\l::CAS::CASCautionMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html",tooltip="A CAS message with a priority level of CAUTION."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Challenger604Systems\l::CAS::GroundSpoilersDeployed\lMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html",tooltip="A message sent when the ground spoilers are deployed."];
+  Node8 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Challenger604Systems\l::CAS::CASStatusMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html",tooltip="A CAS message with a priority level of STATUS."];
+  Node8 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Challenger604Systems\l::CAS::CASWarningMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html",tooltip="A CAS message with a priority level of WARNING."];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Challenger604Systems\l::CAS::TakeoffAutopilotEngaged\lMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html",tooltip="A message that is sent when the aircraft is in takeoff configuration but the autopilot is engaged..."];
+  Node13 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Challenger604Systems\l::CAS::TakeoffFlapsMessage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html",tooltip="A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not se..."];
+  Node6 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Challenger604Systems\l::PowerSource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_power_source.html"];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Challenger604Systems\l::ACPowerSource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_a_c_power_source.html"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Challenger604Systems\l::SimpleACPowerSource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_simple_a_c_power_source.html"];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="Challenger604Systems\l::EndlessACPowerSource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_endless_a_c_power_source.html",tooltip="A power source that provides endless (up to 1.7976931348623157 * 10^308 watts) of AC power at exactly..."];
+  Node16 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="Challenger604Systems\l::SimpleDCPowerSource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_simple_d_c_power_source.html"];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Challenger604Systems::APU",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_a_p_u.html",tooltip="The aircraft Auxilliary Power Unit."];
+  Node20 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

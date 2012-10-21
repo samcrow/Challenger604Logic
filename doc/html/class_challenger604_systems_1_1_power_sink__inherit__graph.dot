@@ -1,0 +1,14 @@
+digraph "Challenger604Systems::PowerSink"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Challenger604Systems\l::PowerSink",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Challenger604Systems\l::SimpleACPowerSink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_simple_a_c_power_sink.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Challenger604Systems::TRU",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_t_r_u.html",tooltip="Simulates a Transformer-Rectifier Unit This converts AC into DC. Currently, the imperfect efficiency ..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Challenger604Systems\l::SimpleDCPowerSink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_simple_d_c_power_sink.html",tooltip="A power sink that accepts DC power."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Challenger604Systems\l::TestDCPowerSink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_test_d_c_power_sink.html",tooltip="A power sink that consumes 100 watts of power at 28 volts DC."];
+}

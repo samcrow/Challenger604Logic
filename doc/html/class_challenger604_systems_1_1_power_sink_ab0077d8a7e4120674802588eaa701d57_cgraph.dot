@@ -1,0 +1,11 @@
+digraph "Challenger604Systems::PowerSink::getCurrentInputWattage"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Challenger604Systems\l::PowerSink::getCurrentInput\lWattage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Challenger604Systems\l::PowerSource::getCurrentOutput\lWattage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_power_source.html#a941b5d3a7d51811809a22126f9b16f3d"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Challenger604Systems\l::PowerSink::getTargetInput\lWattage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_challenger604_systems_1_1_power_sink.html#ade0817850ef945ba0751d757bceeee65"];
+}

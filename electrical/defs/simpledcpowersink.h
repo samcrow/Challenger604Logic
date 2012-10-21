@@ -9,7 +9,7 @@ namespace Challenger604Systems {
 /**
   @brief A power sink that accepts DC power
   */
-class SimpleDCPowerSink : public PowerSink
+class CHALLENGER604LOGICSHARED_EXPORT SimpleDCPowerSink : public PowerSink
 {
 public:
     /**

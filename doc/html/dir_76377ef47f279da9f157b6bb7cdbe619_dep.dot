@@ -1,0 +1,6 @@
+digraph "fuel" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_76377ef47f279da9f157b6bb7cdbe619 [shape=box, label="fuel", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_76377ef47f279da9f157b6bb7cdbe619.html"];
+}

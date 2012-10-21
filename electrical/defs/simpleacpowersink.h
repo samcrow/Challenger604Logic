@@ -8,7 +8,7 @@ namespace Challenger604Systems {
 /**
   A power sink that takes standard AC power
   */
-class SimpleACPowerSink : public PowerSink
+class CHALLENGER604LOGICSHARED_EXPORT SimpleACPowerSink : public PowerSink
 {
 
 public:

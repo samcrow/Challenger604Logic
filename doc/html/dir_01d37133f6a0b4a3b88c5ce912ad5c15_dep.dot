@@ -1,0 +1,9 @@
+digraph "electrical/defs" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c2bce7fd3ac825e037eff860c2292573 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="electrical" fontname="Helvetica", fontsize="10", URL="dir_c2bce7fd3ac825e037eff860c2292573.html"]
+  dir_01d37133f6a0b4a3b88c5ce912ad5c15 [shape=box, label="defs", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_01d37133f6a0b4a3b88c5ce912ad5c15.html"];
+  }
+}

@@ -7,6 +7,12 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -22,7 +28,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Challenger 604 Systems Logic
+   &#160;<span id="projectnumber">a1</span>
    </div>
+   <div id="projectbrief">This Qt C++ dynamic library simulates the systems of a Challenger 604 aircraft</div>
   </td>
  </tr>
  </tbody>
@@ -65,12 +73,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -79,11 +102,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_challenger604_systems.html">Challenger604Systems</a></li><li class="navelem"><a class="el" href="namespace_challenger604_systems_1_1_c_a_s.html">CAS</a></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html">CASMessage</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -104,12 +122,13 @@ Inheritance diagram for Challenger604Systems::CAS::CASMessage:</div>
  <div class="center">
   <img src="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.png" usemap="#Challenger604Systems::CAS::CASMessage_map" alt=""/>
   <map id="Challenger604Systems::CAS::CASMessage_map" name="Challenger604Systems::CAS::CASMessage_map">
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html" title="A CAS message with a priority level of ADVISORY." alt="Challenger604Systems::CAS::CASAdvisoryMessage" shape="rect" coords="0,112,371,136"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html" title="A CAS message with a priority level of CAUTION." alt="Challenger604Systems::CAS::CASCautionMessage" shape="rect" coords="381,112,752,136"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html" title="A CAS message with a priority level of STATUS." alt="Challenger604Systems::CAS::CASStatusMessage" shape="rect" coords="762,112,1133,136"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html" title="A CAS message with a priority level of WARNING." alt="Challenger604Systems::CAS::CASWarningMessage" shape="rect" coords="1143,112,1514,136"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html" title="A message that is sent when the aircraft is in takeoff configuration but the autopilot is engaged..." alt="Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage" shape="rect" coords="952,168,1323,192"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html" title="A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not se..." alt="Challenger604Systems::CAS::TakeoffFlapsMessage" shape="rect" coords="1333,168,1704,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html" title="A CAS message with a priority level of ADVISORY." alt="Challenger604Systems::CAS::CASAdvisoryMessage" shape="rect" coords="0,112,372,136"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html" title="A CAS message with a priority level of CAUTION." alt="Challenger604Systems::CAS::CASCautionMessage" shape="rect" coords="382,112,754,136"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html" title="A CAS message with a priority level of STATUS." alt="Challenger604Systems::CAS::CASStatusMessage" shape="rect" coords="764,112,1136,136"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html" title="A CAS message with a priority level of WARNING." alt="Challenger604Systems::CAS::CASWarningMessage" shape="rect" coords="1146,112,1518,136"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html" title="A message sent when the ground spoilers are deployed." alt="Challenger604Systems::CAS::GroundSpoilersDeployedMessage" shape="rect" coords="382,168,754,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html" title="A message that is sent when the aircraft is in takeoff configuration but the autopilot is engaged..." alt="Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage" shape="rect" coords="955,168,1327,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html" title="A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not se..." alt="Challenger604Systems::CAS::TakeoffFlapsMessage" shape="rect" coords="1337,168,1709,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -143,6 +162,15 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26">AuralWarningSystem::WarningSound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#af28c41e0c3f36a915bc9151318465b78">getSound</a> ()</td></tr>
 <tr class="memdesc:af28c41e0c3f36a915bc9151318465b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sound that this message triggers.  <a href="#af28c41e0c3f36a915bc9151318465b78"></a><br/></td></tr>
 <tr class="separator:af28c41e0c3f36a915bc9151318465b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9a9429a3bef4df859249cee3303226"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a4d9a9429a3bef4df859249cee3303226">isTakeoffIgnored</a> ()</td></tr>
+<tr class="memdesc:a4d9a9429a3bef4df859249cee3303226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if this message should be ignored when the aircraft is taking off.  <a href="#a4d9a9429a3bef4df859249cee3303226"></a><br/></td></tr>
+<tr class="separator:a4d9a9429a3bef4df859249cee3303226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587b403ea04045382a51d54baaadf959"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a587b403ea04045382a51d54baaadf959">isLandingIgnored</a> ()</td></tr>
+<tr class="memdesc:a587b403ea04045382a51d54baaadf959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if this message should be ignored when the aircraft is landing.  <a href="#a587b403ea04045382a51d54baaadf959"></a><br/></td></tr>
+<tr class="separator:a587b403ea04045382a51d54baaadf959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff4870555e6fd82c06dab953c61646c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#abff4870555e6fd82c06dab953c61646c">getDisplayColor</a> ()</td></tr>
+<tr class="memdesc:abff4870555e6fd82c06dab953c61646c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the color that should be used to display this message on the ECIAS display.  <a href="#abff4870555e6fd82c06dab953c61646c"></a><br/></td></tr>
+<tr class="separator:abff4870555e6fd82c06dab953c61646c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for a Crew Alerting System message. </p>
@@ -191,6 +219,34 @@ The master caution or master warning lights may illuminate </li>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abff4870555e6fd82c06dab953c61646c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_color.html">Color</a> Challenger604Systems::CAS::CASMessage::getDisplayColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the color that should be used to display this message on the ECIAS display. </p>
+<p>The default implementation returns white. Subclasses should override this to display different colors. </p>
+
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af8f74235b64c7b454f097bc0e4d73886">Challenger604Systems::CAS::CASCautionMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a08108a1f33a42bdd3f425729a3c2ad6f">Challenger604Systems::CAS::CASWarningMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html#a509b3e4c5c5981e088613116242a8105">Challenger604Systems::CAS::CASAdvisoryMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html#aa5131f341706b29c3ec17a865a5c7472">Challenger604Systems::CAS::CASStatusMessage</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a28c4a2be2b31dcc8183ea84effe8f81c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -215,7 +271,7 @@ The master caution or master warning lights may illuminate </li>
 <p>Get the text that this message should display on the ECIAS display. </p>
 <p>This should be short and in all capital letters </p>
 
-<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#acb892ffef0a7e4e74c647db696ea44c7">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a7357021349d02a2d7aba9d3360461761">Challenger604Systems::CAS::TakeoffFlapsMessage</a>.</p>
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#aba58dc01fe4f88c03a59fa2020a1fd96">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#acb892ffef0a7e4e74c647db696ea44c7">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a7357021349d02a2d7aba9d3360461761">Challenger604Systems::CAS::TakeoffFlapsMessage</a>.</p>
 
 </div>
 </div>
@@ -241,7 +297,7 @@ The master caution or master warning lights may illuminate </li>
 </div><div class="memdoc">
 <p>Get the priority level of this message </p>
 
-<p>Implemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html#a01bef39f2d4301bfc7cebf0e9309b74c">Challenger604Systems::CAS::CASAdvisoryMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af7e93cefbcdd9f9197a4c624c20d5e27">Challenger604Systems::CAS::CASCautionMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html#ac6a98cf31cf0b5912425b2a87c17ba62">Challenger604Systems::CAS::CASStatusMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a895fe790e94e2bda52eb6d78ce1ef09d">Challenger604Systems::CAS::CASWarningMessage</a>.</p>
+<p>Implemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af7e93cefbcdd9f9197a4c624c20d5e27">Challenger604Systems::CAS::CASCautionMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a895fe790e94e2bda52eb6d78ce1ef09d">Challenger604Systems::CAS::CASWarningMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html#a01bef39f2d4301bfc7cebf0e9309b74c">Challenger604Systems::CAS::CASAdvisoryMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html#ac6a98cf31cf0b5912425b2a87c17ba62">Challenger604Systems::CAS::CASStatusMessage</a>.</p>
 
 </div>
 </div>
@@ -270,7 +326,65 @@ The master caution or master warning lights may illuminate </li>
 <p>The default implementation returns <a class="el" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26ae5acb874e76f6c7d2d6797a6bd4f6c92">AuralWarningSystem::NO_SOUND</a>, so a message that does not play sound does not need to override this.</p>
 <dl class="section return"><dt>Returns</dt><dd>The sound that this message should play, or <a class="el" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26ae5acb874e76f6c7d2d6797a6bd4f6c92">AuralWarningSystem::NO_SOUND</a> if it should not play a sound </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a0f3b9be1d9ee8665b5fe6179f666766f">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#aec477c5edd50ac255f36c750f92622dd">Challenger604Systems::CAS::TakeoffFlapsMessage</a>.</p>
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af4930b30ce55118a6dea2fa48317bdd6">Challenger604Systems::CAS::CASCautionMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#ace33668029e2a19bd54b57d9ca5efe56">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a0f3b9be1d9ee8665b5fe6179f666766f">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#aec477c5edd50ac255f36c750f92622dd">Challenger604Systems::CAS::TakeoffFlapsMessage</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a587b403ea04045382a51d54baaadf959"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Challenger604Systems::CAS::CASMessage::isLandingIgnored </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if this message should be ignored when the aircraft is landing. </p>
+<p>The criteria for landing are explained in the Aural and Visual Warning document on pages 16-17.</p>
+<p>The default implementation returns false, so a message that is not ignored does not need to override this message. </p>
+
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#acba68dded7a3f842fe58cc8ebb1f9b0d">Challenger604Systems::CAS::CASCautionMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#a86ceb9d4263f95ceb0bdb004e708d44c">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d9a9429a3bef4df859249cee3303226"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Challenger604Systems::CAS::CASMessage::isTakeoffIgnored </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine if this message should be ignored when the aircraft is taking off. </p>
+<p>The criteria for taking off are explained in the Aural and Visual Warning document on pages 16-17.</p>
+<p>The default implementation returns false, so a message that is not ignored does not need to override this message. </p>
+
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#a7a8a2cac4a118c6802aab29ec2d56c5a">Challenger604Systems::CAS::CASCautionMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#a98ab8a79865f8c79cbd6b34c7718e411">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>.</p>
 
 </div>
 </div>
@@ -297,6 +411,8 @@ The master caution or master warning lights may illuminate </li>
 
 <p>Determine if this message should turn on the master caution lights. </p>
 <p>The default implementation returns false, so a message that does not use the master caution lights does not need to override this. </p>
+
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#ab7fd581a14d82ee469fef961448faf49">Challenger604Systems::CAS::CASCautionMessage</a>.</p>
 
 </div>
 </div>
@@ -329,15 +445,19 @@ The master caution or master warning lights may illuminate </li>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Applications/X-Plane 10 Demo/Aircraft/Heavy Metal/Challenger 604/Challenger604Logic/warnings/<a class="el" href="casmessage_8h_source.html">casmessage.h</a></li>
-<li>/Applications/X-Plane 10 Demo/Aircraft/Heavy Metal/Challenger 604/Challenger604Logic/warnings/casmessage.cpp</li>
+<li>warnings/<a class="el" href="casmessage_8h_source.html">casmessage.h</a></li>
+<li>warnings/casmessage.cpp</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 20 2012 15:09:16 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.2
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_challenger604_systems.html">Challenger604Systems</a></li><li class="navelem"><a class="el" href="namespace_challenger604_systems_1_1_c_a_s.html">CAS</a></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html">CASMessage</a></li>
+    <li class="footer">Generated on Sat Oct 20 2012 19:52:41 for Challenger 604 Systems Logic by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
 </body>
 </html>

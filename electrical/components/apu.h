@@ -7,6 +7,9 @@
 
 namespace Challenger604Systems {
 
+/**
+  @brief The aircraft Auxilliary Power Unit
+  */
 class CHALLENGER604LOGICSHARED_EXPORT APU : public SimpleDCPowerSource
 {
     Q_OBJECT

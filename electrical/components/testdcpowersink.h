@@ -8,7 +8,7 @@ namespace Challenger604Systems {
 /**
   @brief A power sink that consumes 100 watts of power at 28 volts DC
   */
-class TestDCPowerSink : public SimpleDCPowerSink
+class CHALLENGER604LOGICSHARED_EXPORT TestDCPowerSink : public SimpleDCPowerSink
 {
 public:
     TestDCPowerSink(PowerSource * inSource);

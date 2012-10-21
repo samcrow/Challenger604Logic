@@ -1,0 +1,9 @@
+digraph "warnings/aural" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_8f9794e0b340a4335ab3e22a8eda50df {
+    graph [ bgcolor="#ddddee", pencolor="black", label="warnings" fontname="Helvetica", fontsize="10", URL="dir_8f9794e0b340a4335ab3e22a8eda50df.html"]
+  dir_c3fd8d524a7545268e726327ab644544 [shape=box, label="aural", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_c3fd8d524a7545268e726327ab644544.html"];
+  }
+}

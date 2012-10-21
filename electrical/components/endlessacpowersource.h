@@ -8,7 +8,7 @@
 namespace Challenger604Systems {
 
 /**
-  A power source that provides endless (up to 1.7976931348623157 * 10^308 watts) of AC power
+  @brief A power source that provides endless (up to 1.7976931348623157 * 10^308 watts) of AC power
   at exactly 400 hertz and responds instantly to power requests.
   */
 class CHALLENGER604LOGICSHARED_EXPORT EndlessACPowerSource : public SimpleACPowerSource

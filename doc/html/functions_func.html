@@ -7,6 +7,12 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -22,7 +28,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Challenger 604 Systems Logic
+   &#160;<span id="projectnumber">a1</span>
    </div>
+   <div id="projectbrief">This Qt C++ dynamic library simulates the systems of a Challenger 604 aircraft</div>
   </td>
  </tr>
  </tbody>
@@ -76,20 +84,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_w"><span>w</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,6 +128,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="contents">
 &#160;
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>cancelMessage()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#a263a81985a72e45467e849711a6b682c">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
+<li>Color()
+: <a class="el" href="class_color.html#ae6a1963d2b88a07e6d656944e5f60504">Color</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>enableMasterCaution()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#a357dd59fad9c264c67fb8d7c8e50b23b">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
+<li>enableMasterWarning()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#afb3996d1ede6a9a26590a54627bb637a">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
+</ul>
+
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>getActualInputRate()
@@ -127,10 +175,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#a4e4755ba334156bf6db48e2d53b189d6">Challenger604Systems::SimpleACPowerSource</a>
 , <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a6e35b8636ae955ce4b46f14e3b864650">Challenger604Systems::SimpleDCPowerSource</a>
 </li>
+<li>getDisplayColor()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#abff4870555e6fd82c06dab953c61646c">Challenger604Systems::CAS::CASMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html#aa5131f341706b29c3ec17a865a5c7472">Challenger604Systems::CAS::CASStatusMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a08108a1f33a42bdd3f425729a3c2ad6f">Challenger604Systems::CAS::CASWarningMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html#a509b3e4c5c5981e088613116242a8105">Challenger604Systems::CAS::CASAdvisoryMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af8f74235b64c7b454f097bc0e4d73886">Challenger604Systems::CAS::CASCautionMessage</a>
+</li>
 <li>getDisplayText()
-: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a7357021349d02a2d7aba9d3360461761">Challenger604Systems::CAS::TakeoffFlapsMessage</a>
-, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a28c4a2be2b31dcc8183ea84effe8f81c">Challenger604Systems::CAS::CASMessage</a>
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a28c4a2be2b31dcc8183ea84effe8f81c">Challenger604Systems::CAS::CASMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#aba58dc01fe4f88c03a59fa2020a1fd96">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>
 , <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#acb892ffef0a7e4e74c647db696ea44c7">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a7357021349d02a2d7aba9d3360461761">Challenger604Systems::CAS::TakeoffFlapsMessage</a>
 </li>
 <li>getInputPowerType()
 : <a class="el" href="class_challenger604_systems_1_1_power_sink.html#aeb901bdc03e7c2c5cef0ccc3ff078a89">Challenger604Systems::PowerSink</a>
@@ -138,34 +194,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_sink.html#aa487ad5aaa41a206dac34aca02622af9">Challenger604Systems::SimpleDCPowerSink</a>
 </li>
 <li>getMaxOutputWattage()
-: <a class="el" href="class_challenger604_systems_1_1_power_source.html#a7169f0c8fdce00d38a64b6b6bba04e18">Challenger604Systems::PowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#af4be658550a6883664eacd3ec5f63068">Challenger604Systems::SimpleACPowerSource</a>
+: <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#af4be658550a6883664eacd3ec5f63068">Challenger604Systems::SimpleACPowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_power_source.html#a7169f0c8fdce00d38a64b6b6bba04e18">Challenger604Systems::PowerSource</a>
 , <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a9cdf826d67e23a54371a6d7840fd5ff9">Challenger604Systems::SimpleDCPowerSource</a>
 </li>
 <li>getOutputPowerType()
-: <a class="el" href="class_challenger604_systems_1_1_power_source.html#a005b9cac72b89344aded232d87fde2f6">Challenger604Systems::PowerSource</a>
+: <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a9253b83cb9e35b40db473e24bf3d7f54">Challenger604Systems::SimpleDCPowerSource</a>
+, <a class="el" href="class_challenger604_systems_1_1_power_source.html#a005b9cac72b89344aded232d87fde2f6">Challenger604Systems::PowerSource</a>
 , <a class="el" href="class_challenger604_systems_1_1_simple_a_c_power_source.html#aaaebd8199288938f6d7955743669193b">Challenger604Systems::SimpleACPowerSource</a>
-, <a class="el" href="class_challenger604_systems_1_1_simple_d_c_power_source.html#a9253b83cb9e35b40db473e24bf3d7f54">Challenger604Systems::SimpleDCPowerSource</a>
 </li>
 <li>getPriority()
-: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html#ac6a98cf31cf0b5912425b2a87c17ba62">Challenger604Systems::CAS::CASStatusMessage</a>
-, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a895fe790e94e2bda52eb6d78ce1ef09d">Challenger604Systems::CAS::CASWarningMessage</a>
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html#a01bef39f2d4301bfc7cebf0e9309b74c">Challenger604Systems::CAS::CASAdvisoryMessage</a>
 , <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af7e93cefbcdd9f9197a4c624c20d5e27">Challenger604Systems::CAS::CASCautionMessage</a>
-, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html#a01bef39f2d4301bfc7cebf0e9309b74c">Challenger604Systems::CAS::CASAdvisoryMessage</a>
 , <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a36d3794a82ae29fa029494e341a83127">Challenger604Systems::CAS::CASMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a895fe790e94e2bda52eb6d78ce1ef09d">Challenger604Systems::CAS::CASWarningMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html#ac6a98cf31cf0b5912425b2a87c17ba62">Challenger604Systems::CAS::CASStatusMessage</a>
 </li>
 <li>getSound()
-: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#aec477c5edd50ac255f36c750f92622dd">Challenger604Systems::CAS::TakeoffFlapsMessage</a>
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a0f3b9be1d9ee8665b5fe6179f666766f">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>
 , <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#af28c41e0c3f36a915bc9151318465b78">Challenger604Systems::CAS::CASMessage</a>
-, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a0f3b9be1d9ee8665b5fe6179f666766f">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#aec477c5edd50ac255f36c750f92622dd">Challenger604Systems::CAS::TakeoffFlapsMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#ace33668029e2a19bd54b57d9ca5efe56">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af4930b30ce55118a6dea2fa48317bdd6">Challenger604Systems::CAS::CASCautionMessage</a>
 </li>
 <li>getTargetInputRate()
 : <a class="el" href="class_challenger604_systems_1_1_fuel_1_1_fuel_sink.html#a909e272f4d9da3389f226590aacac50a">Challenger604Systems::Fuel::FuelSink</a>
 </li>
 <li>getTargetInputWattage()
-: <a class="el" href="class_challenger604_systems_1_1_power_sink.html#ade0817850ef945ba0751d757bceeee65">Challenger604Systems::PowerSink</a>
+: <a class="el" href="class_challenger604_systems_1_1_t_r_u.html#a2b023a31d9adcc544f793e8422519f9d">Challenger604Systems::TRU</a>
 , <a class="el" href="class_challenger604_systems_1_1_test_d_c_power_sink.html#a49ae61c3b70aa9d1be22fb3ac564a053">Challenger604Systems::TestDCPowerSink</a>
-, <a class="el" href="class_challenger604_systems_1_1_t_r_u.html#a2b023a31d9adcc544f793e8422519f9d">Challenger604Systems::TRU</a>
+, <a class="el" href="class_challenger604_systems_1_1_power_sink.html#ade0817850ef945ba0751d757bceeee65">Challenger604Systems::PowerSink</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>isLandingIgnored()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#acba68dded7a3f842fe58cc8ebb1f9b0d">Challenger604Systems::CAS::CASCautionMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a587b403ea04045382a51d54baaadf959">Challenger604Systems::CAS::CASMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#a86ceb9d4263f95ceb0bdb004e708d44c">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>
+</li>
+<li>isMasterCautionOn()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#aeb5ed896754799ab10f60601d029f6c7">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
+<li>isMasterWarningOn()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#ad815056c6b30da95580c8cb13ce2398c">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
+<li>isTakeoffIgnored()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#a98ab8a79865f8c79cbd6b34c7718e411">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a4d9a9429a3bef4df859249cee3303226">Challenger604Systems::CAS::CASMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#a7a8a2cac4a118c6802aab29ec2d56c5a">Challenger604Systems::CAS::CASCautionMessage</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>newMessage()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#a952c6590fb2804e9603364c038a5eb09">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>operator==()
+: <a class="el" href="class_color.html#a097ab6c1ad2ebd3f2cd06c536284ae1e">Color</a>
 </li>
 </ul>
 
@@ -184,6 +276,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>requestPower()
 : <a class="el" href="class_challenger604_systems_1_1_power_source.html#a7337c7de30e3d23c551d3a41370b34bb">Challenger604Systems::PowerSource</a>
 </li>
+<li>resetMasterCaution()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#a4c63f5a19b98c823f20bfae60b875b3f">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
+<li>resetMasterWarning()
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html#aaf5dfbf26cf4340a6fa5ee6365a21be7">Challenger604Systems::CAS::CASMessageHandler</a>
+</li>
 </ul>
 
 
@@ -196,20 +294,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>triggersMasterCaution()
-: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a55b6926bfd7af2af340cd075e5fb8a17">Challenger604Systems::CAS::CASMessage</a>
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#ab7fd581a14d82ee469fef961448faf49">Challenger604Systems::CAS::CASCautionMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a55b6926bfd7af2af340cd075e5fb8a17">Challenger604Systems::CAS::CASMessage</a>
 </li>
 <li>triggersMasterWarning()
-: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a160c0467f67e17b055683a3bde9dcef3">Challenger604Systems::CAS::TakeoffFlapsMessage</a>
-, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a6c6c7b355cfd49db0f3090ce00f5b222">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>
+: <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a6c6c7b355cfd49db0f3090ce00f5b222">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>
 , <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a6296584e1a8eff970892c65ce66e8111">Challenger604Systems::CAS::CASMessage</a>
+, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a160c0467f67e17b055683a3bde9dcef3">Challenger604Systems::CAS::TakeoffFlapsMessage</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>white()
+: <a class="el" href="class_color.html#a154c895b965e8aa00cc42e9ad53d8b75">Color</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 20 2012 15:09:16 for Challenger 604 Systems Logic by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.2
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Oct 20 2012 19:52:41 for Challenger 604 Systems Logic by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
 </body>
 </html>

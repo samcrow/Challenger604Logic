@@ -2,6 +2,9 @@
 #define POWERSINK_H
 
 #include <QObject>
+
+#include "../../Challenger604Logic_global.h"
+
 #include "electricalpowertype.h"
 #include "powersource.h"
 
@@ -10,7 +13,7 @@ namespace Challenger604Systems {
 /**
   @brief Abstract base class for anything that accepts electricity from something else
   */
-class PowerSink
+class CHALLENGER604LOGICSHARED_EXPORT PowerSink
 {
 
 public:

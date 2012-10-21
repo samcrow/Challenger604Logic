@@ -31,7 +31,10 @@ SOURCES += \
     warnings/cascautionmessage.cpp \
     warnings/casadvisorymessage.cpp \
     warnings/casstatusmessage.cpp \
-    warnings/CASmessages/takeoffflapsmessage.cpp
+    warnings/CASmessages/takeoffflapsmessage.cpp \
+    warnings/CASmessages/groundspoilersdeployedmessage.cpp \
+    util/color.cpp \
+    warnings/casmessagehandler.cpp
 
 HEADERS +=\
         Challenger604Logic_global.h \
@@ -55,7 +58,10 @@ HEADERS +=\
     warnings/cascautionmessage.h \
     warnings/casadvisorymessage.h \
     warnings/casstatusmessage.h \
-    warnings/CASmessages/takeoffflapsmessage.h
+    warnings/CASmessages/takeoffflapsmessage.h \
+    warnings/CASmessages/groundspoilersdeployedmessage.h \
+    util/color.h \
+    warnings/casmessagehandler.h
 
 symbian {
     MMP_RULES += EXPORTUNFROZEN

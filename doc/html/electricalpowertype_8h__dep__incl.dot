@@ -1,0 +1,32 @@
+digraph "electrical/defs/electricalpowertype.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="electrical/defs/electricalpowertype.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="electrical/defs/powersource.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$powersource_8h_source.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="electrical/defs/simpledcpowersource.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$simpledcpowersource_8h_source.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="electrical/components\l/apu.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$apu_8h_source.html"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="electrical/components\l/tru.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tru_8h_source.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="electrical/defs/acpowersource.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$acpowersource_8h_source.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="electrical/defs/simpleacpowersource.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$simpleacpowersource_8h_source.html"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="electrical/components\l/endlessacpowersource.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$endlessacpowersource_8h_source.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="electrical/defs/powersink.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$powersink_8h_source.html"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="electrical/defs/simpledcpowersink.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$simpledcpowersink_8h_source.html"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="electrical/components\l/testdcpowersink.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$testdcpowersink_8h_source.html"];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="electrical/defs/simpleacpowersink.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$simpleacpowersink_8h_source.html"];
+  Node12 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
