@@ -4,6 +4,7 @@ var class_challenger604_systems_1_1_aural_warning_system =
       [ "NO_SOUND", "class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26ae5acb874e76f6c7d2d6797a6bd4f6c92", null ],
       [ "ATTENSON_SINGLE", "class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26a025c85b32f7dbf0d8315ef8f2e77bbd4", null ],
       [ "ATTENSON_TRIPLE", "class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26a3e646145879a1348aaf200172ee7447b", null ],
+      [ "CLACKER", "class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26a5022e5656c018f920d97d4a29e6ee6df", null ],
       [ "VOICE_CONFIG_AUTOPILOT", "class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26a30c6c977caa3fbab45146589acb232ec", null ],
       [ "VOICE_CONFIG_FLAPS", "class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26af20954d866a46ed5539c2d6d81a9c9a7", null ],
       [ "VOICE_CONFIG_SPOILERS", "class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26a707d255555ec77620480215ec14b2a7e", null ],

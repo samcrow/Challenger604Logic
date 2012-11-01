@@ -36,9 +36,5 @@ AuralWarningSystem::WarningSound CASMessage::getSound() {
     return AuralWarningSystem::NO_SOUND;
 }
 
-Color CASMessage::getDisplayColor() {
-    return Color::white();
-}
-
 }
 }

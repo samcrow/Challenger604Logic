@@ -14,9 +14,5 @@ CASMessage::Priority CASAdvisoryMessage::getPriority() {
     return ADVISORY;
 }
 
-Color CASAdvisoryMessage::getDisplayColor() {
-    return advisoryColor;
-}
-
 }
 }

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Challenger 604 Systems Logic: warnings/CASmessages/takeoffflapsmessage.h Source File</title>
+<title>Challenger 604 Systems Logic: warnings/CASmessages/warning/flightcontrols/takeoffflapsmessage.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('takeoffflapsmessage_8h_source.html',''
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TAKEOFFFLAPSMESSAGE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TAKEOFFFLAPSMESSAGE_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../caswarningmessage.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../../../caswarningmessage.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Challenger604Systems {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>CAS {</div>
@@ -120,26 +120,24 @@ $(document).ready(function(){initNavTree('takeoffflapsmessage_8h_source.html',''
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    QString getDisplayText();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> triggersMasterWarning();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26">AuralWarningSystem::WarningSound</a> getSound();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26">AuralWarningSystem::WarningSound</a> getSound();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;signals:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;signals:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span> slots:</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // TAKEOFFFLAPSMESSAGE_H</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif // TAKEOFFFLAPSMESSAGE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_8f9794e0b340a4335ab3e22a8eda50df.html">warnings</a></li><li class="navelem"><a class="el" href="dir_e4e24743f8b7889d5de53d1a3d4ba500.html">CASmessages</a></li><li class="navelem"><b>takeoffflapsmessage.h</b></li>
-    <li class="footer">Generated on Sun Oct 21 2012 16:33:21 for Challenger 604 Systems Logic by
+    <li class="navelem"><a class="el" href="dir_8f9794e0b340a4335ab3e22a8eda50df.html">warnings</a></li><li class="navelem"><a class="el" href="dir_e4e24743f8b7889d5de53d1a3d4ba500.html">CASmessages</a></li><li class="navelem"><a class="el" href="dir_250416dd70f02d408f94ef70e3f5060d.html">warning</a></li><li class="navelem"><a class="el" href="dir_6468377199c39e2f2fd00f38d4250607.html">flightcontrols</a></li><li class="navelem"><b>takeoffflapsmessage.h</b></li>
+    <li class="footer">Generated on Tue Oct 23 2012 21:06:41 for Challenger 604 Systems Logic by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

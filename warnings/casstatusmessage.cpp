@@ -14,9 +14,5 @@ CASMessage::Priority CASStatusMessage::getPriority() {
     return STATUS;
 }
 
-Color CASStatusMessage::getDisplayColor() {
-    return Color::white();
-}
-
 }
 }

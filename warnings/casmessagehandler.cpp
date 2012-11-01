@@ -91,6 +91,7 @@ QList<EICASMessage> CASMessageHandler::getEicasMessages(CASMessage::Priority pri
 
     //Only sort the list if there are actually 2 or more messages in it
     if(messages.length() >= 2) {
+        //Sort the messages from first to last creation order
         std::sort(messages.begin(), messages.end());
     }
 
@@ -99,7 +100,7 @@ QList<EICASMessage> CASMessageHandler::getEicasMessages(CASMessage::Priority pri
 
 
 void CASMessageHandler::dumpEciasMessages() {
-    qDebug() << "ECIAS text message dump: message pointer | text";
+    qDebug() << "ECIAS text message dump: message pointer | text | priority";
 
     QHashIterator<CASMessage *, EICASMessage> iterator(eicasMessages);
     while(iterator.hasNext()) {
@@ -107,7 +108,7 @@ void CASMessageHandler::dumpEciasMessages() {
 
         EICASMessage message = iterator.value();
 
-        qDebug() << iterator.key() << "\t" << message.getMessageText();
+        qDebug() << iterator.key() << "\t" << message.getMessageText() << "\t" << message.getPriority();
     }
 }
 

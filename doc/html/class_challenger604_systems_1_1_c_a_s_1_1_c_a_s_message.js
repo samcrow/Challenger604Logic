@@ -7,7 +7,6 @@ var class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message =
       [ "STATUS", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a6a31a04097fb1143feb1d1b86aba4ca9", null ]
     ] ],
     [ "CASMessage", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a67f3029962225598a323c961c19025d7", null ],
-    [ "getDisplayColor", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#abff4870555e6fd82c06dab953c61646c", null ],
     [ "getDisplayText", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a28c4a2be2b31dcc8183ea84effe8f81c", null ],
     [ "getPriority", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a36d3794a82ae29fa029494e341a83127", null ],
     [ "getSound", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#af28c41e0c3f36a915bc9151318465b78", null ],

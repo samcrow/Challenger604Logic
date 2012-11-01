@@ -12,10 +12,6 @@ QString TakeoffAutopilotEngagedMessage::getDisplayText() {
     return "CONFIG AP";
 }
 
-bool TakeoffAutopilotEngagedMessage::triggersMasterWarning() {
-    return true;
-}
-
 AuralWarningSystem::WarningSound TakeoffAutopilotEngagedMessage::getSound() {
     return AuralWarningSystem::VOICE_CONFIG_AUTOPILOT;
 }

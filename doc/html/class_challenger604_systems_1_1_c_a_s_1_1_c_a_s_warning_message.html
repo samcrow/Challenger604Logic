@@ -122,9 +122,12 @@ Inheritance diagram for Challenger604Systems::CAS::CASWarningMessage:</div>
  <div class="center">
   <img src="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.png" usemap="#Challenger604Systems::CAS::CASWarningMessage_map" alt=""/>
   <map id="Challenger604Systems::CAS::CASWarningMessage_map" name="Challenger604Systems::CAS::CASWarningMessage_map">
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html" title="Base class for a Crew Alerting System message." alt="Challenger604Systems::CAS::CASMessage" shape="rect" coords="190,56,561,80"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html" title="A message that is sent when the aircraft is in takeoff configuration but the autopilot is engaged..." alt="Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage" shape="rect" coords="0,168,371,192"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html" title="A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not se..." alt="Challenger604Systems::CAS::TakeoffFlapsMessage" shape="rect" coords="381,168,752,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html" title="Base class for a Crew Alerting System message." alt="Challenger604Systems::CAS::CASMessage" shape="rect" coords="762,56,1133,80"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_config_message.html" title="A message sent when the aircraft is in takeoff configuration and the horizontal stabilizer (elevator)..." alt="Challenger604Systems::CAS::STrimConfigMessage" shape="rect" coords="0,168,371,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_runaway_message.html" title="A message to alert crew of a possible horizontal stabilizer (elevator) trim runaway condition..." alt="Challenger604Systems::CAS::STrimRunawayMessage" shape="rect" coords="381,168,752,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html" title="A message that is sent when the aircraft is in takeoff configuration but the autopilot is engaged..." alt="Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage" shape="rect" coords="762,168,1133,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html" title="A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not se..." alt="Challenger604Systems::CAS::TakeoffFlapsMessage" shape="rect" coords="1143,168,1514,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_spoilers_message.html" title="A warning message sent when the aircraft is in takeoff configuration and the flight or ground spoiler..." alt="Challenger604Systems::CAS::TakeoffSpoilersMessage" shape="rect" coords="1524,168,1895,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -135,8 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9a07585519447691153a7984d0ad2461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a895fe790e94e2bda52eb6d78ce1ef09d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9">Priority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a895fe790e94e2bda52eb6d78ce1ef09d">getPriority</a> ()</td></tr>
 <tr class="separator:a895fe790e94e2bda52eb6d78ce1ef09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08108a1f33a42bdd3f425729a3c2ad6f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a08108a1f33a42bdd3f425729a3c2ad6f">getDisplayColor</a> ()</td></tr>
-<tr class="separator:a08108a1f33a42bdd3f425729a3c2ad6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad976965910832ae738914308611b831b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#ad976965910832ae738914308611b831b">triggersMasterWarning</a> ()</td></tr>
+<tr class="separator:ad976965910832ae738914308611b831b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html">Challenger604Systems::CAS::CASMessage</a></td></tr>
 <tr class="memitem:a67f3029962225598a323c961c19025d7 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67f3029962225598a323c961c19025d7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CASMessage</b> (QObject *parent=0)</td></tr>
@@ -147,9 +150,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a55b6926bfd7af2af340cd075e5fb8a17 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a55b6926bfd7af2af340cd075e5fb8a17">triggersMasterCaution</a> ()</td></tr>
 <tr class="memdesc:a55b6926bfd7af2af340cd075e5fb8a17 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if this message should turn on the master caution lights.  <a href="#a55b6926bfd7af2af340cd075e5fb8a17"></a><br/></td></tr>
 <tr class="separator:a55b6926bfd7af2af340cd075e5fb8a17 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6296584e1a8eff970892c65ce66e8111 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a6296584e1a8eff970892c65ce66e8111">triggersMasterWarning</a> ()</td></tr>
-<tr class="memdesc:a6296584e1a8eff970892c65ce66e8111 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if this message should turn on the master warning lights.  <a href="#a6296584e1a8eff970892c65ce66e8111"></a><br/></td></tr>
-<tr class="separator:a6296584e1a8eff970892c65ce66e8111 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af28c41e0c3f36a915bc9151318465b78 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
 <a class="el" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26">AuralWarningSystem::WarningSound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#af28c41e0c3f36a915bc9151318465b78">getSound</a> ()</td></tr>
 <tr class="memdesc:af28c41e0c3f36a915bc9151318465b78 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sound that this message triggers.  <a href="#af28c41e0c3f36a915bc9151318465b78"></a><br/></td></tr>
@@ -179,36 +179,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="namespace_challenger604_systems_1_1_c_a_s.html" title="Contains things for the Crew Alerting System that displays messages to crew members.">CAS</a> message with a priority level of WARNING. </p>
-<p>Warning messages turn on the master warning lights by default. Individual messages should override <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a6296584e1a8eff970892c65ce66e8111" title="Determine if this message should turn on the master warning lights.">triggersMasterWarning()</a> if they should not turn on the master warning lights. </p>
+<p>Warning messages turn on the master warning lights by default. Individual messages should override <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#ad976965910832ae738914308611b831b">triggersMasterWarning()</a> if they should not turn on the master warning lights. </p>
 <p>Warning messages sound three attention-getting sounds by default. Individual messages can override <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#af28c41e0c3f36a915bc9151318465b78" title="Get the sound that this message triggers.">getSound()</a> to change this. </p>
-<p>Warning messages display with an red color (defined by warningColor) by default. Individual messages can override <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a08108a1f33a42bdd3f425729a3c2ad6f">getDisplayColor()</a> to change this. </p>
+<p>Warning messages display with an red color (defined by warningColor) by default. Individual messages can override getDisplayColor() to change this. </p>
+<p>Warning messages trigger the master warning lights by default. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a08108a1f33a42bdd3f425729a3c2ad6f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_color.html">Color</a> Challenger604Systems::CAS::CASWarningMessage::getDisplayColor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a red color associated with warning messages </p>
-
-<p>Reimplemented from <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#abff4870555e6fd82c06dab953c61646c">Challenger604Systems::CAS::CASMessage</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a895fe790e94e2bda52eb6d78ce1ef09d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -232,6 +207,34 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the priority level of this message </p>
 
 <p>Implements <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a36d3794a82ae29fa029494e341a83127">Challenger604Systems::CAS::CASMessage</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad976965910832ae738914308611b831b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Challenger604Systems::CAS::CASWarningMessage::triggersMasterWarning </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true </p>
+
+<p>Reimplemented from <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a6296584e1a8eff970892c65ce66e8111">Challenger604Systems::CAS::CASMessage</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_runaway_message.html#a6915b576a319cc7653b21c8afb03fdd8">Challenger604Systems::CAS::STrimRunawayMessage</a>.</p>
 
 </div>
 </div>
@@ -267,7 +270,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_challenger604_systems.html">Challenger604Systems</a></li><li class="navelem"><a class="el" href="namespace_challenger604_systems_1_1_c_a_s.html">CAS</a></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html">CASWarningMessage</a></li>
-    <li class="footer">Generated on Sun Oct 21 2012 16:33:21 for Challenger 604 Systems Logic by
+    <li class="footer">Generated on Tue Oct 23 2012 21:06:42 for Challenger 604 Systems Logic by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

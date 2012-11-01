@@ -14,8 +14,8 @@ CASMessage::Priority CASWarningMessage::getPriority() {
     return WARNING;
 }
 
-Color CASWarningMessage::getDisplayColor() {
-    return warningColor;
+bool CASWarningMessage::triggersMasterWarning() {
+    return true;
 }
 
 }

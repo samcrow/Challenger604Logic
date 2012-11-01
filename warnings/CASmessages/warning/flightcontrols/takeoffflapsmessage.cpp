@@ -14,10 +14,6 @@ QString TakeoffFlapsMessage::getDisplayText() {
     return "CONFIG FLAPS";
 }
 
-bool TakeoffFlapsMessage::triggersMasterWarning() {
-    return true;
-}
-
 AuralWarningSystem::WarningSound TakeoffFlapsMessage::getSound() {
     return AuralWarningSystem::VOICE_CONFIG_FLAPS;
 }

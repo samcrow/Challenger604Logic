@@ -16,12 +16,21 @@ var hierarchy =
       [ "Challenger604Systems::CAS::CASMessage", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html", [
         [ "Challenger604Systems::CAS::CASAdvisoryMessage", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html", null ],
         [ "Challenger604Systems::CAS::CASCautionMessage", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html", [
-          [ "Challenger604Systems::CAS::GroundSpoilersDeployedMessage", "class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html", null ]
+          [ "Challenger604Systems::CAS::ElevatorSplitMessage", "class_challenger604_systems_1_1_c_a_s_1_1_elevator_split_message.html", null ],
+          [ "Challenger604Systems::CAS::FlapsFailMessage", "class_challenger604_systems_1_1_c_a_s_1_1_flaps_fail_message.html", null ],
+          [ "Challenger604Systems::CAS::GroundSpoilersDeployedMessage", "class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html", null ],
+          [ "Challenger604Systems::CAS::StabTrimFailMessage", "class_challenger604_systems_1_1_c_a_s_1_1_stab_trim_fail_message.html", null ]
         ] ],
-        [ "Challenger604Systems::CAS::CASStatusMessage", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html", null ],
+        [ "Challenger604Systems::CAS::CASStatusMessage", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html", [
+          [ "Challenger604Systems::CAS::FlapsMotorOverheatMessage", "class_challenger604_systems_1_1_c_a_s_1_1_flaps_motor_overheat_message.html", null ],
+          [ "Challenger604Systems::CAS::HStabilizerChannelInopMessage", "class_challenger604_systems_1_1_c_a_s_1_1_h_stabilizer_channel_inop_message.html", null ]
+        ] ],
         [ "Challenger604Systems::CAS::CASWarningMessage", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html", [
+          [ "Challenger604Systems::CAS::STrimConfigMessage", "class_challenger604_systems_1_1_c_a_s_1_1_s_trim_config_message.html", null ],
+          [ "Challenger604Systems::CAS::STrimRunawayMessage", "class_challenger604_systems_1_1_c_a_s_1_1_s_trim_runaway_message.html", null ],
           [ "Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage", "class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html", null ],
-          [ "Challenger604Systems::CAS::TakeoffFlapsMessage", "class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html", null ]
+          [ "Challenger604Systems::CAS::TakeoffFlapsMessage", "class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html", null ],
+          [ "Challenger604Systems::CAS::TakeoffSpoilersMessage", "class_challenger604_systems_1_1_c_a_s_1_1_takeoff_spoilers_message.html", null ]
         ] ]
       ] ],
       [ "Challenger604Systems::CAS::CASMessageHandler", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message_handler.html", null ],

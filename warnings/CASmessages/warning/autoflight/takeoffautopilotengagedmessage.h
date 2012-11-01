@@ -1,7 +1,7 @@
 #ifndef TAKEOFFAUTOPILOTENGAGEDMESSAGE_H
 #define TAKEOFFAUTOPILOTENGAGEDMESSAGE_H
 
-#include "../caswarningmessage.h"
+#include "../../../caswarningmessage.h"
 
 namespace Challenger604Systems {
 namespace CAS {
@@ -16,8 +16,6 @@ public:
     explicit TakeoffAutopilotEngagedMessage(QObject *parent = 0);
 
     QString getDisplayText();
-
-    bool triggersMasterWarning();
 
     AuralWarningSystem::WarningSound getSound();
 

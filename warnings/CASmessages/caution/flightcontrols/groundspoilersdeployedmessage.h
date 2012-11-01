@@ -1,7 +1,7 @@
 #ifndef GROUNDSPOILERSDEPLOYEDMESSAGE_H
 #define GROUNDSPOILERSDEPLOYEDMESSAGE_H
 
-#include "../cascautionmessage.h"
+#include "../../../cascautionmessage.h"
 
 namespace Challenger604Systems {
 namespace CAS {

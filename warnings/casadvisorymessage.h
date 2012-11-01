@@ -20,9 +20,6 @@ public:
 
     Priority getPriority();
 
-    /** Returns the green color used for advisory messages */
-    virtual Color getDisplayColor();
-
     /** The green color used for advisory messages */
     static const Color advisoryColor;
     

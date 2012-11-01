@@ -1,7 +1,6 @@
 var class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message =
 [
     [ "CASCautionMessage", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#a4bbca2d85275849d77f884c8b0b02d91", null ],
-    [ "getDisplayColor", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af8f74235b64c7b454f097bc0e4d73886", null ],
     [ "getPriority", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af7e93cefbcdd9f9197a4c624c20d5e27", null ],
     [ "getSound", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af4930b30ce55118a6dea2fa48317bdd6", null ],
     [ "isLandingIgnored", "class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#acba68dded7a3f842fe58cc8ebb1f9b0d", null ],

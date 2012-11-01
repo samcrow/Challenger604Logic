@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('class_challenger604_systems_1_1_c_a_s_
 </div><!--header-->
 <div class="contents">
 
-<p>A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not set.  
+<p>A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not set at 20 degrees.  
  <a href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="takeoffflapsmessage_8h_source.html">takeoffflapsmessage.h</a>&gt;</code></p>
@@ -134,9 +134,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7357021349d02a2d7aba9d3360461761"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a7357021349d02a2d7aba9d3360461761">getDisplayText</a> ()</td></tr>
 <tr class="memdesc:a7357021349d02a2d7aba9d3360461761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the text that this message should display on the ECIAS display.  <a href="#a7357021349d02a2d7aba9d3360461761"></a><br/></td></tr>
 <tr class="separator:a7357021349d02a2d7aba9d3360461761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160c0467f67e17b055683a3bde9dcef3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a160c0467f67e17b055683a3bde9dcef3">triggersMasterWarning</a> ()</td></tr>
-<tr class="memdesc:a160c0467f67e17b055683a3bde9dcef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if this message should turn on the master warning lights.  <a href="#a160c0467f67e17b055683a3bde9dcef3"></a><br/></td></tr>
-<tr class="separator:a160c0467f67e17b055683a3bde9dcef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec477c5edd50ac255f36c750f92622dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26">AuralWarningSystem::WarningSound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#aec477c5edd50ac255f36c750f92622dd">getSound</a> ()</td></tr>
 <tr class="memdesc:aec477c5edd50ac255f36c750f92622dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sound that this message triggers.  <a href="#aec477c5edd50ac255f36c750f92622dd"></a><br/></td></tr>
 <tr class="separator:aec477c5edd50ac255f36c750f92622dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,8 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9a07585519447691153a7984d0ad2461 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a895fe790e94e2bda52eb6d78ce1ef09d inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9">Priority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a895fe790e94e2bda52eb6d78ce1ef09d">getPriority</a> ()</td></tr>
 <tr class="separator:a895fe790e94e2bda52eb6d78ce1ef09d inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08108a1f33a42bdd3f425729a3c2ad6f inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a08108a1f33a42bdd3f425729a3c2ad6f">getDisplayColor</a> ()</td></tr>
-<tr class="separator:a08108a1f33a42bdd3f425729a3c2ad6f inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad976965910832ae738914308611b831b inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#ad976965910832ae738914308611b831b">triggersMasterWarning</a> ()</td></tr>
+<tr class="separator:ad976965910832ae738914308611b831b inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html">Challenger604Systems::CAS::CASMessage</a></td></tr>
 <tr class="memitem:a67f3029962225598a323c961c19025d7 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67f3029962225598a323c961c19025d7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CASMessage</b> (QObject *parent=0)</td></tr>
@@ -177,7 +174,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a10fe9702fac898354110052924a9c37a inherit pub_static_attribs_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not set. </p>
+<div class="textblock"><p>A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not set at 20 degrees. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a7357021349d02a2d7aba9d3360461761"></a>
 <div class="memitem">
@@ -236,37 +233,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a160c0467f67e17b055683a3bde9dcef3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Challenger604Systems::CAS::TakeoffFlapsMessage::triggersMasterWarning </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Determine if this message should turn on the master warning lights. </p>
-<p>The default implementation returns false, so a message that does not use the master warning lights does not need to override this. </p>
-
-<p>Reimplemented from <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a6296584e1a8eff970892c65ce66e8111">Challenger604Systems::CAS::CASMessage</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>warnings/CASmessages/<a class="el" href="takeoffflapsmessage_8h_source.html">takeoffflapsmessage.h</a></li>
-<li>warnings/CASmessages/takeoffflapsmessage.cpp</li>
+<li>warnings/CASmessages/warning/flightcontrols/<a class="el" href="takeoffflapsmessage_8h_source.html">takeoffflapsmessage.h</a></li>
+<li>warnings/CASmessages/warning/flightcontrols/takeoffflapsmessage.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -274,7 +243,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_challenger604_systems.html">Challenger604Systems</a></li><li class="navelem"><a class="el" href="namespace_challenger604_systems_1_1_c_a_s.html">CAS</a></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html">TakeoffFlapsMessage</a></li>
-    <li class="footer">Generated on Sun Oct 21 2012 16:33:21 for Challenger 604 Systems Logic by
+    <li class="footer">Generated on Tue Oct 23 2012 21:06:41 for Challenger 604 Systems Logic by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

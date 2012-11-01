@@ -122,8 +122,11 @@ Inheritance diagram for Challenger604Systems::CAS::CASCautionMessage:</div>
  <div class="center">
   <img src="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.png" usemap="#Challenger604Systems::CAS::CASCautionMessage_map" alt=""/>
   <map id="Challenger604Systems::CAS::CASCautionMessage_map" name="Challenger604Systems::CAS::CASCautionMessage_map">
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html" title="Base class for a Crew Alerting System message." alt="Challenger604Systems::CAS::CASMessage" shape="rect" coords="0,56,372,80"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html" title="A message sent when the ground spoilers are deployed." alt="Challenger604Systems::CAS::GroundSpoilersDeployedMessage" shape="rect" coords="0,168,372,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html" title="Base class for a Crew Alerting System message." alt="Challenger604Systems::CAS::CASMessage" shape="rect" coords="573,56,945,80"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_elevator_split_message.html" title="A message indicating that the two elevators are not synchronized." alt="Challenger604Systems::CAS::ElevatorSplitMessage" shape="rect" coords="0,168,372,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_flaps_fail_message.html" title="A caution message indicating that the flaps have failed." alt="Challenger604Systems::CAS::FlapsFailMessage" shape="rect" coords="382,168,754,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html" title="A message sent when the ground spoilers are deployed." alt="Challenger604Systems::CAS::GroundSpoilersDeployedMessage" shape="rect" coords="764,168,1136,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_stab_trim_fail_message.html" title="A message sent when both channels of horizontal stabilizer trim control fail." alt="Challenger604Systems::CAS::StabTrimFailMessage" shape="rect" coords="1146,168,1518,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -147,8 +150,6 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26">AuralWarningSystem::WarningSound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af4930b30ce55118a6dea2fa48317bdd6">getSound</a> ()</td></tr>
 <tr class="memdesc:af4930b30ce55118a6dea2fa48317bdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sound that this message triggers.  <a href="#af4930b30ce55118a6dea2fa48317bdd6"></a><br/></td></tr>
 <tr class="separator:af4930b30ce55118a6dea2fa48317bdd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8f74235b64c7b454f097bc0e4d73886"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af8f74235b64c7b454f097bc0e4d73886">getDisplayColor</a> ()</td></tr>
-<tr class="separator:af8f74235b64c7b454f097bc0e4d73886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html">Challenger604Systems::CAS::CASMessage</a></td></tr>
 <tr class="memitem:a67f3029962225598a323c961c19025d7 inherit pub_methods_class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67f3029962225598a323c961c19025d7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CASMessage</b> (QObject *parent=0)</td></tr>
@@ -181,34 +182,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Caution messages are inhibited (ignored) by default during takeoff and landing. Individual messages should override <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#a7a8a2cac4a118c6802aab29ec2d56c5a" title="Determine if this message should be ignored when the aircraft is taking off.">isTakeoffIgnored()</a> and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#acba68dded7a3f842fe58cc8ebb1f9b0d" title="Determine if this message should be ignored when the aircraft is landing.">isLandingIgnored()</a> if they are not ignored during takeoff and/or landing. </p>
 <p>Caution messages turn on the master caution lights by default. Individual messages should override <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#ab7fd581a14d82ee469fef961448faf49" title="Determine if this message should turn on the master caution lights.">triggersMasterCaution()</a> if they should not turn on the master caution lights. </p>
 <p>Caution messages sound a single attention-getting sound by default. Individual messages can override <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af4930b30ce55118a6dea2fa48317bdd6" title="Get the sound that this message triggers.">getSound()</a> to change this. </p>
-<p>Caution messages display with an amber color (defined by cautionColor) by default. Individual messages can override <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af8f74235b64c7b454f097bc0e4d73886">getDisplayColor()</a> to change this. </p>
+<p>Caution messages display with an amber color (defined by cautionColor) by default. Individual messages can override getDisplayColor() to change this. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af8f74235b64c7b454f097bc0e4d73886"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_color.html">Color</a> Challenger604Systems::CAS::CASCautionMessage::getDisplayColor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns an amber color, used by default for caution messages </p>
-
-<p>Reimplemented from <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#abff4870555e6fd82c06dab953c61646c">Challenger604Systems::CAS::CASMessage</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="af7e93cefbcdd9f9197a4c624c20d5e27"></a>
 <div class="memitem">
 <div class="memproto">
@@ -388,7 +363,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_challenger604_systems.html">Challenger604Systems</a></li><li class="navelem"><a class="el" href="namespace_challenger604_systems_1_1_c_a_s.html">CAS</a></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html">CASCautionMessage</a></li>
-    <li class="footer">Generated on Sun Oct 21 2012 16:33:21 for Challenger 604 Systems Logic by
+    <li class="footer">Generated on Tue Oct 23 2012 21:06:41 for Challenger 604 Systems Logic by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

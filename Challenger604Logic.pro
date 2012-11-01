@@ -25,17 +25,25 @@ SOURCES += \
     electrical/components/testdcpowersink.cpp \
     fuel/fuelsink.cpp \
     warnings/casmessage.cpp \
-    warnings/CASmessages/takeoffautopilotengagedmessage.cpp \
     warnings/aural/auralwarningsystem.cpp \
     warnings/caswarningmessage.cpp \
     warnings/cascautionmessage.cpp \
     warnings/casadvisorymessage.cpp \
     warnings/casstatusmessage.cpp \
-    warnings/CASmessages/takeoffflapsmessage.cpp \
-    warnings/CASmessages/groundspoilersdeployedmessage.cpp \
     util/color.cpp \
     warnings/casmessagehandler.cpp \
-    warnings/eicasmessage.cpp
+    warnings/eicasmessage.cpp \
+    warnings/CASmessages/caution/flightcontrols/groundspoilersdeployedmessage.cpp \
+    warnings/CASmessages/caution/flightcontrols/elevatorsplitmessage.cpp \
+    warnings/CASmessages/status/flightcontrols/hstabilizerchannelinopmessage.cpp \
+    warnings/CASmessages/warning/autoflight/takeoffautopilotengagedmessage.cpp \
+    warnings/CASmessages/warning/flightcontrols/takeoffflapsmessage.cpp \
+    warnings/CASmessages/caution/flightcontrols/stabtrimfailmessage.cpp \
+    warnings/CASmessages/warning/flightcontrols/strimconfigmessage.cpp \
+    warnings/CASmessages/warning/flightcontrols/strimrunawaymessage.cpp \
+    warnings/CASmessages/status/flightcontrols/flapsmotoroverheatmessage.cpp \
+    warnings/CASmessages/caution/flightcontrols/flapsfailmessage.cpp \
+    warnings/CASmessages/warning/flightcontrols/takeoffspoilersmessage.cpp
 
 HEADERS +=\
         Challenger604Logic_global.h \
@@ -53,27 +61,26 @@ HEADERS +=\
     electrical/components/testdcpowersink.h \
     fuel/fuelsink.h \
     warnings/casmessage.h \
-    warnings/CASmessages/takeoffautopilotengagedmessage.h \
     warnings/aural/auralwarningsystem.h \
     warnings/caswarningmessage.h \
     warnings/cascautionmessage.h \
     warnings/casadvisorymessage.h \
     warnings/casstatusmessage.h \
-    warnings/CASmessages/takeoffflapsmessage.h \
-    warnings/CASmessages/groundspoilersdeployedmessage.h \
+    warnings/CASmessages/caution/flightcontrols/groundspoilersdeployedmessage.h \
+    warnings/CASmessages/caution/flightcontrols/elevatorsplitmessage.h \
+    warnings/CASmessages/status/flightcontrols/hstabilizerchannelinopmessage.h \
+    warnings/CASmessages/warning/autoflight/takeoffautopilotengagedmessage.h \
+    warnings/CASmessages/warning/flightcontrols/takeoffflapsmessage.h \
     util/color.h \
     warnings/casmessagehandler.h \
-    warnings/eicasmessage.h
+    warnings/eicasmessage.h \
+    warnings/CASmessages/caution/flightcontrols/stabtrimfailmessage.h \
+    warnings/CASmessages/warning/flightcontrols/strimconfigmessage.h \
+    warnings/CASmessages/warning/flightcontrols/strimrunawaymessage.h \
+    warnings/CASmessages/status/flightcontrols/flapsmotoroverheatmessage.h \
+    warnings/CASmessages/caution/flightcontrols/flapsfailmessage.h \
+    warnings/CASmessages/warning/flightcontrols/takeoffspoilersmessage.h
 
-symbian {
-    MMP_RULES += EXPORTUNFROZEN
-    TARGET.UID3 = 0xE1817D5F
-    TARGET.CAPABILITY = 
-    TARGET.EPOCALLOWDLLDATA = 1
-    addFiles.sources = Challenger604Logic.dll
-    addFiles.path = !:/sys/bin
-    DEPLOYMENT += addFiles
-}
 
 unix:!symbian {
     maemo5 {

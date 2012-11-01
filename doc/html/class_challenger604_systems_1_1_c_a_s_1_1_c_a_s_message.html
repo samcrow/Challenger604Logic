@@ -124,11 +124,19 @@ Inheritance diagram for Challenger604Systems::CAS::CASMessage:</div>
   <map id="Challenger604Systems::CAS::CASMessage_map" name="Challenger604Systems::CAS::CASMessage_map">
 <area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html" title="A CAS message with a priority level of ADVISORY." alt="Challenger604Systems::CAS::CASAdvisoryMessage" shape="rect" coords="0,112,372,136"/>
 <area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html" title="A CAS message with a priority level of CAUTION." alt="Challenger604Systems::CAS::CASCautionMessage" shape="rect" coords="382,112,754,136"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html" title="A CAS message with a priority level of STATUS." alt="Challenger604Systems::CAS::CASStatusMessage" shape="rect" coords="764,112,1136,136"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html" title="A CAS message with a priority level of WARNING." alt="Challenger604Systems::CAS::CASWarningMessage" shape="rect" coords="1146,112,1518,136"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html" title="A message sent when the ground spoilers are deployed." alt="Challenger604Systems::CAS::GroundSpoilersDeployedMessage" shape="rect" coords="382,168,754,192"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html" title="A message that is sent when the aircraft is in takeoff configuration but the autopilot is engaged..." alt="Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage" shape="rect" coords="955,168,1327,192"/>
-<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html" title="A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not se..." alt="Challenger604Systems::CAS::TakeoffFlapsMessage" shape="rect" coords="1337,168,1709,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html" title="A CAS message with a priority level of STATUS." alt="Challenger604Systems::CAS::CASStatusMessage" shape="rect" coords="1146,112,1518,136"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html" title="A CAS message with a priority level of WARNING." alt="Challenger604Systems::CAS::CASWarningMessage" shape="rect" coords="1910,112,2282,136"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_elevator_split_message.html" title="A message indicating that the two elevators are not synchronized." alt="Challenger604Systems::CAS::ElevatorSplitMessage" shape="rect" coords="764,168,1136,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_flaps_fail_message.html" title="A caution message indicating that the flaps have failed." alt="Challenger604Systems::CAS::FlapsFailMessage" shape="rect" coords="764,224,1136,248"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html" title="A message sent when the ground spoilers are deployed." alt="Challenger604Systems::CAS::GroundSpoilersDeployedMessage" shape="rect" coords="764,280,1136,304"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_stab_trim_fail_message.html" title="A message sent when both channels of horizontal stabilizer trim control fail." alt="Challenger604Systems::CAS::StabTrimFailMessage" shape="rect" coords="764,336,1136,360"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_flaps_motor_overheat_message.html" title="A message that indicates that a single flaps motor has overheated." alt="Challenger604Systems::CAS::FlapsMotorOverheatMessage" shape="rect" coords="1528,168,1900,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_h_stabilizer_channel_inop_message.html" title="A status message to indicate that one channel of the Horizontal Stabilizer Trim Control Unit is inope..." alt="Challenger604Systems::CAS::HStabilizerChannelInopMessage" shape="rect" coords="1528,224,1900,248"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_config_message.html" title="A message sent when the aircraft is in takeoff configuration and the horizontal stabilizer (elevator)..." alt="Challenger604Systems::CAS::STrimConfigMessage" shape="rect" coords="2292,168,2664,192"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_runaway_message.html" title="A message to alert crew of a possible horizontal stabilizer (elevator) trim runaway condition..." alt="Challenger604Systems::CAS::STrimRunawayMessage" shape="rect" coords="2292,224,2664,248"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html" title="A message that is sent when the aircraft is in takeoff configuration but the autopilot is engaged..." alt="Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage" shape="rect" coords="2292,280,2664,304"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html" title="A warning message that is sent when the aircraft is in takeoff configuration but the flaps are not se..." alt="Challenger604Systems::CAS::TakeoffFlapsMessage" shape="rect" coords="2292,336,2664,360"/>
+<area href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_spoilers_message.html" title="A warning message sent when the aircraft is in takeoff configuration and the flight or ground spoiler..." alt="Challenger604Systems::CAS::TakeoffSpoilersMessage" shape="rect" coords="2292,392,2664,416"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -168,9 +176,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a587b403ea04045382a51d54baaadf959"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a587b403ea04045382a51d54baaadf959">isLandingIgnored</a> ()</td></tr>
 <tr class="memdesc:a587b403ea04045382a51d54baaadf959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if this message should be ignored when the aircraft is landing.  <a href="#a587b403ea04045382a51d54baaadf959"></a><br/></td></tr>
 <tr class="separator:a587b403ea04045382a51d54baaadf959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff4870555e6fd82c06dab953c61646c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#abff4870555e6fd82c06dab953c61646c">getDisplayColor</a> ()</td></tr>
-<tr class="memdesc:abff4870555e6fd82c06dab953c61646c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the color that should be used to display this message on the ECIAS display.  <a href="#abff4870555e6fd82c06dab953c61646c"></a><br/></td></tr>
-<tr class="separator:abff4870555e6fd82c06dab953c61646c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for a Crew Alerting System message. </p>
@@ -219,34 +224,6 @@ The master caution or master warning lights may illuminate </li>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abff4870555e6fd82c06dab953c61646c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_color.html">Color</a> Challenger604Systems::CAS::CASMessage::getDisplayColor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the color that should be used to display this message on the ECIAS display. </p>
-<p>The default implementation returns white. Subclasses should override this to display different colors. </p>
-
-<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af8f74235b64c7b454f097bc0e4d73886">Challenger604Systems::CAS::CASCautionMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#a08108a1f33a42bdd3f425729a3c2ad6f">Challenger604Systems::CAS::CASWarningMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_advisory_message.html#a509b3e4c5c5981e088613116242a8105">Challenger604Systems::CAS::CASAdvisoryMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_status_message.html#aa5131f341706b29c3ec17a865a5c7472">Challenger604Systems::CAS::CASStatusMessage</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a28c4a2be2b31dcc8183ea84effe8f81c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +248,7 @@ The master caution or master warning lights may illuminate </li>
 <p>Get the text that this message should display on the ECIAS display. </p>
 <p>This should be short and in all capital letters </p>
 
-<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#aba58dc01fe4f88c03a59fa2020a1fd96">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#acb892ffef0a7e4e74c647db696ea44c7">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a7357021349d02a2d7aba9d3360461761">Challenger604Systems::CAS::TakeoffFlapsMessage</a>.</p>
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_h_stabilizer_channel_inop_message.html#a50fb48a273b7de1dfc5afef8bae52ae2">Challenger604Systems::CAS::HStabilizerChannelInopMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_runaway_message.html#adf579c6a0d35144ed4970d97d9ebf81f">Challenger604Systems::CAS::STrimRunawayMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_elevator_split_message.html#a3ce265df79d1221a872259e6ac01b201">Challenger604Systems::CAS::ElevatorSplitMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_flaps_fail_message.html#a749835cfbfb7b1feeb581a45664dc31f">Challenger604Systems::CAS::FlapsFailMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_stab_trim_fail_message.html#a040a9e990a8ca6c6409d77608718ac20">Challenger604Systems::CAS::StabTrimFailMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#aba58dc01fe4f88c03a59fa2020a1fd96">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_flaps_motor_overheat_message.html#abaac05bd41a8f5df5c12b8eaaef55968">Challenger604Systems::CAS::FlapsMotorOverheatMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_config_message.html#a5418c533464f4687e6aadea4931357e0">Challenger604Systems::CAS::STrimConfigMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#acb892ffef0a7e4e74c647db696ea44c7">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a7357021349d02a2d7aba9d3360461761">Challenger604Systems::CAS::TakeoffFlapsMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_spoilers_message.html#a1263ba87cc092ae48b17eba6a6e14a5b">Challenger604Systems::CAS::TakeoffSpoilersMessage</a>.</p>
 
 </div>
 </div>
@@ -326,7 +303,7 @@ The master caution or master warning lights may illuminate </li>
 <p>The default implementation returns <a class="el" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26ae5acb874e76f6c7d2d6797a6bd4f6c92">AuralWarningSystem::NO_SOUND</a>, so a message that does not play sound does not need to override this.</p>
 <dl class="section return"><dt>Returns</dt><dd>The sound that this message should play, or <a class="el" href="class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26ae5acb874e76f6c7d2d6797a6bd4f6c92">AuralWarningSystem::NO_SOUND</a> if it should not play a sound </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af4930b30ce55118a6dea2fa48317bdd6">Challenger604Systems::CAS::CASCautionMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#ace33668029e2a19bd54b57d9ca5efe56">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a0f3b9be1d9ee8665b5fe6179f666766f">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#aec477c5edd50ac255f36c750f92622dd">Challenger604Systems::CAS::TakeoffFlapsMessage</a>.</p>
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#af4930b30ce55118a6dea2fa48317bdd6">Challenger604Systems::CAS::CASCautionMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_runaway_message.html#af1c1e7a38c7049cdd9a378860496f9be">Challenger604Systems::CAS::STrimRunawayMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_ground_spoilers_deployed_message.html#ace33668029e2a19bd54b57d9ca5efe56">Challenger604Systems::CAS::GroundSpoilersDeployedMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_config_message.html#a768e6cebdbe918252701caa085e0e3e5">Challenger604Systems::CAS::STrimConfigMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a0f3b9be1d9ee8665b5fe6179f666766f">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>, <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#aec477c5edd50ac255f36c750f92622dd">Challenger604Systems::CAS::TakeoffFlapsMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_spoilers_message.html#a9d4f0c10361db0b7258a282b663dec71">Challenger604Systems::CAS::TakeoffSpoilersMessage</a>.</p>
 
 </div>
 </div>
@@ -440,7 +417,7 @@ The master caution or master warning lights may illuminate </li>
 <p>Determine if this message should turn on the master warning lights. </p>
 <p>The default implementation returns false, so a message that does not use the master warning lights does not need to override this. </p>
 
-<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_autopilot_engaged_message.html#a6c6c7b355cfd49db0f3090ce00f5b222">Challenger604Systems::CAS::TakeoffAutopilotEngagedMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_takeoff_flaps_message.html#a160c0467f67e17b055683a3bde9dcef3">Challenger604Systems::CAS::TakeoffFlapsMessage</a>.</p>
+<p>Reimplemented in <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_warning_message.html#ad976965910832ae738914308611b831b">Challenger604Systems::CAS::CASWarningMessage</a>, and <a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_s_trim_runaway_message.html#a6915b576a319cc7653b21c8afb03fdd8">Challenger604Systems::CAS::STrimRunawayMessage</a>.</p>
 
 </div>
 </div>
@@ -454,7 +431,7 @@ The master caution or master warning lights may illuminate </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_challenger604_systems.html">Challenger604Systems</a></li><li class="navelem"><a class="el" href="namespace_challenger604_systems_1_1_c_a_s.html">CAS</a></li><li class="navelem"><a class="el" href="class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html">CASMessage</a></li>
-    <li class="footer">Generated on Sun Oct 21 2012 16:33:21 for Challenger 604 Systems Logic by
+    <li class="footer">Generated on Tue Oct 23 2012 21:06:41 for Challenger 604 Systems Logic by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

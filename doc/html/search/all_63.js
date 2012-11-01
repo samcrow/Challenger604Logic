@@ -11,6 +11,7 @@ var searchData=
   ['caution',['CAUTION',['../class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_message.html#a5a503c8cb9618403fcd342dca9ba1ca9a6fa1e30565258a490a57432d15b59295',1,'Challenger604Systems::CAS::CASMessage']]],
   ['cautioncolor',['cautionColor',['../class_challenger604_systems_1_1_c_a_s_1_1_c_a_s_caution_message.html#adb6cbe928daf47f8a291d2fe256fbe29',1,'Challenger604Systems::CAS::CASCautionMessage']]],
   ['challenger604systems',['Challenger604Systems',['../namespace_challenger604_systems.html',1,'']]],
+  ['clacker',['CLACKER',['../class_challenger604_systems_1_1_aural_warning_system.html#a06a8a8fa973dde5ad449b8e0ca058a26a5022e5656c018f920d97d4a29e6ee6df',1,'Challenger604Systems::AuralWarningSystem']]],
   ['color',['Color',['../class_color.html',1,'Color'],['../class_color.html#ae6a1963d2b88a07e6d656944e5f60504',1,'Color::Color()']]],
   ['count',['count',['../class_challenger604_systems_1_1_c_a_s_1_1_e_i_c_a_s_message.html#ad402567d8c4e423d0e14160e11bb6a0a',1,'Challenger604Systems::CAS::EICASMessage']]],
   ['countmutex',['countMutex',['../class_challenger604_systems_1_1_c_a_s_1_1_e_i_c_a_s_message.html#ad637e58ab81d027ab8e7b0cf0c078b01',1,'Challenger604Systems::CAS::EICASMessage']]],

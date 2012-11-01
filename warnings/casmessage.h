@@ -124,14 +124,6 @@ public:
       */
     virtual bool isLandingIgnored();
 
-
-    /**
-      @brief Get the color that should be used to display this message on the ECIAS display
-
-      The default implementation returns white. Subclasses should override this to display different colors.
-      */
-    virtual Color getDisplayColor();
-
 signals:
     
 public slots:

@@ -29,7 +29,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_challenger604_logic__global_8h_source.html"
+"_challenger604_logic__global_8h_source.html",
+"namespace_challenger604_systems.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

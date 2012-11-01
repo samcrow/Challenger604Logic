@@ -18,6 +18,8 @@ namespace CAS {
   </p><p>
   Warning messages display with an red color (defined by warningColor) by default. Individual
   messages can override getDisplayColor() to change this.
+  </p><p>
+  Warning messages trigger the master warning lights by default.
   </p>
   */
 class CHALLENGER604LOGICSHARED_EXPORT CASWarningMessage : public CASMessage
@@ -29,9 +31,9 @@ public:
     Priority getPriority();
 
     /**
-      Returns a red color associated with warning messages
+      Returns true
       */
-    virtual Color getDisplayColor();
+    virtual bool triggersMasterWarning();
 
     /** The red color, assoicated with warning messages */
     static const Color warningColor;

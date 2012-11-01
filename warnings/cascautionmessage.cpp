@@ -34,9 +34,5 @@ AuralWarningSystem::WarningSound CASCautionMessage::getSound() {
     return AuralWarningSystem::ATTENSON_SINGLE;
 }
 
-Color CASCautionMessage::getDisplayColor() {
-    return cautionColor;
-}
-
 }
 }

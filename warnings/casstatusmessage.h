@@ -18,8 +18,6 @@ public:
     explicit CASStatusMessage(QObject *parent = 0);
 
     Priority getPriority();
-
-    virtual Color getDisplayColor();
     
 signals:
     

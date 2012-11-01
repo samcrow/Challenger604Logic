@@ -21,11 +21,14 @@ public:
     /**
       An enumeration of all the different types of sounds that the system can produce
       */
+    //Maybe move this to a config file in the future, once things are working
     enum WarningSound {
         NO_SOUND, /**< Does nothing */
 
         ATTENSON_SINGLE, /**< A single attention-getting chime or similar sound */
         ATTENSON_TRIPLE, /**< Three attention-getting sounds in sequence */
+
+        CLACKER, /**< A drum roll-type sound (See flight controls section, page 12) */
 
         VOICE_CONFIG_AUTOPILOT, /**< A voice saying "config autopilot" */
         VOICE_CONFIG_FLAPS, /**< A voice saying "config flaps" */

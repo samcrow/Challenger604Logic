@@ -44,11 +44,6 @@ public:
       An amber color used to display caution messages
       */
     static const Color cautionColor;
-
-    /**
-      Returns an amber color, used by default for caution messages
-      */
-    virtual Color getDisplayColor();
     
 signals:
     
