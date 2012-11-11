@@ -24,9 +24,8 @@ namespace CAS {
   */
 class CHALLENGER604LOGICSHARED_EXPORT CASWarningMessage : public CASMessage
 {
-    Q_OBJECT
 public:
-    explicit CASWarningMessage(QObject *parent = 0);
+    CASWarningMessage();
 
     Priority getPriority();
 
@@ -37,10 +36,6 @@ public:
 
     /** The red color, assoicated with warning messages */
     static const Color warningColor;
-    
-signals:
-    
-public slots:
     
 };
 

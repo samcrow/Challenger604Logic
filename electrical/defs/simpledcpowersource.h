@@ -14,9 +14,8 @@ namespace Challenger604Systems {
   */
 class CHALLENGER604LOGICSHARED_EXPORT SimpleDCPowerSource : public PowerSource
 {
-    Q_OBJECT
 public:
-    explicit SimpleDCPowerSource(QObject *parent = 0);
+    SimpleDCPowerSource();
 
     virtual double getMaxOutputWattage();
 
@@ -27,13 +26,9 @@ public:
     virtual double getCurrentOutputVoltage();
 
     virtual ElectricalPowerType getOutputPowerType();
-    
-signals:
-    
-public slots:
 
     virtual void requestPower(double inRequestedPower);
-    
+
 protected:
 
     /** The maximum power that this source can supply */

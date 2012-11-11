@@ -13,13 +13,8 @@ namespace Challenger604Systems {
   */
 class CHALLENGER604LOGICSHARED_EXPORT EndlessACPowerSource : public SimpleACPowerSource
 {
-    Q_OBJECT
 public:
-    explicit EndlessACPowerSource(QObject *parent = 0);
-    
-signals:
-    
-public slots:
+    EndlessACPowerSource();
 
     virtual void requestPower(double inRequestedPower);
     

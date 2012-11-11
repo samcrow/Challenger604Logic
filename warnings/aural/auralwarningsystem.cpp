@@ -2,8 +2,7 @@
 
 namespace Challenger604Systems {
 
-AuralWarningSystem::AuralWarningSystem(QObject *parent) :
-    QObject(parent)
+AuralWarningSystem::AuralWarningSystem()
 {
 }
 

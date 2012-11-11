@@ -3,12 +3,11 @@
 namespace Challenger604Systems {
 namespace CAS {
 
-TakeoffSpoilersMessage::TakeoffSpoilersMessage(QObject *parent) :
-    CASWarningMessage(parent)
+TakeoffSpoilersMessage::TakeoffSpoilersMessage()
 {
 }
 
-QString TakeoffSpoilersMessage::getDisplayText() {
+string TakeoffSpoilersMessage::getDisplayText() {
     return "CONFIG SPOILERS";
 }
 

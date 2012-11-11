@@ -14,16 +14,10 @@ namespace CAS {
   */
 class ElevatorSplitMessage : public CASCautionMessage
 {
-    Q_OBJECT
 public:
-    explicit ElevatorSplitMessage(QObject *parent = 0);
+    ElevatorSplitMessage();
 
-    QString getDisplayText();
-    
-signals:
-    
-public slots:
-    
+    string getDisplayText();
 };
 
 }

@@ -1,8 +1,6 @@
 #ifndef EICASMESSAGE_H
 #define EICASMESSAGE_H
 
-#include <QMutex>
-
 #include "casmessage.h"
 
 namespace Challenger604Systems {
@@ -29,7 +27,7 @@ public:
     /**
       Get the text to display
       */
-    QString getMessageText();
+    string getMessageText();
 
     /**
       Get the priority level of this message
@@ -56,7 +54,7 @@ protected:
     //EICAS message data fields
 
     /** The text of the message to display */
-    QString messageText;
+    string messageText;
     /** The priority level to display the text at */
     CASMessage::Priority priority;
     /**
@@ -73,8 +71,6 @@ protected:
       This starts out as zero. For every new message, it is incremented by one and the new message is given the new incremented value.
       */
     static int count;
-    /** @brief Mutex used to lock the sequence number when a new message instance is created */
-    static QMutex countMutex;
 
 };
 

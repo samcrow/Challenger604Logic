@@ -14,15 +14,10 @@ namespace CAS {
   */
 class FlapsFailMessage : public CASCautionMessage
 {
-    Q_OBJECT
 public:
-    explicit FlapsFailMessage(QObject *parent = 0);
+    FlapsFailMessage();
 
-    QString getDisplayText();
-    
-signals:
-    
-public slots:
+    string getDisplayText();
     
 };
 

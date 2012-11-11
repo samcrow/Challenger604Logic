@@ -5,8 +5,7 @@ namespace CAS {
 
 const Color CASAdvisoryMessage::advisoryColor = Color(74, 183, 90);
 
-CASAdvisoryMessage::CASAdvisoryMessage(QObject *parent) :
-    CASMessage(parent)
+CASAdvisoryMessage::CASAdvisoryMessage()
 {
 }
 

@@ -4,12 +4,11 @@ namespace Challenger604Systems {
 namespace CAS {
 
 
-STrimConfigMessage::STrimConfigMessage(QObject *parent) :
-    CASWarningMessage(parent)
+STrimConfigMessage::STrimConfigMessage()
 {
 }
 
-QString STrimConfigMessage::getDisplayText() {
+string STrimConfigMessage::getDisplayText() {
     return "CONFIG STAB";
 }
 

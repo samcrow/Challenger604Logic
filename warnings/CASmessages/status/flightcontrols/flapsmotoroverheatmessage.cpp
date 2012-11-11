@@ -3,12 +3,11 @@
 namespace Challenger604Systems {
 namespace CAS {
 
-FlapsMotorOverheatMessage::FlapsMotorOverheatMessage(QObject *parent) :
-    CASStatusMessage(parent)
+FlapsMotorOverheatMessage::FlapsMotorOverheatMessage()
 {
 }
 
-QString FlapsMotorOverheatMessage::getDisplayText(){
+string FlapsMotorOverheatMessage::getDisplayText(){
        return "FLAPS MOTOR OVHT";
 }
 

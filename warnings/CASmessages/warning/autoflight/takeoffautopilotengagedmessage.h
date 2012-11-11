@@ -11,17 +11,12 @@ namespace CAS {
   */
 class CHALLENGER604LOGICSHARED_EXPORT TakeoffAutopilotEngagedMessage : public CASWarningMessage
 {
-    Q_OBJECT
 public:
-    explicit TakeoffAutopilotEngagedMessage(QObject *parent = 0);
+    TakeoffAutopilotEngagedMessage();
 
-    QString getDisplayText();
+    string getDisplayText();
 
     AuralWarningSystem::WarningSound getSound();
-
-signals:
-    
-public slots:
     
 };
 

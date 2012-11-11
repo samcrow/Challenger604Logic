@@ -1,8 +1,9 @@
 #ifndef CASMESSAGEHANDLER_H
 #define CASMESSAGEHANDLER_H
 
-#include <QObject>
-#include <QHash>
+#include <vector>
+#include <algorithm>
+#include <map>
 
 #include "../Challenger604Logic_global.h"
 
@@ -23,19 +24,15 @@ namespace CAS {
   and later when the message is canceled (the condition has been resolved).
   It decides what to display on the ECIAS display.
   */
-class CHALLENGER604LOGICSHARED_EXPORT CASMessageHandler : public QObject
+class CHALLENGER604LOGICSHARED_EXPORT CASMessageHandler
 {
-    Q_OBJECT
 public:
-    explicit CASMessageHandler(QObject *parent = 0);
+    CASMessageHandler();
 
     /** Determine if the master caution lights are on */
     bool isMasterCautionOn();
     /** Determine if the master warning lights are on */
     bool isMasterWarningOn();
-
-    /** Output the ECIAS (text) messages to stderr with QDebug */
-    void dumpEciasMessages();
 
     /**
       @brief Get the current ECIAS warning messages
@@ -43,7 +40,7 @@ public:
       The first message in the list is the oldest.
       If no messages exist, this returns an empty QList.
       */
-    QList<EICASMessage> getEicasWarningMessages();
+    vector<EICASMessage> getEicasWarningMessages();
     /**
       @brief Get the current ECIAS caution messages
 
@@ -51,57 +48,23 @@ public:
       This does not return messages that are inhibited on takeoff and landing.
       If no messages exist, this returns an empty QList.
       */
-    QList<EICASMessage> getEicasCautionMessages();
+    vector<EICASMessage> getEicasCautionMessages();
     /**
       @brief Get the current ECIAS advisory messages
 
       The first message in the list is the oldest.
       If no messages exist, this returns an empty QList.
       */
-    QList<EICASMessage> getEicasAdvisoryMessages();
+    vector<EICASMessage> getEicasAdvisoryMessages();
     /**
       @brief Get the current ECIAS status messages
 
       The first message in the list is the oldest.
       If no messages exist, this returns an empty QList.
       */
-    QList<EICASMessage> getEicasStatusMessages();
-    
-protected:
+    vector<EICASMessage> getEicasStatusMessages();
 
-    /** The current active messages */
-    QList<CASMessage *> messages;
 
-    /**
-      @brief The set of messages to display on the EICAS display
-
-      This associates each CAS message with a single EICAS message.
-      */
-    QHash<CASMessage *, EICASMessage> eicasMessages;
-
-    /** If the master caution lights are currently on */
-    bool masterCautionOn;
-
-    /** If the master warning lights are currently on */
-    bool masterWarningOn;
-
-    /** Turn on the master caution lights */
-    void enableMasterCaution();
-    /** Turn on the master warning lights */
-    void enableMasterWarning();
-
-    /**
-      @brief Get a list of EICAS messages from the eciasMessages data structure and sort
-      them according to creation order, earliest first
-
-      If there are no messages with the given priority level, this function returns an empty QList.
-      @param priority The priority level of messages to search for
-      */
-    QList<EICASMessage> getEicasMessages(CASMessage::Priority priority);
-
-signals:
-    
-public slots:
 
     /**
       @brief Submit a new message to the message handler
@@ -142,6 +105,38 @@ public slots:
       @brief Reset the master warning lights, turning them off
       */
     void resetMasterWarning();
+    
+protected:
+
+    /** The current active messages */
+    vector<CASMessage *> messages;
+
+    /**
+      @brief The set of messages to display on the EICAS display
+
+      This associates each CAS message with a single EICAS message.
+      */
+    map<CASMessage *, EICASMessage> eicasMessages;
+
+    /** If the master caution lights are currently on */
+    bool masterCautionOn;
+
+    /** If the master warning lights are currently on */
+    bool masterWarningOn;
+
+    /** Turn on the master caution lights */
+    void enableMasterCaution();
+    /** Turn on the master warning lights */
+    void enableMasterWarning();
+
+    /**
+      @brief Get a list of EICAS messages from the eciasMessages data structure and sort
+      them according to creation order, earliest first
+
+      If there are no messages with the given priority level, this function returns an empty QList.
+      @param priority The priority level of messages to search for
+      */
+    vector<EICASMessage> getEicasMessages(CASMessage::Priority priority);
 };
 
 

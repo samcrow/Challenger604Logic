@@ -11,17 +11,12 @@ namespace CAS {
   */
 class CHALLENGER604LOGICSHARED_EXPORT TakeoffFlapsMessage : public CASWarningMessage
 {
-    Q_OBJECT
 public:
-    explicit TakeoffFlapsMessage(QObject *parent = 0);
+    TakeoffFlapsMessage();
 
-    QString getDisplayText();
+    string getDisplayText();
 
     AuralWarningSystem::WarningSound getSound();
-    
-signals:
-    
-public slots:
     
 };
 

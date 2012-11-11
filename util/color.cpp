@@ -1,6 +1,6 @@
 #include "color.h"
 
-Color::Color(quint8 inRed, quint8 inGreen, quint8 inBlue)
+Color::Color(uint8_t inRed, uint8_t inGreen, uint8_t inBlue)
 {
     red = inRed;
     green = inGreen;
@@ -13,11 +13,4 @@ bool Color::operator == (Color other) {
 
 Color Color::white() {
     return Color(255, 255, 255);
-}
-
-QDebug Color::operator << (QDebug dbg) {
-
-    dbg.nospace() << "Color(R " << red << " G " << green << " B " << blue << ")";
-
-    return dbg.space();
 }

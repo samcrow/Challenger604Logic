@@ -1,17 +1,20 @@
 #include "hstabilizerchannelinopmessage.h"
 
+#include <sstream>
 
 namespace Challenger604Systems {
 namespace CAS {
 
-HStabilizerChannelInopMessage::HStabilizerChannelInopMessage(quint8 channel, QObject *parent) :
-    CASStatusMessage(parent),
+HStabilizerChannelInopMessage::HStabilizerChannelInopMessage(uint8_t channel) :
     channelNumber(channel)
 {
 }
 
-QString HStabilizerChannelInopMessage::getDisplayText() {
-    return QString("STAB CH ") + channelNumber + " INOP";
+string HStabilizerChannelInopMessage::getDisplayText() {
+    stringstream stream;
+
+    stream << "STAB CH " << channelNumber << " INOP";
+    return stream.str();
 }
 
 }

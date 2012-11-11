@@ -5,12 +5,11 @@
 namespace Challenger604Systems {
 namespace CAS {
 
-TakeoffFlapsMessage::TakeoffFlapsMessage(QObject *parent) :
-    CASWarningMessage(parent)
+TakeoffFlapsMessage::TakeoffFlapsMessage()
 {
 }
 
-QString TakeoffFlapsMessage::getDisplayText() {
+string TakeoffFlapsMessage::getDisplayText() {
     return "CONFIG FLAPS";
 }
 

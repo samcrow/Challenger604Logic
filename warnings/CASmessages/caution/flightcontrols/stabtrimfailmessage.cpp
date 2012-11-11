@@ -6,12 +6,11 @@ namespace Challenger604Systems {
 namespace CAS {
 
 
-StabTrimFailMessage::StabTrimFailMessage(QObject *parent) :
-    CASCautionMessage(parent)
+StabTrimFailMessage::StabTrimFailMessage()
 {
 }
 
-QString StabTrimFailMessage::getDisplayText() {
+string StabTrimFailMessage::getDisplayText() {
     return "STAB TRIM";
 }
 

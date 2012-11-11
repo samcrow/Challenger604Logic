@@ -14,15 +14,10 @@ namespace CAS {
   */
 class StabTrimFailMessage : public CASCautionMessage
 {
-    Q_OBJECT
 public:
-    explicit StabTrimFailMessage(QObject *parent = 0);
+    StabTrimFailMessage();
 
-    QString getDisplayText();
-    
-signals:
-    
-public slots:
+    string getDisplayText();
     
 };
 

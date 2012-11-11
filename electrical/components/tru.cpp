@@ -5,8 +5,7 @@ namespace Challenger604Systems {
 //Specify constants
 const double TRU::efficiency = 0.85;
 
-TRU::TRU(ACPowerSource *inSource, QObject *parent) :
-    SimpleDCPowerSource(parent),
+TRU::TRU(ACPowerSource *inSource) :
     SimpleACPowerSink(inSource),
     targetInputWattage(0)
 {

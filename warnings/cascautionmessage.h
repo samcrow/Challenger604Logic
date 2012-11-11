@@ -26,9 +26,8 @@ namespace CAS {
   */
 class CHALLENGER604LOGICSHARED_EXPORT CASCautionMessage : public CASMessage
 {
-    Q_OBJECT
 public:
-    explicit CASCautionMessage(QObject *parent = 0);
+    CASCautionMessage();
 
     Priority getPriority();
 
@@ -44,10 +43,6 @@ public:
       An amber color used to display caution messages
       */
     static const Color cautionColor;
-    
-signals:
-    
-public slots:
     
 };
 

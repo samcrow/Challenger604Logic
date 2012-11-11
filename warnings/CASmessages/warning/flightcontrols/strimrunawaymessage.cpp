@@ -4,14 +4,13 @@ namespace Challenger604Systems {
 namespace CAS {
 
 
-STrimRunawayMessage::STrimRunawayMessage(QObject *parent) :
-    CASWarningMessage(parent)
+STrimRunawayMessage::STrimRunawayMessage()
 {
 }
 
-QString STrimRunawayMessage::getDisplayText() {
+string STrimRunawayMessage::getDisplayText() {
     //No display text; return an empty string
-    return QString();
+    return "";
 }
 
 AuralWarningSystem::WarningSound STrimRunawayMessage::getSound() {

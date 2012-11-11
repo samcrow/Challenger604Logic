@@ -13,17 +13,12 @@ namespace CAS {
   */
 class STrimConfigMessage : public CASWarningMessage
 {
-    Q_OBJECT
 public:
-    explicit STrimConfigMessage(QObject *parent = 0);
+    STrimConfigMessage();
 
-    QString getDisplayText();
+    string getDisplayText();
 
     AuralWarningSystem::WarningSound getSound();
-    
-signals:
-    
-public slots:
     
 };
 

@@ -6,12 +6,11 @@ namespace CAS {
 
 
 
-GroundSpoilersDeployedMessage::GroundSpoilersDeployedMessage(QObject *parent) :
-    CASCautionMessage(parent)
+GroundSpoilersDeployedMessage::GroundSpoilersDeployedMessage()
 {
 }
 
-QString GroundSpoilersDeployedMessage::getDisplayText() {
+string GroundSpoilersDeployedMessage::getDisplayText() {
     return "GND SPLRS DEPLOY";
 }
 

@@ -14,18 +14,13 @@ namespace CAS {
   */
 class CHALLENGER604LOGICSHARED_EXPORT CASAdvisoryMessage : public CASMessage
 {
-    Q_OBJECT
 public:
-    explicit CASAdvisoryMessage(QObject *parent = 0);
+    CASAdvisoryMessage();
 
     Priority getPriority();
 
     /** The green color used for advisory messages */
     static const Color advisoryColor;
-    
-signals:
-    
-public slots:
     
 };
 

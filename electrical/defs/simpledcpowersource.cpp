@@ -2,13 +2,12 @@
 
 namespace Challenger604Systems {
 
-SimpleDCPowerSource::SimpleDCPowerSource(QObject *parent) :
-    PowerSource(parent),
+SimpleDCPowerSource::SimpleDCPowerSource() :
     maxOutputWattage(0),
     availableOutputWattage(0),
     currentOutputWattage(0),
     requestedOutputPower(0),
-  currentOutputVoltage(0)
+    currentOutputVoltage(0)
 {
 }
 

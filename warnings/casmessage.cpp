@@ -1,17 +1,14 @@
 #include "casmessage.h"
 
-#include <QMetaEnum>
-
 namespace Challenger604Systems {
 namespace CAS {
 
-CASMessage::CASMessage(QObject *parent) :
-    QObject(parent)
+CASMessage::CASMessage()
 {
 }
 
-QString CASMessage::getDisplayText() {
-    return QString();
+string CASMessage::getDisplayText() {
+    return "";
 }
 
 bool CASMessage::triggersMasterCaution() {

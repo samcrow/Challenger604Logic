@@ -14,9 +14,8 @@ namespace Challenger604Systems {
   */
 class CHALLENGER604LOGICSHARED_EXPORT SimpleACPowerSource : public ACPowerSource
 {
-    Q_OBJECT
 public:
-    explicit SimpleACPowerSource(QObject *parent = 0);
+    SimpleACPowerSource();
 
     virtual double getMaxOutputWattage();
 
@@ -29,10 +28,6 @@ public:
     virtual double getCurrentFrequency();
 
     virtual ElectricalPowerType getOutputPowerType();
-
-signals:
-
-public slots:
 
     virtual void requestPower(double inRequestedPower);
 

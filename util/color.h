@@ -1,8 +1,8 @@
 #ifndef COLOR_H
 #define COLOR_H
 
-#include <QtGlobal>
-#include <QDebug>
+#include <stdint.h>
+
 #include "../Challenger604Logic_global.h"
 
 /**
@@ -18,14 +18,14 @@ public:
       @param inGreen The green component
       @param inBlue The blue component
       */
-    Color(quint8 inRed, quint8 inGreen, quint8 inBlue);
+    Color(uint8_t inRed, uint8_t inGreen, uint8_t inBlue);
 
     /** The red component of the color, 0-255 */
-    quint8 red;
+    uint8_t red;
     /** The green component of the color, 0-255 */
-    quint8 green;
+    uint8_t green;
     /** The blue component of the color, 0-255 */
-    quint8 blue;
+    uint8_t blue;
 
     /**
       @brief Check if two colors are equal to each other
@@ -39,9 +39,6 @@ public:
       This will have red, green, and blue values of 255.
       */
     static Color white();
-
-    //Debug support
-    QDebug operator << (QDebug dbg);
 };
 
 #endif // COLOR_H

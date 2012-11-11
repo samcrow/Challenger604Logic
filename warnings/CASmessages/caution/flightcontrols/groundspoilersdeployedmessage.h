@@ -13,11 +13,10 @@ namespace CAS {
   */
 class CHALLENGER604LOGICSHARED_EXPORT GroundSpoilersDeployedMessage : public CASCautionMessage
 {
-    Q_OBJECT
 public:
-    explicit GroundSpoilersDeployedMessage(QObject *parent = 0);
+    GroundSpoilersDeployedMessage();
 
-    QString getDisplayText();
+    string getDisplayText();
 
     /**
       Returns AuralWarningSystem::NO_SOUND. No sound should be emitted when the ground spoilers are deployed (this is part of the normal procedures)
@@ -29,10 +28,6 @@ public:
 
     /** Returns false. This message is not inhibited during landing. */
     bool isLandingIgnored();
-    
-signals:
-    
-public slots:
     
 };
 

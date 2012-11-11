@@ -14,22 +14,17 @@ namespace CAS {
   */
 class STrimRunawayMessage : public CASWarningMessage
 {
-    Q_OBJECT
 public:
-    explicit STrimRunawayMessage(QObject *parent = 0);
+    STrimRunawayMessage();
 
     /**
       Returns an empty string
       */
-    QString getDisplayText();
+    string getDisplayText();
 
     AuralWarningSystem::WarningSound getSound();
 
     bool triggersMasterWarning();
-    
-signals:
-    
-public slots:
     
 };
 

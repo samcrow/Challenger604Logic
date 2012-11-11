@@ -1,8 +1,6 @@
 #ifndef POWERSINK_H
 #define POWERSINK_H
 
-#include <QObject>
-
 #include "../../Challenger604Logic_global.h"
 
 #include "electricalpowertype.h"

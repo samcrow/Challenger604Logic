@@ -16,9 +16,12 @@ namespace Challenger604Systems {
   */
 class CHALLENGER604LOGICSHARED_EXPORT TRU : public SimpleDCPowerSource, public SimpleACPowerSink
 {
-    Q_OBJECT
 public:
-    TRU(ACPowerSource * inSource, QObject *parent = 0);
+    /**
+      Constructor
+      @param inSource The power source that this device receives power from
+      */
+    TRU(ACPowerSource * inSource);
 
     /**
       The ratio of efficiency of a TRU. 1 is perfectly efficient, 0 means that it converts all its input energy into heat
@@ -29,7 +32,8 @@ public:
     //from PowerSink
     double getTargetInputWattage();
 
-
+    //Implements from PowerSource
+    virtual void requestPower(double inRequestedPower);
 
 protected:
 
@@ -43,13 +47,6 @@ protected:
       */
     double targetInputWattage;
 
-signals:
-    
-public slots:
-
-    //Implements from PowerSource
-    virtual void requestPower(double inRequestedPower);
-    
 };
 
 }

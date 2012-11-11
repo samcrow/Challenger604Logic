@@ -13,15 +13,10 @@ namespace CAS {
   */
 class FlapsMotorOverheatMessage : public CASStatusMessage
 {
-    Q_OBJECT
 public:
-    explicit FlapsMotorOverheatMessage(QObject *parent = 0);
+    FlapsMotorOverheatMessage();
 
-    QString getDisplayText();
-    
-signals:
-    
-public slots:
+    string getDisplayText();
     
 };
 

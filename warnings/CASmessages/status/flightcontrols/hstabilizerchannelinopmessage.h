@@ -12,7 +12,6 @@ namespace CAS {
   */
 class HStabilizerChannelInopMessage : public CASStatusMessage
 {
-    Q_OBJECT
 public:
 
     /**
@@ -20,21 +19,16 @@ public:
       @param channel The HSTCU channel that this message indicates is inoperative.
       This is usually 1 or 2.
       */
-    explicit HStabilizerChannelInopMessage(quint8 channel, QObject *parent = 0);
+    HStabilizerChannelInopMessage(uint8_t channel);
 
-    QString getDisplayText();
+    string getDisplayText();
     
 private:
 
     /**
       The channel number that this message concerns. In normal operation, this is either 1 or 2.
       */
-    quint8 channelNumber;
-
-signals:
-    
-public slots:
-    
+    uint8_t channelNumber;
 };
 
 

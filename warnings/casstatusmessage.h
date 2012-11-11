@@ -13,16 +13,10 @@ namespace CAS {
   */
 class CHALLENGER604LOGICSHARED_EXPORT CASStatusMessage : public CASMessage
 {
-    Q_OBJECT
 public:
-    explicit CASStatusMessage(QObject *parent = 0);
+    CASStatusMessage();
 
     Priority getPriority();
-    
-signals:
-    
-public slots:
-    
 };
 
 

@@ -4,7 +4,9 @@
 #
 #-------------------------------------------------
 
-QT       -= gui
+QT       -= core gui
+CONFIG += warn_on plugin release
+CONFIG -= thread exceptions qt rtti debug
 
 TARGET = Challenger604Logic
 TEMPLATE = lib
@@ -81,12 +83,3 @@ HEADERS +=\
     warnings/CASmessages/caution/flightcontrols/flapsfailmessage.h \
     warnings/CASmessages/warning/flightcontrols/takeoffspoilersmessage.h
 
-
-unix:!symbian {
-    maemo5 {
-        target.path = /opt/usr/lib
-    } else {
-        target.path = /usr/lib
-    }
-    INSTALLS += target
-}

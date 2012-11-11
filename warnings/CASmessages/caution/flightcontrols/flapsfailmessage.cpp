@@ -3,12 +3,11 @@
 namespace Challenger604Systems {
 namespace CAS {
 
-FlapsFailMessage::FlapsFailMessage(QObject *parent) :
-    CASCautionMessage(parent)
+FlapsFailMessage::FlapsFailMessage()
 {
 }
 
-QString FlapsFailMessage::getDisplayText() {
+string FlapsFailMessage::getDisplayText() {
     return "FLAPS FAIL";
 }
 

@@ -3,12 +3,11 @@
 namespace Challenger604Systems {
 namespace CAS {
 
-ElevatorSplitMessage::ElevatorSplitMessage(QObject *parent) :
-    CASCautionMessage(parent)
+ElevatorSplitMessage::ElevatorSplitMessage()
 {
 }
 
-QString ElevatorSplitMessage::getDisplayText() {
+string ElevatorSplitMessage::getDisplayText() {
     return "ELEVATOR SPLIT";
 }
 

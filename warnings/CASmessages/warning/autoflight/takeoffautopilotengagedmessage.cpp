@@ -3,12 +3,11 @@
 namespace Challenger604Systems {
 namespace CAS {
 
-TakeoffAutopilotEngagedMessage::TakeoffAutopilotEngagedMessage(QObject *parent) :
-    CASWarningMessage(parent)
+TakeoffAutopilotEngagedMessage::TakeoffAutopilotEngagedMessage()
 {
 }
 
-QString TakeoffAutopilotEngagedMessage::getDisplayText() {
+string TakeoffAutopilotEngagedMessage::getDisplayText() {
     return "CONFIG AP";
 }
 

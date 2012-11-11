@@ -5,8 +5,7 @@ namespace CAS {
 
 
 
-CASStatusMessage::CASStatusMessage(QObject *parent) :
-    CASMessage(parent)
+CASStatusMessage::CASStatusMessage()
 {
 }
 

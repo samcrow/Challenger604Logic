@@ -1,8 +1,6 @@
 #ifndef POWERSOURCE_H
 #define POWERSOURCE_H
 
-#include <QObject>
-#include <QVariant>
 #include "../../Challenger604Logic_global.h"
 #include "electricalpowertype.h"
 
@@ -15,11 +13,10 @@ namespace Challenger604Systems {
 /**
   An abstract class for something that can provide power to the electrical system
   */
-class CHALLENGER604LOGICSHARED_EXPORT PowerSource : public QObject
+class CHALLENGER604LOGICSHARED_EXPORT PowerSource
 {
-    Q_OBJECT
 public:
-    explicit PowerSource(QObject *parent = 0);
+    PowerSource();
 
     /**
       Get the maximum power, in watts, that this source
@@ -53,9 +50,6 @@ public:
       */
     virtual ElectricalPowerType getOutputPowerType() = 0;
     
-signals:
-    
-public slots:
 
     /**
       Ask this power source to provide power

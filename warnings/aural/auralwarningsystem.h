@@ -1,8 +1,6 @@
 #ifndef AURALWARNINGSYSTEM_H
 #define AURALWARNINGSYSTEM_H
 
-#include <QObject>
-
 #include "../../Challenger604Logic_global.h"
 
 namespace Challenger604Systems {
@@ -12,11 +10,10 @@ namespace Challenger604Systems {
 
   This class receives messages and plays sounds. It simulates the real aircraft's aural warning system.
   */
-class CHALLENGER604LOGICSHARED_EXPORT AuralWarningSystem : public QObject
+class CHALLENGER604LOGICSHARED_EXPORT AuralWarningSystem
 {
-    Q_OBJECT
 public:
-    explicit AuralWarningSystem(QObject *parent = 0);
+    AuralWarningSystem();
 
     /**
       An enumeration of all the different types of sounds that the system can produce
@@ -45,10 +42,6 @@ public:
       @param warning The sound to play
       */
     void playWarningSound(WarningSound warning);
-
-signals:
-    
-public slots:
     
 };
 

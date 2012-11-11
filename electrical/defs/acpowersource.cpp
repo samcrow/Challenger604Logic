@@ -2,8 +2,7 @@
 
 namespace Challenger604Systems {
 
-ACPowerSource::ACPowerSource(QObject *parent) :
-    PowerSource(parent)
+ACPowerSource::ACPowerSource()
 {
 
 }

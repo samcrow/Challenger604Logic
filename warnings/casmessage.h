@@ -1,7 +1,7 @@
 #ifndef CASMESSAGE_H
 #define CASMESSAGE_H
 
-#include <QObject>
+#include <string>
 
 #include "../Challenger604Logic_global.h"
 
@@ -13,6 +13,8 @@ namespace Challenger604Systems {
   @brief Contains things for the Crew Alerting System that displays messages to crew members
   */
 namespace CAS {
+
+using namespace std;
 
 /**
   @brief Base class for a Crew Alerting System message
@@ -27,11 +29,10 @@ namespace CAS {
     <li>The master caution or master warning lights may illuminate</li>
   </ul>
   */
-class CHALLENGER604LOGICSHARED_EXPORT CASMessage : public QObject
+class CHALLENGER604LOGICSHARED_EXPORT CASMessage
 {
-    Q_OBJECT
 public:
-    explicit CASMessage(QObject *parent = 0);
+    CASMessage();
     
     /**
       @brief An enumeration of priority levels for messages
@@ -74,7 +75,7 @@ public:
 
       This should be short and in all capital letters
       */
-    virtual QString getDisplayText();
+    virtual string getDisplayText();
 
     /**
       @brief Determine if this message should turn on the master caution lights
@@ -123,10 +124,6 @@ public:
       to override this message.
       */
     virtual bool isLandingIgnored();
-
-signals:
-    
-public slots:
     
 };
 

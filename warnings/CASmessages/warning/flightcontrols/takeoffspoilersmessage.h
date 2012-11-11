@@ -11,18 +11,12 @@ namespace CAS {
   */
 class TakeoffSpoilersMessage : public CASWarningMessage
 {
-    Q_OBJECT
 public:
-    explicit TakeoffSpoilersMessage(QObject *parent = 0);
+    TakeoffSpoilersMessage();
 
-    QString getDisplayText();
+    string getDisplayText();
 
     AuralWarningSystem::WarningSound getSound();
-    
-signals:
-    
-public slots:
-    
 };
 
 }

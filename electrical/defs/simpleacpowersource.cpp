@@ -2,8 +2,7 @@
 
 namespace Challenger604Systems {
 
-SimpleACPowerSource::SimpleACPowerSource(QObject *parent) :
-    ACPowerSource(parent),
+SimpleACPowerSource::SimpleACPowerSource() :
     maxWattage(0),
     availableWattage(0),
     currentWattage(0),

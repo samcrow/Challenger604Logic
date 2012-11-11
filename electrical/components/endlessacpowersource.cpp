@@ -2,8 +2,7 @@
 
 namespace Challenger604Systems {
 
-EndlessACPowerSource::EndlessACPowerSource(QObject *parent) :
-    SimpleACPowerSource(parent)
+EndlessACPowerSource::EndlessACPowerSource()
 {
     const double maxDoubleValue = 1.7976931348623157E308;
     maxWattage = maxDoubleValue;

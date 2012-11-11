@@ -11,18 +11,13 @@ namespace Challenger604Systems {
   */
 class CHALLENGER604LOGICSHARED_EXPORT ACPowerSource : public PowerSource
 {
-    Q_OBJECT
 public:
-    explicit ACPowerSource(QObject *parent = 0);
+    ACPowerSource();
 
     /**
       Get the frequency, in hertz, of the electricity currently being supplied by this source
       */
     virtual double getCurrentFrequency() = 0;
-    
-signals:
-    
-public slots:
     
 };
 
